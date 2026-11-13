@@ -103,3 +103,4 @@ export function useAuthUser() {
 - Replace client-side search in `getAllSearchableContent()` with hybrid semantic vector search:
   - Generate OpenAI `text-embedding-3-small` vectors for all 28 podcast transcripts, 6 comic scripts, 13 safari chapters, and executive debriefs.
   - Query endpoint: `/api/search?q=vector+hygiene` executes cosine similarity searches against the knowledge base.
+

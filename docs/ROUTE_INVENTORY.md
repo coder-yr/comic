@@ -18,3 +18,4 @@
 | `/library` | Static | None | `useUserStore` (localStorage bookmarks, reading/listening history) | **New (Phase 2)** |
 | `/account` | Static | None | `useUserStore` (User profile, active tier, display preferences) | **New (Phase 2)** |
 | `/_not-found` | Static | None | Luxury Graphic Novel 404 error page | **New (Phase 2)** |
+

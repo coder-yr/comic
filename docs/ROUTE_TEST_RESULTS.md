@@ -52,3 +52,4 @@
 - Header fits mobile viewport with zero horizontal scroll (`overflow-x: hidden`).
 - Font sizing adapts cleanly with fluid typography classes (`clamp`).
 - Comic Reader offers one-touch spread advance with dedicated bottom toolbar.
+

@@ -72,3 +72,4 @@
 - [x] **10 Animal Characters:** `archetype-01` to `archetype-10` with complete dossiers and roles.
 - [x] **28 Podcast Episodes:** `ep-01` to `ep-28` across Season 01 & Season 02 with full metadata.
 - [x] **6 Comic Issues:** `comic-00` to `comic-05` with full story synopses and reading statistics.
+

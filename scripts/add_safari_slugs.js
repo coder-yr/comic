@@ -26,3 +26,4 @@ for (const [id, slug] of Object.entries(slugMap)) {
 
 fs.writeFileSync('src/data/safari.ts', text, 'utf8');
 console.log('Successfully added slugs to safari.ts');
+
