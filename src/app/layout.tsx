@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/navigation/Navbar";
 import { Footer } from "@/components/navigation/Footer";
+import { GlobalMiniPlayer } from "@/components/player/GlobalMiniPlayer";
 
 export const metadata: Metadata = {
   title: "The AI Jungle Experience | Executive Strategy & Digital Graphic Novels",
@@ -32,7 +33,8 @@ export default function RootLayout({
       </head>
       <body className="bg-background text-editorial-light min-h-screen flex flex-col antialiased selection:bg-primary selection:text-background">
         <Navbar />
-        <main className="flex-1 w-full pt-16 md:pt-[98px]">{children}</main>
+        <main className="flex-1 w-full pt-16 md:pt-[98px] pb-20">{children}</main>
+        <GlobalMiniPlayer />
         <Footer />
       </body>
     </html>

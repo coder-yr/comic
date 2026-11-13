@@ -1,6 +1,7 @@
 export interface SafariChapter {
   id: string;
   number: string;
+  slug: string;
   displayNumber: string;
   volume: "Volume I: Foundations" | "Volume II: Scaling & MLOps" | "Volume III: Autonomous Horizons";
   volumeKey: "vol-1" | "vol-2" | "vol-3";
@@ -29,6 +30,7 @@ export interface SafariChapter {
 export const SAFARI_CHAPTERS: SafariChapter[] = [
   {
     id: "ch-00",
+    slug: "the-seed-of-silicon",
     number: "00",
     displayNumber: "PROLOGUE • CHAPTER 00",
     volume: "Volume I: Foundations",
@@ -60,6 +62,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-01",
+    slug: "the-jungle-audit",
     number: "01",
     displayNumber: "FOUNDATIONS • CHAPTER 01",
     volume: "Volume I: Foundations",
@@ -91,6 +94,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-02",
+    slug: "the-great-trunk",
     number: "02",
     displayNumber: "FOUNDATIONS • CHAPTER 02",
     volume: "Volume I: Foundations",
@@ -122,6 +126,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-03",
+    slug: "pack-instinct",
     number: "03",
     displayNumber: "FOUNDATIONS • CHAPTER 03",
     volume: "Volume I: Foundations",
@@ -153,6 +158,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-04",
+    slug: "silent-eyes",
     number: "04",
     displayNumber: "FOUNDATIONS • CHAPTER 04",
     volume: "Volume I: Foundations",
@@ -184,6 +190,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-05",
+    slug: "the-innovation-sprint",
     number: "05",
     displayNumber: "FOUNDATIONS • CHAPTER 05",
     volume: "Volume I: Foundations",
@@ -215,6 +222,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-06",
+    slug: "zero-trust-canopy",
     number: "06",
     displayNumber: "SCALING • CHAPTER 06",
     volume: "Volume II: Scaling & MLOps",
@@ -246,6 +254,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-07",
+    slug: "the-velocity-gap",
     number: "07",
     displayNumber: "SCALING • CHAPTER 07",
     volume: "Volume II: Scaling & MLOps",
@@ -277,6 +286,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-08",
+    slug: "colony-intelligence",
     number: "08",
     displayNumber: "SCALING • CHAPTER 08",
     volume: "Volume II: Scaling & MLOps",
@@ -308,6 +318,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-09",
+    slug: "prestige-brand-synthesis",
     number: "09",
     displayNumber: "SCALING • CHAPTER 09",
     volume: "Volume II: Scaling & MLOps",
@@ -339,6 +350,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-10",
+    slug: "curiosity-engine",
     number: "10",
     displayNumber: "AUTONOMOUS • CHAPTER 10",
     volume: "Volume III: Autonomous Horizons",
@@ -370,6 +382,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-11",
+    slug: "the-sovereign-moat",
     number: "11",
     displayNumber: "AUTONOMOUS • CHAPTER 11",
     volume: "Volume III: Autonomous Horizons",
@@ -401,6 +414,7 @@ export const SAFARI_CHAPTERS: SafariChapter[] = [
   },
   {
     id: "ch-12",
+    slug: "autonomous-apex",
     number: "12",
     displayNumber: "AUTONOMOUS • CHAPTER 12",
     volume: "Volume III: Autonomous Horizons",

@@ -8,6 +8,7 @@ import { CHARACTERS } from "@/data/characters";
 import { SAFARI_CHAPTERS } from "@/data/safari";
 import { PODCAST_EPISODES } from "@/data/podcast";
 import { COMIC_ISSUES, CANONICAL_OMNIBUS } from "@/data/comics";
+import { usePlayerStore } from "@/store/usePlayerStore";
 import { BioluminescentParticles } from "@/components/effects/BioluminescentParticles";
 import { AudioVisualizer } from "@/components/effects/AudioVisualizer";
 import { InteractiveHoloCard } from "@/components/effects/InteractiveHoloCard";
@@ -30,6 +31,7 @@ import {
 export default function HomePage() {
   const [selectedVolume, setSelectedVolume] = useState<string>("all");
   const [isAudioSimPlaying, setIsAudioSimPlaying] = useState<boolean>(true);
+  const playEpisode = usePlayerStore((s) => s.playEpisode);
   const featuredEpisode = PODCAST_EPISODES[0];
   const featuredComics = COMIC_ISSUES.slice(0, 3);
 
@@ -221,12 +223,14 @@ export default function HomePage() {
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                <Link
-                  href={`/podcast/${featuredEpisode.slug}`}
+                <button
+                  type="button"
+                  onClick={() => playEpisode(featuredEpisode)}
                   className="w-16 h-16 rounded-full bg-primary text-background flex items-center justify-center shadow-gold-lg group-hover:scale-110 transition-transform active:scale-95"
+                  aria-label={`Play ${featuredEpisode.title}`}
                 >
                   <Play className="w-7 h-7 fill-current ml-1" />
-                </Link>
+                </button>
               </div>
 
               {/* Dynamic Soundwave Overlay on top right of video */}

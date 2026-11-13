@@ -17,10 +17,11 @@ export const FOOTER_COLUMNS = [
   {
     title: "Media Universe",
     links: [
-      { label: "Podcast Episodes", href: "/podcast" },
-      { label: "Digital Comics Library", href: "/comics" },
-      { label: "Comic Reader", href: "/reader/the-jungle-audit" },
-      { label: "Canonical Omnibus Vol. I", href: "/comics" },
+      { label: "Podcast Transmissions (28)", href: "/podcast" },
+      { label: "Digital Comics Library (6)", href: "/comics" },
+      { label: "Graphic Novel Reader", href: "/reader/the-jungle-audit" },
+      { label: "Omni-Search Index", href: "/search" },
+      { label: "Executive Library", href: "/library" },
     ],
   },
   {
@@ -30,12 +31,14 @@ export const FOOTER_COLUMNS = [
       { label: "Council of 10 Animal Archetypes", href: "/characters" },
       { label: "Council Comparison Matrix", href: "/characters#matrix" },
       { label: "Discover Your Archetype", href: "/characters#discover" },
+      { label: "Demonstration Membership", href: "/membership" },
     ],
   },
   {
     title: "Leadership & Enterprise",
     links: [
       { label: "About Dr. Amit Khandelwal", href: "/about" },
+      { label: "Executive Account & Settings", href: "/account" },
       { label: "Sovereign AI Strategy Advisory", href: "/about#advisory" },
       { label: "Executive Debrief Series", href: "/podcast" },
       { label: "Zero-Hallucination Framework", href: "/safari" },
@@ -57,4 +60,3 @@ export const BRAND_INFO = {
     { name: "X (Twitter)", href: "https://x.com", icon: "twitter" },
   ],
 };
-

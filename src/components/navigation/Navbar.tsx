@@ -16,6 +16,9 @@ import {
   ChevronRight,
   Flame,
   Home,
+  Search,
+  Bookmark,
+  User,
 } from "lucide-react";
 
 interface NavItem {
@@ -27,11 +30,11 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "The Podcast", href: "/podcast" },
-  { label: "Graphic Novels", href: "/comics" },
-  { label: "The Saga", href: "/safari" },
-  { label: "The Council", href: "/characters" },
-  { label: "Our Story", href: "/about" },
+  { label: "Podcast", href: "/podcast" },
+  { label: "Comics", href: "/comics" },
+  { label: "Safari", href: "/safari" },
+  { label: "Council", href: "/characters" },
+  { label: "About", href: "/about" },
 ];
 
 export function Navbar() {
@@ -75,14 +78,21 @@ export function Navbar() {
     switch (label) {
       case "Home":
         return <Home className="w-4 h-4 text-[#E8B63F]" />;
+      case "The Podcast":
       case "Podcast":
         return <Radio className="w-4 h-4 text-[#38C7B5]" />;
+      case "Graphic Novels":
       case "Comics":
         return <BookOpen className="w-4 h-4 text-[#E8B63F]" />;
+      case "The Saga":
       case "Safari Journey":
+      case "Safari":
         return <Compass className="w-4 h-4 text-[#38C7B5]" />;
+      case "The Council":
       case "Characters":
+      case "Council":
         return <Users className="w-4 h-4 text-[#E8B63F]" />;
+      case "Our Story":
       case "About":
         return <Info className="w-4 h-4 text-[#38C7B5]" />;
       default:
@@ -116,6 +126,13 @@ export function Navbar() {
               <Flame className="w-3 h-3 text-[#E8B63F]" />
               13 SAFARI CHAPTERS SYNCED
             </span>
+            <span className="text-white/20">|</span>
+            <Link
+              href="/membership"
+              className="text-[#38C7B5] hover:text-white transition-colors"
+            >
+              MEMBERSHIP TIERS
+            </Link>
             <span className="text-white/20">|</span>
             <span className="text-[#777D74]">SYNDICATE V4.9.2</span>
           </div>
@@ -197,33 +214,68 @@ export function Navbar() {
           </div>
 
           {/* -------------------------------------------------------------------
-              RIGHT: CTAs & Mobile Menu Toggle
+              RIGHT: Search, Library, CTAs & Mobile Menu Toggle
               ------------------------------------------------------------------- */}
-          <div className="flex items-center justify-end gap-2 sm:gap-2.5 xl:gap-3 shrink-0">
+          <div className="flex items-center justify-end gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0">
+            {/* Omni-Search Icon Button */}
+            <Link
+              href="/search"
+              className={`p-2 rounded-lg transition-colors border ${
+                isActive("/search")
+                  ? "bg-[#18211C] border-[#E8B63F] text-[#E8B63F]"
+                  : "bg-[#111914] border-jungle-border/60 text-[#B6B4A8] hover:text-[#E8B63F] hover:border-[#E8B63F]/40"
+              }`}
+              title="Search Canon"
+              aria-label="Search Canon"
+            >
+              <Search className="w-4 h-4" />
+            </Link>
+
+            {/* Library Icon Button */}
+            <Link
+              href="/library"
+              className={`p-2 rounded-lg transition-colors border ${
+                isActive("/library")
+                  ? "bg-[#18211C] border-[#E8B63F] text-[#E8B63F]"
+                  : "bg-[#111914] border-jungle-border/60 text-[#B6B4A8] hover:text-[#E8B63F] hover:border-[#E8B63F]/40"
+              }`}
+              title="Personal Library"
+              aria-label="Personal Library"
+            >
+              <Bookmark className="w-4 h-4" />
+            </Link>
+
+            {/* Account Icon Button */}
+            <Link
+              href="/account"
+              className={`hidden sm:inline-flex p-2 rounded-lg transition-colors border ${
+                isActive("/account")
+                  ? "bg-[#18211C] border-[#E8B63F] text-[#E8B63F]"
+                  : "bg-[#111914] border-jungle-border/60 text-[#B6B4A8] hover:text-[#E8B63F] hover:border-[#E8B63F]/40"
+              }`}
+              title="Executive Account"
+              aria-label="Executive Account"
+            >
+              <User className="w-4 h-4" />
+            </Link>
+
             {/* Watch Podcast CTA */}
             <Link
               href="/podcast/ep-08-jungle-audit"
-              className="hidden sm:inline-flex items-center gap-1.5 xl:gap-2 px-2.5 xl:px-3.5 py-1.5 xl:py-2 rounded-lg bg-[#111914] border border-[#38C7B5]/40 text-[#38C7B5] font-label text-[11px] xl:text-xs font-semibold uppercase tracking-wider shadow-[0_0_12px_rgba(56,199,181,0.15)] hover:border-[#38C7B5] hover:bg-[#38C7B5]/15 hover:shadow-[0_0_20px_rgba(56,199,181,0.25)] transition-all hover:scale-105 active:scale-95 group shrink-0"
+              className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#111914] border border-[#38C7B5]/40 text-[#38C7B5] font-label text-xs font-semibold uppercase tracking-wider shadow-[0_0_12px_rgba(56,199,181,0.15)] hover:border-[#38C7B5] hover:bg-[#38C7B5]/15 transition-all hover:scale-105 active:scale-95 group shrink-0"
               aria-label="Watch Podcast Episode 08"
             >
               <div className="relative flex items-center justify-center">
                 <Radio className="w-3.5 h-3.5 text-[#38C7B5]" />
                 <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-[#38C7B5] animate-ping" />
               </div>
-              <span className="hidden xl:inline">Watch Podcast</span>
-              <span className="xl:hidden">Podcast</span>
-              {/* Mini live audio wave bars */}
-              <div className="hidden xl:flex items-end gap-[2px] h-3 ml-0.5">
-                <span className="w-[2px] h-1.5 bg-[#38C7B5] rounded-full animate-pulse" />
-                <span className="w-[2px] h-3 bg-[#38C7B5] rounded-full" />
-                <span className="w-[2px] h-2 bg-[#38C7B5] rounded-full animate-pulse" />
-              </div>
+              <span>Podcast</span>
             </Link>
 
             {/* Explore Comics CTA */}
             <Link
               href="/comics"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 xl:px-4 py-1.5 xl:py-2 rounded-lg bg-gradient-to-r from-[#C79528] via-[#E8B63F] to-[#FFD15A] text-[#0B100D] font-label text-[11px] xl:text-xs font-bold uppercase tracking-wider shadow-[0_0_18px_rgba(232,182,63,0.35)] hover:brightness-110 hover:shadow-[0_0_25px_rgba(232,182,63,0.5)] transition-all hover:scale-105 active:scale-95 shrink-0"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 xl:px-4 py-1.5 xl:py-2 rounded-lg bg-gradient-to-r from-[#C79528] via-[#E8B63F] to-[#FFD15A] text-[#0B100D] font-label text-[11px] xl:text-xs font-bold uppercase tracking-wider shadow-[0_0_18px_rgba(232,182,63,0.35)] hover:brightness-110 transition-all hover:scale-105 active:scale-95 shrink-0"
               aria-label="Explore Comics Library"
             >
               <BookOpen className="w-3.5 h-3.5" />
@@ -231,20 +283,11 @@ export function Navbar() {
               <span className="xl:hidden">Comics</span>
             </Link>
 
-            {/* Mobile Podcast Quick Action (<= 639px) */}
-            <Link
-              href="/podcast/ep-08-jungle-audit"
-              className="sm:hidden w-8 h-8 rounded-lg bg-[#111914] border border-[#38C7B5]/40 text-[#38C7B5] hover:bg-[#38C7B5]/15 transition-all flex items-center justify-center shrink-0"
-              aria-label="Watch Podcast"
-            >
-              <Radio className="w-3.5 h-3.5" />
-            </Link>
-
             {/* Mobile / Tablet Menu Toggle (<= 1023px) */}
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden w-8 h-8 rounded-lg bg-[#111914] text-[#B6B4A8] hover:text-[#E8B63F] hover:border-[#E8B63F]/40 transition-colors border border-jungle-border/60 flex items-center justify-center shrink-0"
+              className="lg:hidden w-8 h-8 rounded-lg bg-[#111914] text-[#B6B4A8] hover:text-[#E8B63F] hover:border-[#E8B63F]/40 transition-colors border border-jungle-border/60 flex items-center justify-center shrink-0 ml-1"
               aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={mobileMenuOpen}
             >
@@ -309,8 +352,8 @@ export function Navbar() {
                   </button>
                 </div>
 
-                {/* Navigation Links */}
-                <div className="space-y-2">
+                {/* Primary Navigation Links */}
+                <div className="space-y-1.5">
                   {NAV_ITEMS.map((item) => {
                     const active = isActive(item.href);
                     return (
@@ -318,7 +361,7 @@ export function Navbar() {
                         key={item.href}
                         href={item.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`flex items-center justify-between px-4 py-3 rounded-xl font-label text-xs uppercase tracking-wider transition-all ${
+                        className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label text-xs uppercase tracking-wider transition-all ${
                           active
                             ? "bg-[#18211C] text-[#E8B63F] font-bold border border-[#E8B63F]/40 shadow-[0_0_15px_rgba(232,182,63,0.15)]"
                             : "text-[#B6B4A8] hover:text-[#F2EFE6] hover:bg-[#111914]"
@@ -329,32 +372,61 @@ export function Navbar() {
                           {getNavIcon(item.label)}
                           <span>{item.label}</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                          {item.badge && (
-                            <span
-                              className={`text-[9px] px-2 py-0.5 rounded-full font-mono font-semibold ${
-                                item.badgeColor === "teal"
-                                  ? "bg-[#38C7B5]/15 text-[#38C7B5] border border-[#38C7B5]/30"
-                                  : "bg-[#E8B63F]/15 text-[#E8B63F] border border-[#E8B63F]/30"
-                              }`}
-                            >
-                              {item.label === "Safari Journey" ? "13 Chapters" : "Council of 10"}
-                            </span>
-                          )}
-                          <ChevronRight className="w-3.5 h-3.5 text-[#777D74]" />
-                        </div>
+                        <ChevronRight className="w-3.5 h-3.5 text-[#777D74]" />
                       </Link>
                     );
                   })}
                 </div>
+
+                {/* Secondary Utility Links */}
+                <div className="pt-3 border-t border-jungle-border/40 space-y-1.5">
+                  <span className="text-[10px] font-label uppercase tracking-widest text-[#777D74] px-3 block">
+                    Repository &amp; Account
+                  </span>
+                  <Link
+                    href="/search"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center gap-3 px-3.5 py-2 rounded-lg text-xs font-label uppercase tracking-wider text-[#B6B4A8] hover:text-[#E8B63F] hover:bg-[#111914] transition-colors"
+                  >
+                    <Search className="w-4 h-4 text-[#E8B63F]" />
+                    <span>Omni-Search Index</span>
+                  </Link>
+
+                  <Link
+                    href="/library"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center gap-3 px-3.5 py-2 rounded-lg text-xs font-label uppercase tracking-wider text-[#B6B4A8] hover:text-[#E8B63F] hover:bg-[#111914] transition-colors"
+                  >
+                    <Bookmark className="w-4 h-4 text-[#E8B63F]" />
+                    <span>Personal Library</span>
+                  </Link>
+
+                  <Link
+                    href="/membership"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center gap-3 px-3.5 py-2 rounded-lg text-xs font-label uppercase tracking-wider text-[#B6B4A8] hover:text-[#38C7B5] hover:bg-[#111914] transition-colors"
+                  >
+                    <Crown className="w-4 h-4 text-[#38C7B5]" />
+                    <span>Demonstration Membership</span>
+                  </Link>
+
+                  <Link
+                    href="/account"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center gap-3 px-3.5 py-2 rounded-lg text-xs font-label uppercase tracking-wider text-[#B6B4A8] hover:text-[#E8B63F] hover:bg-[#111914] transition-colors"
+                  >
+                    <User className="w-4 h-4 text-[#E8B63F]" />
+                    <span>Executive Profile</span>
+                  </Link>
+                </div>
               </div>
 
               {/* Drawer Bottom CTAs */}
-              <div className="pt-6 border-t border-jungle-border/60 space-y-3">
+              <div className="pt-6 border-t border-jungle-border/60 space-y-2.5">
                 <Link
                   href="/podcast/ep-08-jungle-audit"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-[#111914] border border-[#38C7B5]/40 text-[#38C7B5] font-label text-xs uppercase tracking-wider font-semibold shadow-[0_0_15px_rgba(56,199,181,0.15)] hover:bg-[#38C7B5]/15 transition-all"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#111914] border border-[#38C7B5]/40 text-[#38C7B5] font-label text-xs uppercase tracking-wider font-semibold shadow-[0_0_15px_rgba(56,199,181,0.15)] hover:bg-[#38C7B5]/15 transition-all"
                 >
                   <Radio className="w-4 h-4" />
                   <span>Watch Podcast Ep 08</span>
@@ -363,7 +435,7 @@ export function Navbar() {
                 <Link
                   href="/comics"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-[#C79528] via-[#E8B63F] to-[#FFD15A] text-[#0B100D] font-label text-xs uppercase tracking-wider font-bold shadow-[0_0_18px_rgba(232,182,63,0.35)] hover:brightness-110 transition-all"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-gradient-to-r from-[#C79528] via-[#E8B63F] to-[#FFD15A] text-[#0B100D] font-label text-xs uppercase tracking-wider font-bold shadow-[0_0_18px_rgba(232,182,63,0.35)] hover:brightness-110 transition-all"
                 >
                   <BookOpen className="w-4 h-4" />
                   <span>Explore Comic Library</span>
