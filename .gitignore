@@ -1,0 +1,46 @@
+# Dependencies
+/node_modules
+/.pnpm-store
+
+# Next.js build output
+/.next/
+/out/
+
+# Production build artifacts
+/build
+/dist
+
+# Debug and runtime logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Local environment variables
+.env*.local
+.env
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Large raw video assets (>100MB exceeds standard GitHub push limits)
+public/assets/sample/WhatsApp Video 2026-11-12 at 7.08.22 PM.mp4
+public/assets/sample/podcast-episode-full.mp4
+
+# Test & verification artifacts
+.artifacts/navbar-verification/
+reader_preview.png
+reader_1440px.png
+reader_1280px.png
+reader_mobile_390.png
+reader_4clips.png
+reader_single_comic_page.png

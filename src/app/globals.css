@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 8 11 9;
+    --surface: 17 20 18;
+    --primary: 247 192 72;
+    --secondary: 79 219 199;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    background-color: #080B09;
+    color: #F4F0E7;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    background-color: #080B09;
+    color: #F4F0E7;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  ::selection {
+    background-color: #F7C048;
+    color: #080B09;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #080B09;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #202820;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D9A52E;
+  }
+}
+
+/* Glassmorphism and Luxury Glow utilities */
+.glass-panel {
+  background: rgba(24, 33, 28, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(220, 176, 64, 0.18);
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(247, 192, 72, 0.45);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(247, 192, 72, 0.12);
+}
+
+.glass-panel-teal {
+  background: rgba(12, 24, 17, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(79, 219, 199, 0.22);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-teal:hover {
+  border-color: rgba(79, 219, 199, 0.5);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(79, 219, 199, 0.15);
+}
+
+.glass-nav {
+  background: rgba(8, 11, 9, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(220, 176, 64, 0.14);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(247, 192, 72, 0.25);
+}
+
+.teal-glow {
+  box-shadow: 0 0 25px rgba(79, 219, 199, 0.2);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F7C048 0%, #FFD15A 50%, #D9A52E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-teal-gradient {
+  background: linear-gradient(135deg, #70F8E3 0%, #4FDBC7 50%, #38C7B5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-jungle-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(247, 192, 72, 0.08) 0%, rgba(8, 11, 9, 0.95) 70%, #080B09 100%);
+}
+
+/* Shimmer metallic effect on cards */
+.shimmer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(247, 192, 72, 0.08) 50%,
+      transparent 100%);
+  transform: skewX(-20deg);
+  transition: all 0.75s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.shimmer-card:hover::before {
+  left: 150%;
+}
+
+/* Animated electrical pulse down timeline spine */
+@keyframes electricPulse {
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+.animate-electric-pulse {
+  position: absolute;
+  left: -1px;
+  width: 3px;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #4FDBC7, #F7C048, transparent);
+  box-shadow: 0 0 15px #4FDBC7, 0 0 25px #F7C048;
+  animation: electricPulse 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Audio visualizer bar animations */
+@keyframes soundwave {
+
+  0%,
+  100% {
+    height: 4px;
+  }
+
+  50% {
+    height: 22px;
+  }
+}
+
+.bar-1 {
+  animation: soundwave 1.2s ease-in-out infinite;
+}
+
+.bar-2 {
+  animation: soundwave 0.8s ease-in-out infinite 0.2s;
+}
+
+.bar-3 {
+  animation: soundwave 1.5s ease-in-out infinite 0.4s;
+}
+
+.bar-4 {
+  animation: soundwave 0.9s ease-in-out infinite 0.1s;
+}
+
+.bar-5 {
+  animation: soundwave 1.3s ease-in-out infinite 0.3s;
+}
+
+/* Subtle floating firefly particles */
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(0.8);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(-25px) translateX(12px) scale(1.2);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(-50px) translateX(-8px) scale(0.8);
+    opacity: 0.2;
+  }
+}
+
+.firefly-gold {
+  animation: floatParticle 6s ease-in-out infinite alternate;
+}
+
+.firefly-teal {
+  animation: floatParticle 8s ease-in-out infinite alternate-reverse;
+}
+
+/* Cybernetic corner brackets */
+.holo-bracket {
+  position: relative;
+}
+
+.holo-bracket::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #F7C048;
+  border-left: 2px solid #F7C048;
+  pointer-events: none;
+}

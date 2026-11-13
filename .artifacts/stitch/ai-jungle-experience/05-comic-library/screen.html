@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#261900","secondary-container":"#03b4a1","error-container":"#93000a","on-primary":"#402d00","primary-fixed-dim":"#f5be46","primary-container":"#d9a52e","on-background":"#e1e3df","on-tertiary-fixed":"#251a00","on-surface-variant":"#d3c5af","on-tertiary-container":"#533e00","on-primary-container":"#553d00","inverse-surface":"#e1e3df","error":"#ffb4ab","secondary-fixed":"#70f8e3","surface-bright":"#373a37","primary":"#f7c048","primary-fixed":"#ffdea3","surface-variant":"#323533","on-primary-fixed-variant":"#5d4200","tertiary-container":"#d3a82d","background":"#111412","inverse-primary":"#7a5900","on-secondary":"#003731","on-secondary-fixed":"#00201c","on-secondary-fixed-variant":"#005047","tertiary-fixed-dim":"#eec145","on-tertiary":"#3e2e00","surface-tint":"#f5be46","secondary":"#4fdbc7","tertiary":"#f1c347","surface-container-lowest":"#0c0f0d","surface-container":"#1d201e","surface-dim":"#111412","inverse-on-surface":"#2e312f","outline":"#9b8f7b","surface":"#111412","secondary-fixed-dim":"#4fdbc7","on-secondary-container":"#003f37","on-tertiary-fixed-variant":"#594400","on-surface":"#e1e3df","surface-container-highest":"#323533","outline-variant":"#4f4635","on-error-container":"#ffdad6","on-error":"#690005","surface-container-high":"#282b28","tertiary-fixed":"#ffdf95","surface-container-low":"#191c1a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-md":"1rem","space-xl":"2.5rem","margin-mobile":"1.25rem","gutter-mobile":"1rem","margin":"3rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Newsreader"],"label-md":["Space Grotesk"],"body-sm":["Plus Jakarta Sans"],"display-lg":["Newsreader"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Newsreader"],"headline-xl":["Newsreader"],"label-sm":["Space Grotesk"],"headline-md":["Newsreader"],"headline-sm":["Newsreader"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["Newsreader"],"label-lg":["Space Grotesk"]},"fontSize":{"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"0em","fontWeight":"500"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.1em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0.005em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.06em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-[#080B09]/80 backdrop-blur-md border-b border-[#D9A52E]/20 shadow-[0_4px_30px_rgba(0,0,0,0.5)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-4 shrink-0"><img alt="The AI Jungle Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBtG_bmaMs1rL1TE1FLs-U16JzFMjX8YGdMxeRQGjsaQmNGmBNolSDERX-EpiWEck43HB9L2IZepRwK4vfjOzSQ61gzsjQlY4q-a1kqWoQz-lgXmW2raBgO4rBK3V8SCLtGySieDprJXVAYG2dwBgCHZz4PQwgs7jpRRY9BC09cgSw5nsnakpb4wlG0IMoKBT_CsiNpJEIEExMYM3sS7rJJusyYZmbnDoUN824QgNJs"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">THE AI JUNGLE</span><span class="font-label-sm text-label-sm uppercase tracking-[0.22em] text-outline">WHERE BUSINESS MEETS ARTIFICIAL INTELLIGENCE</span></div></div><nav class="hidden xl:flex items-center gap-7" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 relative py-1 group" data-path="home" href="#"><span class="relative z-10">Home</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span></a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 relative py-1 group" data-path="podcast" href="#"><span class="relative z-10">Podcast</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span></a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 relative py-1 group" data-path="comics" href="#"><span class="relative z-10">Comics</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span></a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 relative py-1 group" data-path="safari-journey" href="#"><span class="relative z-10">Safari Journey</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span></a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 relative py-1 group" data-path="characters" href="#"><span class="relative z-10">Characters</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span></a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 relative py-1 group" data-path="about" href="#"><span class="relative z-10">About</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span></a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 relative py-1 group" data-path="contact" href="#"><span class="relative z-10">Contact</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span></a></nav><div class="flex items-center gap-3 shrink-0"><a class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-primary/40 text-primary font-label-md text-label-md uppercase tracking-wider hover:border-primary hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-[0_0_12px_rgba(217,165,46,0.15)]" data-path="podcast" href="#"><span class="material-symbols-outlined text-[16px]">play_circle</span><span>Watch Podcast</span></a><a class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-[0_0_20px_rgba(244,198,74,0.35)] hover:shadow-[0_0_25px_rgba(244,198,74,0.5)] transition-all duration-300" data-path="comics" href="#"><span>Explore Comics</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1 shadow-[0_0_10px_rgba(247,192,72,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Backdrop -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[480px] bg-primary/5 blur-[140px] pointer-events-none rounded-full"></div>
+<div class="absolute top-[600px] -left-48 w-[600px] h-[600px] bg-secondary/5 blur-[160px] pointer-events-none rounded-full"></div>
+<!-- Hero / Featured Lead Issue Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16 w-full">
+<!-- Section Header Badging -->
+<div class="flex flex-col items-start gap-3 mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary border border-secondary/20 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em]">Graphic Novel Reserve • Premier Tier</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl lg:text-display-lg text-primary tracking-tight font-medium max-w-4xl drop-shadow-[0_2px_15px_rgba(247,192,72,0.15)]">
+          ENTER THE COMIC WORLD
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light">
+          Explore the AI Jungle through illustrated stories, boardroom strategies, and unforgettable animal archetypes commanding the computational wild.
+        </p>
+</div>
+<!-- Featured Graphic Novel Showcase Card (Issue Zero) -->
+<div class="relative w-full rounded-2xl bg-surface-container/70 backdrop-blur-xl border border-primary/25 p-6 lg:p-10 shadow-2xl overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-surface-container/40 to-transparent pointer-events-none z-10 hidden lg:block"></div>
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-20">
+<!-- Artwork / Visual Cover Display (Left 7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-3">
+<div class="relative w-full rounded-xl overflow-hidden aspect-[16/9] shadow-2xl border border-outline-variant/40 group-hover:border-primary/40 transition-all duration-500">
+<img class="w-full h-full object-cover transform group-hover:scale-[1.02] transition-transform duration-700 ease-out" data-alt="A cinematic prestige graphic novel wide cover showing an anthropomorphic majestic lion in an executive navy bespoke tailored suit and a massive cybernetic ancient elephant with glowing turquoise holographic tribal circuitry glowing on its head. They stand in an impenetrable midnight jungle canopy looking intently over a glowing 3D amber holographic data lake map of world telemetry. Ambient warm golden lanterns hang from tangled vines in dark emerald twilight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Xsvz3alrsR7uBxxiv15gNeAll3alooJ4KjnCCdhv5bqkli8JMaizYFj2W8b5UJohVHdVZP1KUF7Pb_Uu7aFzpMgdB4reczqVgadtWgqKTib7W-G5jz8wAykVXrjpEgBYsWTaIkaHOskc_N7D3Z1zd7WZgWrGqxFcFbX6kEW0FRSBOojIEgNWmIhQruxrX5dEjQspKJn2ddyJNp4dS1jXqLT2-ehBIJ95LJFZKsY"/>
+<div class="absolute top-4 left-4 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-sm bg-[#080B09]/90 backdrop-blur-md border border-primary/40 text-primary font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  CANONICAL ISSUE #00
+                </span>
+<span class="px-2.5 py-1 rounded-sm bg-secondary-container/90 text-on-secondary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                  FREE TO EXPLORE
+                </span>
+</div>
+<div class="absolute bottom-3 right-4 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">auto_stories</span>
+<span>36 Illustrated Spreads</span>
+</div>
+</div>
+</div>
+<!-- Narrative Synopsis & Metadata (Right 5 Cols) -->
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md uppercase tracking-[0.2em] mb-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Genesis Omnibus Arc</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight font-medium mb-3">
+              Issue Zero: The Sovereign Awakening &amp; The Sacred Lake
+            </h2>
+<div class="flex flex-wrap items-center gap-2 mb-4">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">military_tech</span>
+<span>The Lion (Strategy)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">database</span>
+<span>The Elephant (Data Lake)</span>
+</div>
+<span class="text-outline font-label-sm text-label-sm uppercase tracking-wider">• 18 Min Read</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Before the pride hunts, they survey the shifting computational terrain. The Lion convenes deep inside the midnight reserve with The Elephant to sanitize enterprise telemetry, dispel downstream model hallucinations, and establish unyielding sovereignty before autonomous agent swarms are unleashed.
+            </p>
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-[0_0_25px_rgba(247,192,72,0.35)] hover:shadow-[0_0_35px_rgba(247,192,72,0.55)] transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<span>START READING</span>
+</a>
+<button class="inline-flex items-center gap-2 px-4 py-3 rounded-lg border border-primary/40 text-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary/10 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>PREVIEW ISSUE</span>
+</button>
+<button class="p-3 rounded-lg border border-outline-variant/60 text-outline hover:text-primary hover:border-primary transition-colors" title="Add to Sovereign Pull List" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comic Catalog Controls & Search Matrix -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-10 w-full">
+<div class="p-4 lg:p-6 rounded-xl bg-surface-container-low/80 backdrop-blur-md border border-outline-variant/40 flex flex-col gap-4 shadow-lg">
+<!-- Top Search Row -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center gap-3 w-full">
+<div class="relative flex-grow">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-lg bg-surface text-on-surface placeholder:text-outline font-body-sm text-body-sm border border-outline-variant/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all" placeholder="Search graphic chapters, animal archetypes, data frameworks, or agent playbooks..." type="text"/>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-label-md text-label-md uppercase tracking-wider px-4 py-2.5 pr-8 rounded-lg border border-outline-variant/50 focus:outline-none focus:border-primary cursor-pointer">
+<option>ALL CHARACTERS</option>
+<option>Lion (Strategy &amp; Governance)</option>
+<option>Elephant (Data Fabric)</option>
+<option>Wolf (Ops &amp; Wolfpack)</option>
+<option>Owl (Ethics &amp; Guardrails)</option>
+<option>Fox (Agile Innovation)</option>
+<option>Eagle (Zero-Trust Security)</option>
+<option>Cheetah (Inference Speed)</option>
+<option>Monkey (Generative Agents)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-label-md text-label-md uppercase tracking-wider px-4 py-2.5 pr-8 rounded-lg border border-outline-variant/50 focus:outline-none focus:border-primary cursor-pointer">
+<option>SORT: CANONICAL ARC</option>
+<option>LATEST DISPATCH</option>
+<option>MOST ACCLAIMED</option>
+<option>TOTAL SPREAD COUNT</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">sort</span>
+</div>
+</div>
+</div>
+<!-- Filter Category Pills -->
+<div class="flex items-center justify-between gap-4 overflow-x-auto pt-2 border-t border-outline-variant/20 scrollbar-none">
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-[0_0_12px_rgba(247,192,72,0.3)] shrink-0">
+              All Volumes
+            </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-primary hover:bg-surface-container-high border border-outline-variant/40 font-label-sm text-label-sm uppercase tracking-wider transition-colors shrink-0">
+              The Sovereign Safari Canon
+            </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-primary hover:bg-surface-container-high border border-outline-variant/40 font-label-sm text-label-sm uppercase tracking-wider transition-colors shrink-0">
+              Boardroom Graphic Playbooks
+            </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-primary hover:bg-surface-container-high border border-outline-variant/40 font-label-sm text-label-sm uppercase tracking-wider transition-colors shrink-0">
+              Agentic Tactical Battles
+            </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-primary hover:bg-surface-container-high border border-outline-variant/40 font-label-sm text-label-sm uppercase tracking-wider transition-colors shrink-0">
+              Archival Hardcover Editions
+            </button>
+</div>
+<span class="text-outline font-label-sm text-label-sm whitespace-nowrap shrink-0 hidden sm:inline-block">
+            13 Canonical Issues Active
+          </span>
+</div>
+</div>
+</section>
+<!-- SECTION 1: "CONTINUE READING" (Personalized Pull List / Reading Deck) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-14 w-full">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">timelapse</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-wide">
+            CONTINUE READING • ACTIVE REEL
+          </h2>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline uppercase tracking-wider flex items-center gap-1" href="#">
+<span>Manage Pull List</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Progress Item 1 -->
+<div class="p-4 rounded-xl bg-surface-container/60 border border-outline-variant/40 hover:border-primary/40 transition-all flex flex-col justify-between group">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-16 h-22 rounded-md overflow-hidden shrink-0 border border-outline-variant/60 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Graphic novel portrait cover of a cybernetic elephant standing beside a digital turquoise glowing pool in a dense illuminated midnight jungle, detailed comic book line art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2K9O7f7kmZa-p7KePWrIdofPsVYg0FL0ZFx8caDst2sXzgd_oxrpDe6d4V9b31X6B1teUEYThDYFQH0VySRnnx5P63_I6BK6bxa4tYyZQkYsRNPQ945-l8VTAHywYwzF-bplGIb1ieM476CVgxJv-kLVejS9M97jUTdRUkX5tEbS2kZ6c8AeOI7HDHMd4YBGtC98v5pS2UCopYcVIY3QYv5ms2aPuPalnehZBb8M"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">CHAPTER 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">
+                The Great Trunk
+              </h3>
+<p class="font-body-sm text-body-sm text-outline truncate">Data Sanitation &amp; RAG Architecture</p>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Page 18 of 28</span>
+<span class="text-primary font-bold">(65%)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary rounded-full w-[65%]"></div>
+</div>
+<a class="mt-2 w-full py-2 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md uppercase tracking-wider text-center font-bold transition-all flex items-center justify-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>RESUME READ</span>
+</a>
+</div>
+</div>
+<!-- Progress Item 2 -->
+<div class="p-4 rounded-xl bg-surface-container/60 border border-outline-variant/40 hover:border-primary/40 transition-all flex flex-col justify-between group">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-16 h-22 rounded-md overflow-hidden shrink-0 border border-outline-variant/60 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Graphic novel portrait comic cover of a dignified lion in a midnight blue corporate tailored tuxedo standing under golden starlight in a cyber jungle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuZKl22ogL-XL3olZpMLuU_j_XgekVlYrm8rDMejhzkwZlZjaH61qF3uUUUWaD2uP5gyRQAQ3St8oLD3Akon1Lw-yytrAYV0FYNvQr9Rp_i2qSHN8l-EBYzNtKkwCE27rBVJEywEyzXsA3dgxXCPfoZW7jchGPY94qhWZkbiZqZUXLorYoP2vc8eoFBSwf6gFVBqRLQcV-pQ8Es-8nPMPMH6v1eZG0BP2k1y-kIe8"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">CHAPTER 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">
+                The Silicon Canopy
+              </h3>
+<p class="font-body-sm text-body-sm text-outline truncate">Awakening of the Sovereign Pride</p>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Page 32 of 32</span>
+<span class="text-secondary font-bold">• COMPLETE</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full"></div>
+</div>
+<a class="mt-2 w-full py-2 rounded bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md uppercase tracking-wider text-center font-bold transition-all flex items-center justify-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+<span>RE-READ EPISODE</span>
+</a>
+</div>
+</div>
+<!-- Progress Item 3 -->
+<div class="p-4 rounded-xl bg-surface-container/60 border border-outline-variant/40 hover:border-primary/40 transition-all flex flex-col justify-between group">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-16 h-22 rounded-md overflow-hidden shrink-0 border border-outline-variant/60 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Graphic novel comic cover of an ethereal wise owl with glowing amber optics perched on a high branch overlooking a sprawling digital circuit board canopy at twilight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3e-UIxpOp48uxbnECPrPvO9qvgoQjYmR2crZE0LV8B09aQ2uqt1PB3PeQpB8KoqOGBxonLr3PHEDJ_Efwi6RNf4XnahsPmZzYqdPQsI6TuUK-orwgcauFJV9QOb-22m3NA-7u0Jf-wCml0avzlUUo9X_CaK4aB_EKh4AzGje35dpdIVbUDesQPCuGbPALwzr6T4mh7S-ecwt1uCztJWEQCNnC_Vte12GUDqpIH80"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">PROLOGUE</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">
+                The Jungle Audit
+              </h3>
+<p class="font-body-sm text-body-sm text-outline truncate">Diagnostic Algorithmic Matrix</p>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Page 5 of 24</span>
+<span class="text-primary font-bold">(20%)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[20%]"></div>
+</div>
+<a class="mt-2 w-full py-2 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md uppercase tracking-wider text-center font-bold transition-all flex items-center justify-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>RESUME READ</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: "FEATURED COMICS" (Large Visual 3:4 Covers Grid) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-16 w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.22em] text-primary">Prestige Issue Spreads</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-medium">
+            FEATURED GRAPHIC NOVELS
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Collector-grade comic covers printed on dynamic canvas. Each issue pairs deep strategic models with visceral narrative worldbuilding.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Comic Card 1: Issue 01 -->
+<article class="flex flex-col rounded-2xl bg-surface-container border border-outline-variant/40 hover:border-primary/60 transition-all duration-300 hover:shadow-[0_12px_40px_rgba(247,192,72,0.18)] overflow-hidden group">
+<!-- 3:4 Aspect Ratio Comic Cover Canvas -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="A graphic novel comic book cover with vintage prestige trade dress titled THE SILICON CANOPY ISSUE ONE. Features an imposing anthropomorphic lion CEO standing tall in golden hour mist in a jungle, digital circuits entwined with ancient roots, gold metallic accents, high-contrast comic book ink lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFOzgw2cxwzT7ZL0_tXLIjMkLfnOZ97Xq-sqS9E1lXGE-tqqfzdbaSc1T67JgqpWoSbpL87_AeYM9KEoQEZsL_fBahFzX1C7XqpkwLvNXtph7C7DcVcIGbRim8wr3z5TbbteNDyjwiQuDVU-S4nOfQu4ei29l8p0pIGBkPXDcVYobXxpo1BH6DRGX_-jsTmgS6j177kiGHJdp5QbwLpyzbcVW_OzLtnCGcryvipeg"/>
+<!-- Top Badging Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+<span class="px-2.5 py-1 rounded-sm bg-primary text-on-primary font-label-sm text-label-sm font-bold uppercase tracking-widest shadow-md">
+                ISSUE #01
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+                COMPLETE
+              </span>
+</div>
+<!-- Character Badge Bottom of Cover -->
+<div class="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between">
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md border border-primary/30 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">crown</span>
+<span>The Lion • Governance</span>
+</div>
+<span class="text-on-surface font-label-sm text-label-sm bg-surface-container-lowest/80 px-2.5 py-1 rounded backdrop-blur-md border border-outline-variant/40">
+                32 Pages
+              </span>
+</div>
+</div>
+<!-- Comic Metadata & Synopsis -->
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors leading-tight mb-2">
+                The Silicon Canopy: Awakening of the Sovereign Pride
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mb-6">
+                Legacy algorithmic paradigms shatter. The Lion convenes an emergency dawn council across the forest canopy to outline foundational rules of algorithmic liability, model containment, and enterprise command.
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/30">
+<a class="flex-grow py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold text-center hover:shadow-[0_0_20px_rgba(247,192,72,0.4)] transition-all" href="#">
+                READ NOW
+              </a>
+<button class="p-2.5 rounded-lg border border-outline-variant/60 text-outline hover:text-primary hover:border-primary transition-colors" title="Bookmark to Reading List" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Comic Card 2: Issue 02 -->
+<article class="flex flex-col rounded-2xl bg-surface-container border border-outline-variant/40 hover:border-primary/60 transition-all duration-300 hover:shadow-[0_12px_40px_rgba(79,219,199,0.18)] overflow-hidden group">
+<!-- 3:4 Aspect Ratio Comic Cover Canvas -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="A comic book cover titled THE GREAT TRUNK ISSUE TWO featuring a wise colossal elephant with illuminated cyan blue neural tattoos, kneeling beside a shimmering bioluminescent water spring deep in a dark tropical forest. Moody comic hatching, dynamic digital mist, glowing runes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVzJdHXGjF6RRL9-4hidB6esKZ_dlfM8IU1P4DaAxvko_-CAm2fyZye6nfDh84f5ig6gFb9RCkxIaOIrvZWxaDczK_x7dFSmrSFzCpb2RsdNP8Laey4iu9EEWqAamWCazedRzaTUqhDvFthQvpjIFtel_2A34TpHbtczpevPjeNcM3hfFeBUSDcsHe82Gd3mtwCSTF2pzJL2ykc7SgPxex6rU-8UOKHfyPwLv1AD4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+<span class="px-2.5 py-1 rounded-sm bg-secondary text-on-secondary font-label-sm text-label-sm font-bold uppercase tracking-widest shadow-md">
+                ISSUE #02
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30 font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+                ONGOING
+              </span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between">
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md border border-secondary/30 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+<span>The Elephant • Data Fabric</span>
+</div>
+<span class="text-on-surface font-label-sm text-label-sm bg-surface-container-lowest/80 px-2.5 py-1 rounded backdrop-blur-md border border-outline-variant/40">
+                28 Pages
+              </span>
+</div>
+</div>
+<!-- Metadata & Synopsis -->
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors leading-tight mb-2">
+                The Great Trunk: Clean Waters of the Data Lake
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mb-6">
+                When poisoned vector embeddings threaten to corrupt every downstream inference engine, The Elephant descends to dredge toxic historical sets and restore uncorrupted semantic recall.
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/30">
+<a class="flex-grow py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold text-center hover:shadow-[0_0_20px_rgba(247,192,72,0.4)] transition-all" href="#">
+                READ NOW
+              </a>
+<button class="p-2.5 rounded-lg border border-outline-variant/60 text-outline hover:text-primary hover:border-primary transition-colors" title="Bookmark to Reading List" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Comic Card 3: Issue 03 -->
+<article class="flex flex-col rounded-2xl bg-surface-container border border-outline-variant/40 hover:border-primary/60 transition-all duration-300 hover:shadow-[0_12px_40px_rgba(247,192,72,0.18)] overflow-hidden group">
+<!-- 3:4 Aspect Ratio Comic Cover Canvas -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Comic book cover titled PACK INSTINCT ISSUE THREE showing an anthropomorphic tactical wolf in modular combat gear leading a pack of cybernetic wolves through an overgrown neon-infused bamboo forest, tactical heads-up display lines, dynamic graphic novel art style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnE4y0eaMYsisQs4Flsewfyyr_aOQiy-gJiFfMlSGYM21onNYca9APHsLdr25ueB1K5N_eAAABOPMQUlDZMUMg8IlkiM34X-7qIsv1A0qHyhCnTAqUuxjfGM6XmvCCf9b41K6o-By4KRSklm0qin4wwSdMTVA9wzmlAU6kBMAmMbJSbdsIVvnIjhjGWMxobL4umyQNj9E0Y3LEz9qJSNuRT0c3QVnKY1oyJLVkjXY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/60 pointer-events-none"></div>
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+<span class="px-2.5 py-1 rounded-sm bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase tracking-widest shadow-md">
+                ISSUE #03
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30 font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+                ONGOING
+              </span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between">
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md border border-primary/30 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>The Wolf • Ops &amp; Scale</span>
+</div>
+<span class="text-on-surface font-label-sm text-label-sm bg-surface-container-lowest/80 px-2.5 py-1 rounded backdrop-blur-md border border-outline-variant/40">
+                30 Pages
+              </span>
+</div>
+</div>
+<!-- Metadata & Synopsis -->
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors leading-tight mb-2">
+                Pack Instinct: The Agile Wolfpack Deployment
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mb-6">
+                Sandboxes are for pups. The Wolf mobilizes autonomous agent packs across decentralized clusters, forging high-throughput model synchronization under hostile real-world enterprise load.
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/30">
+<a class="flex-grow py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold text-center hover:shadow-[0_0_20px_rgba(247,192,72,0.4)] transition-all" href="#">
+                READ NOW
+              </a>
+<button class="p-2.5 rounded-lg border border-outline-variant/60 text-outline hover:text-primary hover:border-primary transition-colors" title="Bookmark to Reading List" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 3: "THE AI JUNGLE SAFARI – COMPLETE SERIES" (13-Chapter Canonical Graphic Saga Shelf) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-16 w-full">
+<div class="rounded-2xl bg-surface-container-low/70 border border-outline-variant/30 p-8 lg:p-10 shadow-xl">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-outline-variant/30">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-[0.25em] mb-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>The Grand Chronology</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-medium">
+              THE AI JUNGLE SAFARI: 13-CHAPTER SAGA
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Volume I: Foundations of the Sovereign Enterprise • Sequential transformation graphic narrative.
+            </p>
+</div>
+<!-- Release Progress Counter Bar -->
+<div class="flex flex-col gap-2 min-w-[280px]">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface uppercase tracking-wider font-semibold">Canon Progress</span>
+<span class="text-primary font-bold">8 of 13 Chapters Unlocked</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full w-[61%]"></div>
+</div>
+</div>
+</div>
+<!-- 8 Released Chapters Grid / Comic Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 pt-8">
+<!-- Chapter 1 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic book portrait of the lion leader standing atop a jungle rock, dramatic comic shading." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdqSsKz3UvROeBf5sNu7cnn9kRISkFthWRUglWdH4fNyuCJaIEr-Fsv71hd7CSmcUTjKrYIj-ZRUQ_goM60IdKARw4T0NKZ8PhBbAgdLNcrloCI9CSitiW5kvLt6nm9oiYosNLpwS9qdv_EPDy4rro16RiF9r2c1hp6WYv7AMfDa6e_TkIXVU9dQuxdiljVQdjGEiIBeFYOqO9IYNrD_AX4YJpWtVPEv9cyVVo0Rw"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.01</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-secondary-container/90 text-on-secondary font-label-sm text-[8px] font-bold">COMPLETE</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Silicon Canopy</h4>
+<span class="text-outline font-label-sm text-[10px]">Lion • 32p</span>
+</div>
+</div>
+<!-- Chapter 2 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic book cover thumbnail of an elephant drinking from glowing data springs, moody deep blue ink." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdfnK6CHAyZT3ebeR_oSuovLrubEYWXmpfCd9OlU6CS99uQYPVM3s8yFvpzH7xuiaLLmpfjwfsgx6GU8CAr5k1Hld7GkfuEq_cCN6Tfzt8XF1hUZ1qRejKcStRdVV1mv0vW5zQfhJJSLEfppmKFS7pL_x4M0GeXdUpPwl6bx-tnCNxk13d1yn3o4dxkjRrM0Oop0koQtTH5Q5OqRa8n5oIYcVVpfmM9C9e1QYeq9s"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.02</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-secondary-container/90 text-on-secondary font-label-sm text-[8px] font-bold">COMPLETE</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Great Trunk</h4>
+<span class="text-outline font-label-sm text-[10px]">Elephant • 28p</span>
+</div>
+</div>
+<!-- Chapter 3 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic cover of a sleek gray wolf in tactical tactical armor with glowing amber optics, nocturnal forest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu-s18CmaC7f_1cHc3DQOSvpdMlfM2QzedHR9biwPBxGfa61XhyiIIdw7tnKcrli2k6V2HKkBGzBxwxqtL-7rGBFiRcGiWcQ4N_QGouKQAPqBm6vZoz33JRxVW-zF6WR5S0DrChhg7Y6Hn-L1INRXBZohr2jFKFAWP6ZLwUa3pciwbSasjZnroZLSZCFCIBLWwp2gmRFw-5khwo24MuFB1-qcCKcKrffCpN5QZh88"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.03</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-secondary-container/90 text-on-secondary font-label-sm text-[8px] font-bold">COMPLETE</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Pack Instinct</h4>
+<span class="text-outline font-label-sm text-[10px]">Wolf • 30p</span>
+</div>
+</div>
+<!-- Chapter 4 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic book cover illustration of an owl in scholars robes perched high over a digital jungle grid, golden light accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr7_1OM1xaau1TWaN9K-lKJj6keP5IxNHTMACTUieEu_HyrAtihy3qhw1mWV_qA7_BLnIn5eO_XYpsML6FCdCVae9fAy3fWE485MZVwRlj_b2IstpAh0CFPuzbnqQ1KLwkkHR_YlzHXwGBLkSZPLZQsNtVxUFVc9N0j3_BYX_GN3dtlCRaYxUEavOX3OC2ZFS-HOGpWQbFRyxFo6DOs9Un8qWOS6iJDeFyjuLI5t0"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.04</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-secondary-container/90 text-on-secondary font-label-sm text-[8px] font-bold">COMPLETE</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Silent Eyes</h4>
+<span class="text-outline font-label-sm text-[10px]">Owl • 34p</span>
+</div>
+</div>
+<!-- Chapter 5 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic cover of an agile red fox navigating intricate cyber traps in a lush rainforest canopy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTIl-tNO7Dnfc2biu8I-Ob78fu_az_QdelHJTHPvBxekMBqQRmQ7d85eLl0Gnojjn_CPoRXLs5VzT5J1FN2iEg0JiPZpbAhlslCQojvfoO8vyyUyH-HYAklDn9e-cvXwT2npCEGsntGQVx4ZmKRqiqKkLoz1KEnW5CaMQ7MoPV-M3gT2rK576r3WdXQeAGmwBXjx0NaRiyCuUcVwIpvGmGt575aOJ6Yso2Mn5yVR8"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.05</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-primary/20 text-primary border border-primary/30 font-label-sm text-[8px] font-bold">NEW</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Innovation Sprint</h4>
+<span class="text-outline font-label-sm text-[10px]">Fox • 26p</span>
+</div>
+</div>
+<!-- Chapter 6 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic cover of a cyber eagle soaring high above lightning-charged clouds over a neon jungle network." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQUs2l76N1PYtzAVfxtQnLjne79646aKj6Z3_-zBORJkFvR-NAjqOFShN-fMJrwOtXqRhK6WgTdZFoOtcUR86t8RXf6Z9I_yHkX7VVYVCpIsqHzjRYUTphrXzvX4W8x7qb1hFkkoI7EL9vUUTvn1uWFpph2YP2Nfj5Bk8x-SQnm9pGuHeXXvi-1orDsHkWowIJkeRrxrmlQWtgLLywh5qt3HpNYCT2Ih45oOw8mVc"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.06</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-primary/20 text-primary border border-primary/30 font-label-sm text-[8px] font-bold">NEW</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Zero-Trust Sky</h4>
+<span class="text-outline font-label-sm text-[10px]">Eagle • 32p</span>
+</div>
+</div>
+<!-- Chapter 7 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic book cover of a sleek sprinting cheetah leaving turquoise kinetic neon motion blur trails in the dark forest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3RSTfB19X1lIfk9IkZG_vDqqvA4sqDwwye_bO-44IdS3fmyr8yMB1Ai-r4JbR1tbxCz1GbYbX6RHJ00hOb5oQn7Ha1YcXj9PhdBN1lvO0qXj3528ezDtfJxIB50VeQYfuI-Q0KUI8cn7TK_ioqcms7uxy91E8dYSb-lovFUBLtEPB2ZJ16PGNVrxLejb-dn-_sIRM20RY-4pip4MqwSDc3bpQdJpenamRRv2Sv9s"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.07</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[8px] font-bold">ONGOING</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Rapid Velocity</h4>
+<span class="text-outline font-label-sm text-[10px]">Cheetah • 28p</span>
+</div>
+</div>
+<!-- Chapter 8 -->
+<div class="flex flex-col gap-2 group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden border border-outline-variant/40 group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(247,192,72,0.3)] transition-all">
+<img class="w-full h-full object-cover" data-alt="Comic cover of a tech-inventor monkey with holographic goggles manipulating miniature floating glowing cityscape blocks with the council." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFTd6Vydm5mp4Dm9-EzgRjbGXCS_fDT492qsYYwF3-Mkjl4DkKQXAFsGSRfBngAQmaQNeFIbTXgbTsvEm3UNVHWt6rgJesGCCeiiQmJKW69VieSrvk_lE0eXXeEnndCg9dOmCmnqJbii3UY7bHVT7EIuoihZy2Qz_-BGme9FCyUv0aq2t0IBiaOgdGk9Qc7RDVTQObfq_d8kx2cqIdNj6gk7hhkp17gzYj46UqvlQ"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-primary font-label-sm text-[9px] font-bold">CH.08</span>
+<span class="absolute bottom-1 right-1 px-1 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[8px] font-bold">ONGOING</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium truncate">Agentic Swarms</h4>
+<span class="text-outline font-label-sm text-[10px]">Monkey • 36p</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: "LATEST CHAPTERS" & "MOST POPULAR COMICS" (Split Editorial Showcase) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-16 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left: Latest Releases Column (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">new_releases</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-wide">
+                FRESH OFF THE DIGITAL PRESS
+              </h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Live Updates</span>
+</div>
+<!-- Release Item 1 -->
+<div class="p-5 rounded-xl bg-surface-container/80 border border-outline-variant/40 hover:border-primary/50 transition-all flex flex-col sm:flex-row gap-5 items-start group">
+<div class="w-full sm:w-28 aspect-[3/4] rounded-lg overflow-hidden shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Comic book cover detail of a cunning red fox in cyber goggles decrypting an ancient mechanical biometric stone portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_e1r1hlHTjcc3u6n2Y9GcDRZ27wQWwnFt5h6B_RV4BHKr3QvUwkn5U4-SM4AG8MvVJgA0Sj9g9cE7J6v76JS034mq59xwXC4UEkkCzW5OmugXOFJcZTeW17Imww3_U_uMGlaBn3k27Tdoj6LuxT5OXx5Vf9nYaMLKIVbjEVP056B36z4CL_7qrVUbDdlfPEyCqsF5vf71C4KTtIbVFTFfmKYTkuzMAOkpBO7irQA"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-[10px] font-bold uppercase tracking-wider">
+                  RELEASED YESTERDAY
+                </span>
+<span class="text-outline font-label-sm text-label-sm">Chapter 05 • 26 Pages</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-on-surface group-hover:text-primary transition-colors font-medium">
+                The Innovation Sprint: The Fox's Deconstruction
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1 mb-4">
+                How agile prototypes dismantle rigid 18-month legacy IT roadmaps. The Fox reveals the underground bypass routes through vendor lock-in.
+              </p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">psychology</span>
+<span>Archetype: The Fox (Product Agility)</span>
+</div>
+<a class="inline-flex items-center gap-1 text-primary hover:text-primary-fixed font-label-md text-label-md uppercase tracking-wider font-bold" href="#">
+<span>READ ISSUE</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Release Item 2 -->
+<div class="p-5 rounded-xl bg-surface-container/80 border border-outline-variant/40 hover:border-primary/50 transition-all flex flex-col sm:flex-row gap-5 items-start group">
+<div class="w-full sm:w-28 aspect-[3/4] rounded-lg overflow-hidden shrink-0 shadow-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Comic book cover thumbnail of an armored eagle scanning cryptographic shields over the canopy with glowing teal radar rings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuCxK9_597MGdwPHxsJcik-x27KyPd1oCJDf0JjRNmy6SkbFFxuv_Lco6D29-4xmi1Dw93gEld_FB29x_Ki50VcIZKqPUgsoK6gMNk1649vMA6DyVmeBYWVwyahsWEbIhFuj3jJhjPXutkoUMZQRAVXD9A7CtaeAGGSXK4stj2xFWuMlUJ3ZTfGb7DemJFhLkCAUwAhoCWKTpw5kHPlsRYYCQM26zFkc31cCfuEDQ"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary font-label-sm text-[10px] font-bold uppercase tracking-wider">
+                  OCTOBER EDITION
+                </span>
+<span class="text-outline font-label-sm text-label-sm">Chapter 06 • 32 Pages</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-on-surface group-hover:text-primary transition-colors font-medium">
+                Zero-Trust Canopy: Sovereign Cryptography
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1 mb-4">
+                Air-gapping high-tier intellectual property while allowing synthetic workers unconstrained access to validated knowledge graphs.
+              </p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-2 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">shield</span>
+<span>Archetype: The Eagle (Security)</span>
+</div>
+<a class="inline-flex items-center gap-1 text-primary hover:text-primary-fixed font-label-md text-label-md uppercase tracking-wider font-bold" href="#">
+<span>READ ISSUE</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Most Acclaimed / Leaderboard (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">trending_up</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-wide">
+                EXECUTIVE FAVORITES
+              </h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Global Pulls</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Rank #1 -->
+<div class="p-4 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-all flex items-center gap-4 group">
+<span class="font-headline-lg text-headline-lg text-primary font-bold w-8 text-center shrink-0">
+                01
+              </span>
+<div class="flex flex-col flex-grow min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+                  The Silicon Canopy #1
+                </h4>
+<div class="flex items-center gap-3 text-outline font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.97
+                  </span>
+<span>•</span>
+<span>14.8k Readers</span>
+<span>•</span>
+<span class="text-secondary font-medium">Study Guide Incl.</span>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-high group-hover:bg-primary group-hover:text-on-primary text-primary transition-colors shrink-0" href="#">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</a>
+</div>
+<!-- Rank #2 -->
+<div class="p-4 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-all flex items-center gap-4 group">
+<span class="font-headline-lg text-headline-lg text-primary font-bold w-8 text-center shrink-0">
+                02
+              </span>
+<div class="flex flex-col flex-grow min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+                  The Great Trunk #2
+                </h4>
+<div class="flex items-center gap-3 text-outline font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.92
+                  </span>
+<span>•</span>
+<span>12.4k Readers</span>
+<span>•</span>
+<span class="text-secondary font-medium">Data Architecture Deck</span>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-high group-hover:bg-primary group-hover:text-on-primary text-primary transition-colors shrink-0" href="#">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</a>
+</div>
+<!-- Rank #3 -->
+<div class="p-4 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-all flex items-center gap-4 group">
+<span class="font-headline-lg text-headline-lg text-primary font-bold w-8 text-center shrink-0">
+                03
+              </span>
+<div class="flex flex-col flex-grow min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+                  Silent Eyes: Algorithmic Guardrails #4
+                </h4>
+<div class="flex items-center gap-3 text-outline font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.88
+                  </span>
+<span>•</span>
+<span>9.6k Readers</span>
+<span>•</span>
+<span class="text-secondary font-medium">EU AI Act Matrix</span>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-high group-hover:bg-primary group-hover:text-on-primary text-primary transition-colors shrink-0" href="#">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</a>
+</div>
+<!-- Rank #4 -->
+<div class="p-4 rounded-xl bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-all flex items-center gap-4 group">
+<span class="font-headline-lg text-headline-lg text-outline font-bold w-8 text-center shrink-0">
+                04
+              </span>
+<div class="flex flex-col flex-grow min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+                  Pack Instinct: Wolfpack Deployment #3
+                </h4>
+<div class="flex items-center gap-3 text-outline font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.85
+                  </span>
+<span>•</span>
+<span>8.1k Readers</span>
+<span>•</span>
+<span class="text-secondary font-medium">MLOps Pipeline</span>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-high group-hover:bg-primary group-hover:text-on-primary text-primary transition-colors shrink-0" href="#">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: "COLLECTOR'S CORNER: PHYSICAL GRAPHIC NOVEL OMNIBUS" -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pb-20 w-full">
+<div class="relative rounded-2xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low border border-primary/40 p-8 lg:p-12 overflow-hidden shadow-2xl">
+<div class="absolute -right-24 -top-24 w-80 h-80 bg-primary/10 rounded-full blur-[90px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+<div class="lg:col-span-4 flex justify-center">
+<div class="relative w-64 aspect-[3/4] rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-primary/50 overflow-hidden transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="A luxury collector hardcover graphic novel omnibus book with thick gold gilded page edges and an embossed metallic gold foil lion crest on deep forest green faux leather slipcase cover." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsSjV_O9NRPXmwqWEK7_GP1kC6tpXDgYyySwhnT1oYcS3kKroBMTOkQUwLOQZN6aGPIcfWMqITSICfHfDtaj04dYlS3gJTXIWMIYDXkvLAAsFiGvXfZ0kVH-t57z1FMqRKssqMb0VASlFvTG0J3v8vQmgpvp3HyfYtSc5vE-aAVCBc3IwvycsBeH2-LddWJDuja0udMfx6XMQDiS1NnBpsf7ejELYcpkjxrtN3lsI"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-black/50 via-transparent to-white/10 pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 right-3 text-center py-1 rounded bg-[#080B09]/90 backdrop-blur-md border border-primary/40 text-primary font-label-sm text-[10px] uppercase tracking-widest font-bold">
+                LIMITED COLLECTOR'S SLIPCASE
+              </div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary font-label-sm text-label-sm uppercase tracking-widest mb-3">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span>Archival Hardcover Edition</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-on-surface font-medium leading-tight mb-3">
+              The AI Jungle: Canonical Omnibus Vol. I (Chapters 01–13)
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mb-6 leading-relaxed">
+              Bound in dark emerald cloth with real 24k foil stamping, archival smyth-sewn binding, matte coated heavy stock, and over 420 full-color spreads including unreleased director's commentary and executive transformation blueprints.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8 w-full max-w-lg">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-sm text-primary font-bold">420+</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Archival Spreads</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-sm text-secondary font-bold">13 Chapters</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Full Sovereign Arc</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-sm text-on-surface font-bold">Gold Edge</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Gilded Foil Finish</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<button class="px-6 py-3 rounded-lg bg-gradient-to-r from-primary-container to-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-[0_0_20px_rgba(247,192,72,0.35)] hover:shadow-[0_0_30px_rgba(247,192,72,0.5)] transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>PRE-ORDER OMNIBUS SLIPCASE</span>
+</button>
+<button class="px-5 py-3 rounded-lg border border-outline-variant/60 text-on-surface hover:text-primary hover:border-primary font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>DOWNLOAD DIGITAL SPEC SHEET</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-[#080B09] border-t border-[#D9A52E]/20 pt-16 pb-12"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-14 border-b border-outline-variant/30"><div class="lg:col-span-2 flex flex-col gap-4"><div class="flex items-center gap-3"><img alt="The AI Jungle Emblem" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBtG_bmaMs1rL1TE1FLs-U16JzFMjX8YGdMxeRQGjsaQmNGmBNolSDERX-EpiWEck43HB9L2IZepRwK4vfjOzSQ61gzsjQlY4q-a1kqWoQz-lgXmW2raBgO4rBK3V8SCLtGySieDprJXVAYG2dwBgCHZz4PQwgs7jpRRY9BC09cgSw5nsnakpb4wlG0IMoKBT_CsiNpJEIEExMYM3sS7rJJusyYZmbnDoUN824QgNJs"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">THE AI JUNGLE</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Where cutting-edge synthetic intelligence meets primal commercial strategy. Decipher the emerging territory.</p><div class="pt-2"><p class="font-headline-md text-headline-sm text-primary tracking-wide italic">"THINK STRATEGICALLY. THEN LET AI ROAR."</p></div><div class="flex items-center gap-3 pt-3 text-outline"><a aria-label="Corporate Link" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="Broadcast Hub" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a><a aria-label="Visual Media" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Network Community" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">hub</span></a><a aria-label="Stream Channel" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">rss_feed</span></a></div></div><div class="flex flex-col gap-3"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Expedition</h4><ul class="flex flex-col gap-2.5"><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Sanctuary Home</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="podcast" href="#">Jungle Podcast</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="comics" href="#">Graphic Chronicles</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="safari-journey" href="#">Safari Journey</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="characters" href="#">Council of Characters</a></li></ul></div><div class="flex flex-col gap-3"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Intelligence</h4><ul class="flex flex-col gap-2.5"><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About The Reserve</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Signal Uplink</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Strategic Whitepapers</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Press Archives</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Executive Briefings</a></li></ul></div><div class="flex flex-col gap-3"><h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary">Expedition Dispatch</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Receive nocturnal intelligence briefings on market-dominating AI paradigms.</p><form class="flex flex-col gap-2 mt-1"><div class="relative"><input class="w-full bg-[#101611] text-on-surface font-body-sm text-body-sm px-3.5 py-2.5 rounded-lg border border-outline-variant/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 placeholder:text-outline" placeholder="Enter executive email" type="email"/></div><button class="w-full bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md uppercase tracking-wider py-2.5 rounded-lg font-bold transition-colors" type="button">Subscribe To Dispatch</button></form></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-outline"><p>© 2025 The AI Jungle. All sovereign rights reserved.</p><div class="flex items-center gap-6 font-label-sm text-label-sm uppercase tracking-wider"><a class="hover:text-primary transition-colors" href="#">Confidentiality Protocol</a><a class="hover:text-primary transition-colors" href="#">Governance &amp; Terms</a><a class="hover:text-primary transition-colors" href="#">Ethical Intelligence</a></div></div></div></footer></body></html>

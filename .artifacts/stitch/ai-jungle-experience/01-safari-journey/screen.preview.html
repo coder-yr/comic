@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#4f4635",
+          "primary-fixed-dim": "#f5be46",
+          "surface-dim": "#111412",
+          "surface-container-highest": "#323533",
+          "primary-fixed": "#ffdea3",
+          "on-primary-container": "#553d00",
+          "background": "#111412",
+          "on-error-container": "#ffdad6",
+          "on-secondary-fixed": "#00201c",
+          "on-primary-fixed": "#261900",
+          "tertiary-container": "#d3a82d",
+          "on-secondary": "#003731",
+          "surface-container": "#1d201e",
+          "inverse-primary": "#7a5900",
+          "on-error": "#690005",
+          "secondary-fixed-dim": "#4fdbc7",
+          "on-primary": "#402d00",
+          "on-background": "#e1e3df",
+          "surface": "#111412",
+          "on-primary-fixed-variant": "#5d4200",
+          "surface-container-low": "#191c1a",
+          "on-secondary-container": "#003f37",
+          "secondary-fixed": "#70f8e3",
+          "surface-container-lowest": "#0c0f0d",
+          "primary-container": "#d9a52e",
+          "inverse-surface": "#e1e3df",
+          "on-tertiary": "#3e2e00",
+          "surface-container-high": "#282b28",
+          "outline": "#9b8f7b",
+          "surface-variant": "#323533",
+          "tertiary": "#f1c347",
+          "primary": "#f7c048",
+          "on-tertiary-container": "#533e00",
+          "tertiary-fixed-dim": "#eec145",
+          "secondary-container": "#03b4a1",
+          "tertiary-fixed": "#ffdf95",
+          "surface-tint": "#f5be46",
+          "on-tertiary-fixed": "#251a00",
+          "surface-bright": "#373a37",
+          "inverse-on-surface": "#2e312f",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-surface": "#e1e3df",
+          "on-secondary-fixed-variant": "#005047",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#d3c5af",
+          "error-container": "#93000a",
+          "secondary": "#4fdbc7"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "margin": "3rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": [
+            "Newsreader"
+          ],
+          "headline-sm": [
+            "Newsreader"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Newsreader"
+          ],
+          "headline-md": [
+            "Newsreader"
+          ],
+          "display-lg": [
+            "Newsreader"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Space Grotesk"
+          ],
+          "label-md": [
+            "Space Grotesk"
+          ],
+          "headline-lg": [
+            "Newsreader"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Space Grotesk"
+          ],
+          "display-lg-mobile": [
+            "Newsreader"
+          ]
+        },
+        "fontSize": {
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.1em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex flex-col group" data-path="home" href="#"><span class="font-headline-md text-headline-md text-primary tracking-tight transition-colors group-hover:text-primary-fixed">THE AI JUNGLE</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Where Business Meets Artificial Intelligence</span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-medium rounded-lg"><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="home" href="#">Home</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="podcast" href="#">Podcast</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="comics" href="#">Comics</a><a aria-current="page" class="px-space-md py-space-sm uppercase tracking-wider transition-all bg-surface-container-high text-primary font-medium rounded-lg" data-path="safari-journey" href="#">Safari Journey</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="characters" href="#">Characters</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="about" href="#">About</a></nav></div><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-surface-container-high font-label-md text-label-md text-secondary uppercase tracking-wider shadow-[0_0_12px_rgba(79,219,199,0.15)] hover:bg-secondary-container hover:text-on-secondary transition-all" data-path="podcast" href="#">Watch Podcast</a><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary font-label-md text-label-md text-on-primary uppercase tracking-wider shadow-[0_0_20px_rgba(247,192,72,0.3)] hover:bg-primary-fixed-dim hover:text-on-primary transition-all" data-path="comics" href="#">Explore Comics</a><a class="ml-space-xs flex items-center justify-center rounded-full p-0.5 ring-1 ring-primary/40 hover:ring-primary transition-all" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAKRDIWtoBzrxQoGvBjgOdP9nKXHu8y9rPkdPZ51wp2I6-kRxw8LVGkYWxvMdlfqiSQLVWw1HKIrCedpHAGCCgZ1rWYI7GOJ4_bnE19svtbh_8j7DZohGu0I-FXSNHGANtMFGPM1EgpwR0IFFcECRvyr7UX7Uqxhvpa1bw-T1BNU2XgGcqaFOKkTAO21zyAVpynU8VZM2E7QV8yZ94UJWkylqMXehimhVnzT7fGkLI"/></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Atmospheric Scrim & Top Canopy Ambient Backdrop -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden pb-space-xl pt-space-xl">
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<div class="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[140px]"></div>
+<div class="absolute top-20 right-10 w-[500px] h-[500px] rounded-full bg-secondary/15 blur-[160px]"></div>
+<div class="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-lg">
+<!-- Top Breadcrumb & Status Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-secondary -ml-2.5"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">CANONICAL ENTERPRISE CURRICULUM • 13 CHAPTERS</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="text-primary font-semibold">Tier 1 Sovereign Access</span>
+<span class="opacity-40">/</span>
+<span>SYNDICATE REVISION 4.9.2</span>
+</div>
+</div>
+<!-- Main Headline Block -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface font-light tracking-tight">
+            The AI Jungle Safari: <span class="italic font-normal text-primary">The 13-Chapter Transformation Journey</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+            From initial algorithmic diagnostic to autonomous agentic swarms. Follow the canonical transformation path deciphering how global enterprises migrate from legacy paralysis to synthetic intelligence supremacy.
+          </p>
+</div>
+<!-- Telemetry HUD Card -->
+<div class="lg:col-span-4 bg-surface-container/80 backdrop-blur-xl p-space-md rounded-xl shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">Global Progress Matrix</span>
+<span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-primary/20 text-primary font-bold">31% MASTERED</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-baseline">
+<span class="font-headline-sm text-headline-sm text-on-surface">4 Chapters Validated</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">9 In Reserve</span>
+</div>
+<!-- Progress Line Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden relative">
+<div class="h-full bg-gradient-to-r from-secondary via-primary to-primary-fixed rounded-full w-[31%] shadow-[0_0_12px_rgba(79,219,199,0.8)] transition-all duration-700"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-sm">shield_with_heart</span> Zero Hallucination Gate</span>
+<span class="text-primary font-medium">Vol. I Synced</span>
+</div>
+</div>
+</div>
+<!-- Quick Filter Ribbons -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-sm" id="volume-filters">
+<button class="filter-btn active-filter px-space-md py-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider bg-primary text-on-primary shadow-[0_0_18px_rgba(247,192,72,0.3)] transition-all" data-filter="all" type="button">
+          All Chapters (13)
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-filter="vol-1" type="button">
+          Volume I: Foundations (00–05)
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-filter="vol-2" type="button">
+          Volume II: Scaling &amp; MLOps (06–09)
+        </button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg font-label-md text-label-md uppercase tracking-wider bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-filter="vol-3" type="button">
+          Volume III: Autonomous Horizons (10–12)
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Cinematic Timeline Spine Section -->
+<section class="relative w-full max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl">
+<!-- Visual Circuit Spine Track (Center line for desktop) -->
+<div class="hidden lg:block absolute left-1/2 top-10 bottom-24 w-0.5 -translate-x-1/2 bg-gradient-to-b from-secondary via-primary to-outline-variant/30 pointer-events-none"></div>
+<div class="flex flex-col gap-space-xl relative" id="chapters-timeline">
+<!-- CHAPTER 00: PROLOGUE -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-1">
+<!-- Left Content Side -->
+<div class="lg:col-span-5 flex flex-col items-start lg:text-right lg:items-end">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">verified</span>
+            MASTERED • COMPLETED
+          </div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">PROLOGUE • CHAPTER 00</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">The Seed of Silicon</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Algorithmic diagnostics and enterprise soul-searching. Assessing legacy inertia before planting autonomous neural architectures.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md lg:justify-end">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Spread Available
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Pilot Ep
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-all" data-path="comics" href="#">Read Comic</a>
+<a class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-[0_0_15px_rgba(247,192,72,0.3)] hover:bg-primary-fixed-dim transition-all" data-path="podcast" href="#">Audit Debrief</a>
+</div>
+</div>
+<!-- Center Node Milestone -->
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-primary flex items-center justify-center text-primary shadow-[0_0_20px_rgba(247,192,72,0.4)] z-10">
+<span class="font-label-md text-label-md font-bold">00</span>
+</div>
+</div>
+<!-- Right Visual Showcase Card -->
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(79,219,199,0.15)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Majestic anthropomorphic executive lion in sharp navy three-piece tailored suit seated behind a polished walnut podcast desk in high-tech corporate glass jungle boardroom surrounded by glowing cyan neural network holographic schematics and luminescent foliage" style="background-image: url('./assets/asset_01_f377b05e.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Lion (Sovereign Strategist)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Core KPI Impact</p>
+<p class="font-headline-sm text-headline-sm text-primary">Zero Legacy Drift</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Compute Velocity</p>
+<p class="font-headline-sm text-headline-sm text-secondary">100 TFLOPS Sovereign</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CHAPTER 01 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-1">
+<!-- Visual Media Card Left -->
+<div class="lg:col-span-5 order-3 lg:order-1">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(247,192,72,0.2)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Cinematic high contrast graphic novel illustration of deep emerald canopy with cybernetic server racks overgrown with bioluminescent vines and glowing amber holographic security audit diagnostics floating in mid-air" style="background-image: url('./assets/asset_03_cfc0b12b.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                Audit Perimeter: Fully Verified
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Hallucination Mitigation</p>
+<p class="font-headline-sm text-headline-sm text-primary">-99.4% Drift</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Syllabus Sync</p>
+<p class="font-headline-sm text-headline-sm text-secondary">Boardroom Grade</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Center Node Milestone -->
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative order-2">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-secondary flex items-center justify-center text-secondary shadow-[0_0_20px_rgba(79,219,199,0.4)] z-10">
+<span class="font-label-md text-label-md font-bold">01</span>
+</div>
+</div>
+<!-- Right Content Details -->
+<div class="lg:col-span-5 order-1 lg:order-3 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">verified</span>
+            MASTERED • COMPLETED
+          </div>
+<span class="font-label-lg text-label-lg text-secondary tracking-widest uppercase">FOUNDATIONS • CHAPTER 01</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">The Jungle Audit</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Sovereign readiness, stopping downstream hallucinations, and rigorously auditing high-cost compute versus real operating margins.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 01
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 01
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-all" data-path="comics" href="#">Read Comic</a>
+<a class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-[0_0_15px_rgba(247,192,72,0.3)] hover:bg-primary-fixed-dim transition-all" data-path="podcast" href="#">Listen Ep 01</a>
+</div>
+</div>
+</div>
+<!-- CHAPTER 02 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-1">
+<div class="lg:col-span-5 flex flex-col items-start lg:text-right lg:items-end">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">verified</span>
+            MASTERED • COMPLETED
+          </div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">FOUNDATIONS • CHAPTER 02</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">The Great Trunk</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Vector sanitization, enterprise data lakes, and flawless RAG architecture anchored by immense institutional memory.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md lg:justify-end">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 02
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 07
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-all" data-path="comics" href="#">Read Comic</a>
+<a class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-[0_0_15px_rgba(247,192,72,0.3)] hover:bg-primary-fixed-dim transition-all" data-path="podcast" href="#">Listen Ep 07</a>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-primary flex items-center justify-center text-primary shadow-[0_0_20px_rgba(247,192,72,0.4)] z-10">
+<span class="font-label-md text-label-md font-bold">02</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(79,219,199,0.15)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Magnificent cybernetic African elephant with glowing cyan circuitry tattoos etched into wrinkled skin, standing in a lush primeval jungle alongside a lion executive reviewing a glowing 3D holographic digital atlas of data pipelines" style="background-image: url('./assets/asset_07_a9db2ebb.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Elephant (Institutional Memory)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">RAG Embedding Depth</p>
+<p class="font-headline-sm text-headline-sm text-primary">1.5B Vectors</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Context Window</p>
+<p class="font-headline-sm text-headline-sm text-secondary">2M Tokens Raw</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CHAPTER 03 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-1">
+<div class="lg:col-span-5 order-3 lg:order-1">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(247,192,72,0.2)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Sleek anthropomorphic cybernetic wolf pack orchestrating multi-agent deployment streams in an ultra-modern dark glass data center nestled in a misty nocturnal rainforest canopy with glowing turquoise status telemetry" style="background-image: url('./assets/asset_12_35c37a2e.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Wolf (MLOps Swarm)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Pipeline Velocity</p>
+<p class="font-headline-sm text-headline-sm text-secondary">42 Deploys / Day</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Orchestrator</p>
+<p class="font-headline-sm text-headline-sm text-primary">Autonomous CI/CD</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative order-2">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-secondary flex items-center justify-center text-secondary shadow-[0_0_20px_rgba(79,219,199,0.4)] z-10">
+<span class="font-label-md text-label-md font-bold">03</span>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-3 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">verified</span>
+            MASTERED • COMPLETED
+          </div>
+<span class="font-label-lg text-label-lg text-secondary tracking-widest uppercase">FOUNDATIONS • CHAPTER 03</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Pack Instinct</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            High-velocity MLOps and collective CI/CD orchestration. Syncing engineering cohorts to fine-tune models continuously without service regression.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 03
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 06
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-all" data-path="comics" href="#">Read Comic</a>
+<a class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-[0_0_15px_rgba(247,192,72,0.3)] hover:bg-primary-fixed-dim transition-all" data-path="podcast" href="#">Listen Ep 06</a>
+</div>
+</div>
+</div>
+<!-- CHAPTER 04 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-1">
+<div class="lg:col-span-5 flex flex-col items-start lg:text-right lg:items-end">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            IN PROGRESS • CURRENT FOCUS
+          </div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">FOUNDATIONS • CHAPTER 04</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Silent Eyes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Algorithmic guardrails, strict EU AI Act compliance, and building impenetrable ethical perimeters without stifling creative agency.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md lg:justify-end">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 04
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 05
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-all" data-path="comics" href="#">Read Comic</a>
+<a class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-[0_0_15px_rgba(247,192,72,0.3)] hover:bg-primary-fixed-dim transition-all" data-path="podcast" href="#">Resume Session</a>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-primary flex items-center justify-center text-primary shadow-[0_0_25px_rgba(247,192,72,0.6)] z-10 animate-pulse">
+<span class="font-label-md text-label-md font-bold">04</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(247,192,72,0.3)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Ethereal mystical barn owl with mechanical gold filigree spectacles perched high on an obsidian bough overlooking an encrypted bioluminescent jungle canopy under full midnight moon with floating legal and ethical data code arrays" style="background-image: url('./assets/asset_10_9ca55566.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Owl (Chief Ethics Officer)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">EU AI Act Readiness</p>
+<p class="font-headline-sm text-headline-sm text-primary">100% Deterministic</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Red-Line Guardrails</p>
+<p class="font-headline-sm text-headline-sm text-secondary">Zero-Drift SLA</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CHAPTER 05 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-1">
+<div class="lg:col-span-5 order-3 lg:order-1">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(79,219,199,0.15)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Clever agile anthropomorphic red fox dressed in tailored tech-couture sprinting through a neon-illuminated canopy laboratory clutching a glowing golden quantum canister while holographic test mockups flutter in the background" style="background-image: url('./assets/asset_08_d9660fae.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Fox (Asymmetric Innovator)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Prototype Latency</p>
+<p class="font-headline-sm text-headline-sm text-primary">48 Hours Concept-to-Demo</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Market Advantage</p>
+<p class="font-headline-sm text-headline-sm text-secondary">3.4x Velocity</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative order-2">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-outline shadow-md z-10">
+<span class="font-label-md text-label-md font-bold">05</span>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-3 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">lock</span>
+            LOCKED • CHAPTER UNLOCK AT CH 04 COMPLETE
+          </div>
+<span class="font-label-lg text-label-lg text-secondary tracking-widest uppercase">FOUNDATIONS • CHAPTER 05</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">The Innovation Sprint</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Asymmetric market arbitrage and 48-hour synthetic product prototyping to outflank enterprise slow-movers.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 05
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 04
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider cursor-not-allowed" type="button">Locked Protocol</button>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider transition-all" data-path="comics" href="#">Preview Teaser</a>
+</div>
+</div>
+</div>
+<!-- CHAPTER 06 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-2">
+<div class="lg:col-span-5 flex flex-col items-start lg:text-right lg:items-end">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">lock</span>
+            LOCKED • VOLUME II
+          </div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">VOLUME II • CHAPTER 06</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Zero-Trust Canopy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Adversarial prompt injection defense, red-teaming, model extraction shields, and safeguarding weights against sovereign threats.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md lg:justify-end">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 06
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 03
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider cursor-not-allowed" type="button">Access Locked</button>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider" data-path="comics" href="#">Intel Brief</a>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-outline shadow-md z-10">
+<span class="font-label-md text-label-md font-bold">06</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(247,192,72,0.15)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Majestic golden martial eagle perched on a fortified cybernetic vantage point above the cloud canopy scanning neon security radars and biometric defense firewalls with sharp piercing golden eyes" style="background-image: url('./assets/asset_02_ad779968.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Eagle (Adversarial Sentinel)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Defense Integrity</p>
+<p class="font-headline-sm text-headline-sm text-primary">Fortress Grade</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Vector Pen-Testing</p>
+<p class="font-headline-sm text-headline-sm text-secondary">Zero Leak</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CHAPTER 07 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-2">
+<div class="lg:col-span-5 order-3 lg:order-1">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(79,219,199,0.15)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Futuristic cybernetic cheetah streaking through a digital bioluminescent jungle leaving trails of cyan fiber-optic light streaks representing ultra-low latency sub-millisecond inference and distributed GPU clusters" style="background-image: url('./assets/asset_11_0b581f35.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Cheetah (Low-Latency Engine)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Inference Target</p>
+<p class="font-headline-sm text-headline-sm text-secondary">&lt; 8ms TTFT</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Compute Density</p>
+<p class="font-headline-sm text-headline-sm text-primary">H100 Sovereign Slices</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative order-2">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-outline shadow-md z-10">
+<span class="font-label-md text-label-md font-bold">07</span>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-3 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">lock</span>
+            LOCKED • VOLUME II
+          </div>
+<span class="font-label-lg text-label-lg text-secondary tracking-widest uppercase">VOLUME II • CHAPTER 07</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">The Velocity Gap</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Real-time streaming inference, decentralized GPU cluster orchestration, and reducing sub-second decision latency for mission-critical trading and operations.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Graphic Novella
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 08
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider cursor-not-allowed" type="button">Awaiting Clearance</button>
+</div>
+</div>
+</div>
+<!-- CHAPTER 08 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-2">
+<div class="lg:col-span-5 flex flex-col items-start lg:text-right lg:items-end">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">lock</span>
+            LOCKED • VOLUME II
+          </div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">VOLUME II • CHAPTER 08</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Colony Intelligence</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Micro-agents and collective worker swarms. Delegating tedious transactional operations to hyper-specialized sub-networks of synchronized AI bots.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md lg:justify-end">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 08
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 09
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider cursor-not-allowed" type="button">Access Locked</button>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-outline shadow-md z-10">
+<span class="font-label-md text-label-md font-bold">08</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(247,192,72,0.15)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Microscopic macro photography of cybernetic leafcutter ants carrying luminescent golden microchips and glowing circuit fragments across mossy jungle roots, building a towering synthetic bio-supercomputer" style="background-image: url('./assets/asset_09_35f30cff.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Ant (Swarm Coordination)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Swarm Agents</p>
+<p class="font-headline-sm text-headline-sm text-primary">100,000+ Synchronized</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Consensus Protocol</p>
+<p class="font-headline-sm text-headline-sm text-secondary">Byzantine Fault-Tolerant</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CHAPTER 09 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-2">
+<div class="lg:col-span-5 order-3 lg:order-1">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(247,192,72,0.2)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Opulent peacock displaying majestic luminescent plumage that shines with intricate gold and emerald laser patterns of corporate brand charts and synthetic narrative typography in a nocturnal greenhouse gallery" style="background-image: url('./assets/asset_13_eb087d0f.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Peacock (Brand Synthesis)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Brand Resonance</p>
+<p class="font-headline-sm text-headline-sm text-primary">Unrivaled Prestige</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Generative Output</p>
+<p class="font-headline-sm text-headline-sm text-secondary">Multi-Modal Gold</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative order-2">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-outline shadow-md z-10">
+<span class="font-label-md text-label-md font-bold">09</span>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-3 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">lock</span>
+            LOCKED • VOLUME II
+          </div>
+<span class="font-label-lg text-label-lg text-secondary tracking-widest uppercase">VOLUME II • CHAPTER 09</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Prestige &amp; Brand Synthesis</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Generative brand storytelling and high-fidelity enterprise executive communication that cuts through the noise of mediocre synthetic content.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 09
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 10
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider cursor-not-allowed" type="button">Access Locked</button>
+</div>
+</div>
+</div>
+<!-- CHAPTER 10 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-3">
+<div class="lg:col-span-5 flex flex-col items-start lg:text-right lg:items-end">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">lock</span>
+            LOCKED • VOLUME III
+          </div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">VOLUME III • CHAPTER 10</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Curiosity Engine</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Experimental synthetic data generation, hypothesis exploration, and evolutionary simulation loops solving zero-shot domain bottlenecks.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md lg:justify-end">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 10
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 11
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider cursor-not-allowed" type="button">Locked Phase</button>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-outline shadow-md z-10">
+<span class="font-label-md text-label-md font-bold">10</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(79,219,199,0.15)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Playful yet brilliant anthropomorphic golden tamarind monkey tinkering with intricate holographic DNA and neural mathematical tensors suspended in mid-air amidst canopy rainforest laboratory" style="background-image: url('./assets/asset_04_176eb6de.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                Archetype: The Monkey (Synthetic Experimenter)
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Synthetic Data Ratio</p>
+<p class="font-headline-sm text-headline-sm text-secondary">85% Novel Weights</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Exploration Loop</p>
+<p class="font-headline-sm text-headline-sm text-primary">Autonomous MCTS</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CHAPTER 11 -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-3">
+<div class="lg:col-span-5 order-3 lg:order-1">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(247,192,72,0.2)] transition-all">
+<div class="h-64 w-full bg-cover bg-center relative" data-alt="Massive subterranean cybernetic canyon fortress where deep glowing emerald roots wrap around colossal obsidian server monoliths representing fortified proprietary enterprise data moats" style="background-image: url('./assets/asset_06_2738113b.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                Deep Gravity: Defended Moat
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Data Gravity</p>
+<p class="font-headline-sm text-headline-sm text-primary">Unbreachable</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Proprietary Alpha</p>
+<p class="font-headline-sm text-headline-sm text-secondary">10x Enterprise Value</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative order-2">
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-outline shadow-md z-10">
+<span class="font-label-md text-label-md font-bold">11</span>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-3 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">lock</span>
+            LOCKED • VOLUME III
+          </div>
+<span class="font-label-lg text-label-lg text-secondary tracking-widest uppercase">VOLUME III • CHAPTER 11</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">The Sovereign Moat</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Enterprise data gravity and proprietary weights. Turning bespoke customer interactions into an unassailable defensive moat that commodity models cannot clone.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Ch 11
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Ep 12
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider cursor-not-allowed" type="button">Locked Phase</button>
+</div>
+</div>
+</div>
+<!-- CHAPTER 12: APEX FINALE -->
+<div class="chapter-card grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center" data-volume="vol-3">
+<div class="lg:col-span-5 flex flex-col items-start lg:text-right lg:items-end">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-xs">workspace_premium</span>
+            THE APEX CROWN • CHAPTER 12
+          </div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">HORIZONS • TRANSFORMATION APEX</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Autonomous Apex</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
+            Full autonomous business processes, self-healing software systems, and algorithmic governance operating under sovereign board-level control.
+          </p>
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md lg:justify-end">
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_stories</span> Comic Finale (60pg)
+            </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">mic</span> Podcast: Apex Special
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<a class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-[0_0_20px_rgba(247,192,72,0.4)] hover:bg-primary-fixed-dim transition-all" href="#syllabus">Claim Transformation Crown</a>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-2 justify-center items-center relative">
+<div class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-headline-sm shadow-[0_0_35px_rgba(247,192,72,0.8)] z-10">
+<span class="material-symbols-outlined">crown</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container/70 rounded-xl overflow-hidden shadow-2xl group hover:shadow-[0_0_35px_rgba(247,192,72,0.3)] transition-all">
+<div class="h-72 w-full bg-cover bg-center relative" data-alt="Grand ceremonial comic book spread depicting the anthropomorphic lion king of the AI jungle standing on an elevated marble balcony atop a synthetic cybernetic biosphere, joined by the elephant, owl, and wolf council as golden autonomous algorithms illuminate the sky" style="background-image: url('./assets/asset_05_ae0a32ce.jpg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase tracking-wider">
+                Full Sovereignty Achieved
+              </div>
+</div>
+<div class="p-space-md flex justify-between items-center bg-surface-container">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Enterprise Status</p>
+<p class="font-headline-sm text-headline-sm text-primary">Autonomous Apex</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Syndicate Level</p>
+<p class="font-headline-sm text-headline-sm text-secondary">Tier 0 Supreme</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Boardroom Syllabus & Scorecard Download Section -->
+<section class="w-full bg-surface-container-low py-space-xl relative overflow-hidden" id="syllabus">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-surface-container rounded-2xl p-space-lg lg:p-space-xl shadow-2xl relative overflow-hidden">
+<!-- Ambient accents -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary/10 blur-[100px] pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-secondary/10 blur-[90px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-widest w-fit">
+<span class="material-symbols-outlined text-xs">download</span>
+              EXECUTIVE BOARDROOM DELIVERABLE
+            </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-light">
+              Download the 13-Chapter <span class="italic font-normal text-primary">Enterprise Transformation Blueprint</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+              Get the confidential 94-page executive roadmap containing maturity diagnostics, GPU compute allocation matrix, agentic orchestration playbooks, and board-ready governance templates.
+            </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-sm">picture_as_pdf</span> 94-Page Syllabus PDF</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-sm">table_chart</span> Transformation Scorecard (XLSX)</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-sm">lock_open</span> C-Suite Confidential Access</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<button class="w-full py-space-sm px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-[0_0_25px_rgba(247,192,72,0.35)] hover:bg-primary-fixed-dim transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined">description</span>
+              Download Complete Dossier (PDF)
+            </button>
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-md text-label-md uppercase tracking-wider transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined">tune</span>
+              Run Interactive Self-Audit
+            </button>
+<span class="font-label-sm text-label-sm text-center text-on-surface-variant">Validated for Fortune 500 Enterprise Governance Councils</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual-Media Synergy Callout -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Comic Stream Banner -->
+<a class="group p-space-lg rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all flex flex-col justify-between shadow-lg" data-path="comics" href="#">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">menu_book</span> GRAPHIC NOVEL CANON
+          </span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Enter The AI Jungle Comics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Immerse yourself in graphic narratives visualizing how executives navigate algorithmic turmoil and triumph over legacy inertia.</p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-highest/20 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span>Read Issue #01 • Free Preview Spread</span>
+</div>
+</a>
+<!-- Podcast Stream Banner -->
+<a class="group p-space-lg rounded-xl bg-surface-container/60 hover:bg-surface-container transition-all flex flex-col justify-between shadow-lg" data-path="podcast" href="#">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">podcasts</span> EXECUTIVE PODCAST DISPATCH
+          </span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">The AI Jungle Strategic Podcast</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">In-depth roundtable debriefs with tier-1 enterprise leaders, Chief AI Officers, and rogue machine learning architects.</p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-highest/20 flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span>Stream Episode 01: Sovereign Compute</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Interactive Volume Filtering Script -->
+<script>
+    (function initJourneyFilter() {
+      const filterButtons = document.querySelectorAll('#volume-filters .filter-btn');
+      const chapterCards = document.querySelectorAll('#chapters-timeline .chapter-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const selected = btn.getAttribute('data-filter');
+
+          // Update active styles
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-[0_0_18px_rgba(247,192,72,0.3)]');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-[0_0_18px_rgba(247,192,72,0.3)]');
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+          // Filter timeline cards with smooth transition
+          chapterCards.forEach(card => {
+            const cardVolume = card.getAttribute('data-volume');
+            if (selected === 'all' || cardVolume === selected) {
+              card.style.display = 'grid';
+              card.style.opacity = '1';
+            } else {
+              card.style.display = 'none';
+              card.style.opacity = '0';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_12px_rgba(0,0,0,0.6)]"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg mb-space-xl"><div class="lg:col-span-5 flex flex-col items-start"><span class="font-headline-lg text-headline-lg text-primary mb-space-xs tracking-tight">THE AI JUNGLE</span><p class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-space-md">Think Strategically. Then Let AI Roar.</p><p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">The apex nexus for executive foresight, graphic storytelling, and systemic enterprise intelligence transformation. Decipher the digital canopy with master-crafted narratives and computational power.</p><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm px-space-sm py-space-xs rounded-lg bg-surface-container font-medium text-secondary uppercase tracking-wider">Transmitting Live</span><span class="font-label-sm text-label-sm px-space-sm py-space-xs rounded-lg bg-surface-container font-medium text-primary uppercase tracking-wider">Enterprise Protocol</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-space-xs">Directory</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home Core</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="podcast" href="#">The Podcast</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="comics" href="#">Graphic Novels</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="safari-journey" href="#">Safari Journey</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="characters" href="#">Characters Archetypes</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About Manifesto</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-space-xs">Intelligence</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="safari-journey" href="#">Enterprise Safari</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="characters" href="#">AI Agent Codex</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="podcast" href="#">Executive Briefs</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="profile" href="#">Member Portal</a></div><div class="lg:col-span-3 flex flex-col"><span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-space-xs">Canopy Dispatch</span><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Receive strategic dispatches, comic releases, and enterprise artificial intelligence blueprints.</p><form class="flex flex-col gap-space-xs"><div class="flex bg-surface-container rounded-lg p-space-xs"><input class="w-full bg-transparent px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="executive@enterprise.ai" type="email"/><button class="px-space-md py-space-xs rounded-lg bg-primary font-label-sm text-label-sm text-on-primary uppercase tracking-wider hover:bg-primary-fixed-dim transition-all" type="button">Join</button></div><span class="font-label-sm text-label-sm text-on-surface-variant">Encrypted corporate broadcast. Unsubscribe anytime.</span></form></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 THE AI JUNGLE PLATFORM. ALL RIGHTS RESERVED.</p><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">PRIVACY PROTOCOL</span><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">TERMS OF SERVICE</span><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">ETHICS GOVERNANCE</span></div></div></div></footer></body></html>

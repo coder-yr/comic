@@ -1,0 +1,1037 @@
+{
+  "project": {
+    "id": "6092264554703740728",
+    "title": "The AI Jungle Experience",
+    "exported_at": "2026-11-13T13:33:00Z",
+    "status": "COMPLETED"
+  },
+  "screens_count": 5,
+  "screens": [
+    {
+      "folder": "01-safari-journey",
+      "screen_id": "f20f2816175247faabcc35fbf27f48f7",
+      "title": "The AI Jungle \u2013 13-Chapter Safari Transformation Journey",
+      "role": "Comprehensive 13-Chapter enterprise AI transformation curriculum and timeline roadmap.",
+      "html_filename": "screen.html",
+      "preview_html_filename": "screen.preview.html",
+      "screenshot_filename": "screenshot.png",
+      "original_dimensions": {
+        "width": 2560,
+        "height": 12846
+      },
+      "html_size_bytes": 80968,
+      "screenshot_size_bytes": 12993296,
+      "screenshot_format": "PNG",
+      "export_status": "EXPORTED_AND_VERIFIED",
+      "downloaded_asset_count": 13,
+      "auth_gated_asset_count": 2,
+      "assets": [
+        {
+          "url": "https://cdn.tailwindcss.com",
+          "status": "EXTERNAL_EMBED",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuA1W9IiIKmpNGsWFZ4QwK11wW2aqaLvD_tfB2CSO-cBvOAs03C8RDINK0sJ2uf8NmutcLuW9h6UllxSJ5AyiBSdlVkh9fA1vfAYedRhd3cFP_mWsfRqweujcmLn0OeiEpyo8WpAAjn04OQORs_-ljU5hIUxPC0sclE-9yFy5PPica5YjMFsdLul5XDCaOpJb60NiKxfCjzvk5h6c1FBEkSJzmeilalBHLg6i_ynxzA",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_01_f377b05e.jpg",
+          "filename": "asset_01_f377b05e.jpg",
+          "size_bytes": 67977,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAH3dPG6LtlG8Ae9C9K_8afVUZnhHp6JE6v61PZ8WKHWj92apC20TY6Qpcl4uyyOB6ZWVeAlp_nsK_BjRhcBwirqO_NnJ6nLfYJZTTjySBSlJ2OEFR_-QZ7lb__rMz-JQSb6IRFP7zAhI37Y-tzkfdM2ourAEuvecGF2HvgmShq8VCdG3PovioJjtcv7WyZ8khBVN0tKTrrRazEtvg4ysiHrNpbdlEn0zjAAyLI9vw",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_02_ad779968.jpg",
+          "filename": "asset_02_ad779968.jpg",
+          "size_bytes": 66152,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAbK8mKbfZ3OVi9h0kNHANoVHZ_EpYQxH502lCWHb-uzVcN9JPLP-p_c-9-k1EoVhIyfeNS4B_XkmGf06qihxCJzvXkZDB2UTDTme0OTYOIvJWiaq9cYQpPh41jMC61A2JR3eJ7cSbvH45jMMU0ZkXfVqsKyZ4WHhNo06ePnaXqhgN6UmhrIrLOEsACaQTYXVGAEvCZuTJjhKKrqRRThBf_JEOHmhMOj_LFZekYLrk",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_03_cfc0b12b.jpg",
+          "filename": "asset_03_cfc0b12b.jpg",
+          "size_bytes": 82295,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdCEfPxNIE5WzVT8q69NEzbletf_chffTbSXuNiDktFgih8rUEEQxQqjmkyJ_yRLGMKrxQFa78Nsq6UC7pHYIos971yhRr7RBwlEpfQElAbnOXFk_UhH8Hl8ffeOCNIoT2idMBSK089l8uZovUfuyScsmyx3aWsRXfUe-5QDUTL-3ICdEGHrOxB9wrAoCU7wsPClVgJiyZn0JRvA5Sd_JLWEXTZEXA2ZMuj05nnVU",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_04_176eb6de.jpg",
+          "filename": "asset_04_176eb6de.jpg",
+          "size_bytes": 60955,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAlSwOWZC2p0bhkE8JWmQItRDtceC-z_ZwbA7UHVejNI4rcuo5kyW4C08JwPmXGi8ceihPKkM-rrqdZd457la_SpJCpyEM87u_8ZT93g7qznQ6Ek5nd_bWSUsCJjNApVEPacn5LU5CokrVte0IJP5bBn-DZ05nIIVnpsbu7d051Stz9YGv_p-nQcnEx_fU-MVC5MF_L8-pWEpHO7TN3lnVZdcE6zRNl2tQ5Jco4vcc",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_05_ae0a32ce.jpg",
+          "filename": "asset_05_ae0a32ce.jpg",
+          "size_bytes": 91785,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBiuhr1FVgfan2j7LJQxvcRP-o4S8VAA_YnBIJsBrqmDaVKP996AXLQENberOqELNWpAyiexV_LE4JBLv5qHmCt0mNwkYN4SysXghUkfRRW4lHx3DYsb6dlmKAEFVZDrhgfTRGy8s-cizQ4v7c4wLek7V2MLtPD9VIfSYCpdVpNRhdxkWPT7pdZ72bMz3GKDqq5-rZQvnAsugv8yDeeyWXplYqDgjbx5RaQvC_ag6k",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_06_2738113b.jpg",
+          "filename": "asset_06_2738113b.jpg",
+          "size_bytes": 55282,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBjF4R_VAhgvpLGdX4C-SyYSrL1aFiV14sN2PdozfNX_UUEFxhYmlGFYfeV6GlKGhScPZ51uD2vFzlNh4w0LrztuQdjYar0SjR25oZJGSpJSD0mjDxHwO17tGm4LT75EUznAwVLuNtFWMVmDPoQ3Ge-R1al1tRJAmuWNvMujAArl2_0Blr3-XguKrdnG9DrPQYPk_mRP5HTYSs8rwmw1Fjz0D8DWYeqvHnou1hNS5k",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_07_a9db2ebb.jpg",
+          "filename": "asset_07_a9db2ebb.jpg",
+          "size_bytes": 63647,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwBAMK7ogyDJxAEOIqvHQ2iFw4R7LLe9eaux04K9Bha9ITOvCs0H8G_oNqjRBDPuOnb2pYxidOjRKPp8c--ao0jlWXOelWO7wlNq3fJx2xcta8dnxB_0o42YizGSAe6QsXUacsXWvBaMTNaqMrK8Zm1dLxOL__DnZ-WPf1QMIL2I6OiC1eOuCLsL8FRS9p-uloaqM0OLko87I13awMWFOzD8aUhkY7xPWOIC3hPwk",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_08_d9660fae.jpg",
+          "filename": "asset_08_d9660fae.jpg",
+          "size_bytes": 75858,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCV6K_8VUfgp_J4PElI8DSNtehdemwOAKNKARo9WWs8V_HqSYjZQXymBqF0UI6R7QPY9bJjRVLHJIuPWcn46DTG5ZNGDtW55Cea1WeFdc450zZz8nHrLk2VuwfmsmTeXNpCz32RpxLuOamttkt-jl1-hNPnnYWBQ1hKZCysI1vWqTF-gxzkdudnPTlqaNmJ1Xsi3JScm3DVnMav4cNPE0FrhlBJ4VGgbLOziNdU8Kk",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_09_35f30cff.jpg",
+          "filename": "asset_09_35f30cff.jpg",
+          "size_bytes": 65700,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDTDbsuNTamPbSPoBBU7TA2PTQ40FKksstumnYRrdrgyf90n8TFiCL40VejFWyuzNLQq8fXmkimsJXFoMBTYAlnMVpkeud15yzvGTCq6tne3BO8ovf8cg3SsgEGJ_t50zL8_rNEfWkxwFtplV3nvxjaiNGfOM6CAz00QfswU-epdPOjonalJ0ET_idk2GEMlcJMS87W-80ZON8HBDg3Geul7KCS4sddK3BFih77yR8",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_10_9ca55566.jpg",
+          "filename": "asset_10_9ca55566.jpg",
+          "size_bytes": 68088,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDkcYxWNJOoLojMwk_vVTnIj8ummSxudDfdSy93hIxGbOPuu03U7-wcFfqKu3yeRGK52GPkT4twgMgnXCmloF9nFrcoDlMDPXcDsdwaXC6ITAaSS63vU8cBYmIQ-cRonz1c2w-d3i952NtSIwgrpK3ocP0ZXh4Ej385mkQ8i6J70YhJ7V8fRmQq3WNPIDdrlShykAEL74-qtq5QI8LokRctHhpU-l6jyYo0CyA2rfA",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_11_0b581f35.jpg",
+          "filename": "asset_11_0b581f35.jpg",
+          "size_bytes": 72324,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDwJzLMtzWqEIgvF9PuOqwTQqAtnszVplEQ_XQ_4BqFgGRjC2kll15g5A_2Kxj8xKc0xW6LPCuAm94k1kenEi4p_ZLhsIjvlhzcjLX_A9dkg0O-TrJUclyyeVMx9E_gWpt1AMbML9uIcFf3T8H7Aad7VCFxm_Q00tF2bj3W6N_YiMp_I64yeXUDivc2zNkJqeM2mj1-mR1rkllTbHG8A5BR7KkCcq3qeWCMtLq9tgg",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_12_35c37a2e.jpg",
+          "filename": "asset_12_35c37a2e.jpg",
+          "size_bytes": 52930,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDz_lJDddpfAcMEiPoCnnbtnVMXHFaVilHaIMFnGb9Ng2LYfx9iF36ZcfLHFX1vTx2HVXXDe_2TGtjt1l15pMmsDL7rM4H8KTyZVquZQ6KkWFkZCgY4IyecF25-YdQl4sn_SGN9Wj76bXuJyd3proQRBu6-PpknSlFLfwTwCFuTfHYa5Ex-hrVzm1aDeGE5I18P6Rb1SXxYzLxcEw51u5efS_iw88y7JAMPR0S6Mvk",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_13_eb087d0f.jpg",
+          "filename": "asset_13_eb087d0f.jpg",
+          "size_bytes": 72843,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida/ALJJyrAKRDIWtoBzrxQoGvBjgOdP9nKXHu8y9rPkdPZ51wp2I6-kRxw8LVGkYWxvMdlfqiSQLVWw1HKIrCedpHAGCCgZ1rWYI7GOJ4_bnE19svtbh_8j7DZohGu0I-FXSNHGANtMFGPM1EgpwR0IFFcECRvyr7UX7Uqxhvpa1bw-T1BNU2XgGcqaFOKkTAO21zyAVpynU8VZM2E7QV8yZ94UJWkylqMXehimhVnzT7fGkLI",
+          "status": "REQUIRES_GOOGLE_AUTH",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        }
+      ],
+      "analysis": {
+        "fonts": [
+          "Material Symbols Outlined",
+          "Newsreader",
+          "Plus Jakarta Sans",
+          "Space Grotesk"
+        ],
+        "theme_colors": {
+          "outline-variant": "#4f4635",
+          "primary-fixed-dim": "#f5be46",
+          "surface-dim": "#111412",
+          "surface-container-highest": "#323533",
+          "primary-fixed": "#ffdea3",
+          "on-primary-container": "#553d00",
+          "background": "#111412",
+          "on-error-container": "#ffdad6",
+          "on-secondary-fixed": "#00201c",
+          "on-primary-fixed": "#261900",
+          "tertiary-container": "#d3a82d",
+          "on-secondary": "#003731",
+          "surface-container": "#1d201e",
+          "inverse-primary": "#7a5900",
+          "on-error": "#690005",
+          "secondary-fixed-dim": "#4fdbc7",
+          "on-primary": "#402d00",
+          "on-background": "#e1e3df",
+          "surface": "#111412",
+          "on-primary-fixed-variant": "#5d4200",
+          "surface-container-low": "#191c1a",
+          "on-secondary-container": "#003f37",
+          "secondary-fixed": "#70f8e3",
+          "surface-container-lowest": "#0c0f0d",
+          "primary-container": "#d9a52e",
+          "inverse-surface": "#e1e3df",
+          "on-tertiary": "#3e2e00",
+          "surface-container-high": "#282b28",
+          "outline": "#9b8f7b",
+          "surface-variant": "#323533",
+          "tertiary": "#f1c347",
+          "primary": "#f7c048",
+          "on-tertiary-container": "#533e00",
+          "tertiary-fixed-dim": "#eec145",
+          "secondary-container": "#03b4a1",
+          "tertiary-fixed": "#ffdf95",
+          "surface-tint": "#f5be46",
+          "on-tertiary-fixed": "#251a00",
+          "surface-bright": "#373a37",
+          "inverse-on-surface": "#2e312f",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-surface": "#e1e3df",
+          "on-secondary-fixed-variant": "#005047",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#d3c5af",
+          "error-container": "#93000a",
+          "secondary": "#4fdbc7"
+        },
+        "breakpoints": [
+          "sm",
+          "md",
+          "lg",
+          "xl"
+        ],
+        "semantic_tags": [
+          "header",
+          "nav",
+          "main",
+          "section",
+          "footer"
+        ],
+        "components": [
+          "Executive Brand Navigation Header",
+          "Glassmorphic Translucent Panels",
+          "Live Telemetry & Pulsing Status Badges",
+          "Filter Ribbon / Pill Controls",
+          "Chronological Chapter Milestone Cards",
+          "Executive Archetype Profile Dossiers",
+          "Full-Screen Comic Reader HUD & Panels",
+          "Graphic Novel Shelving & Issue Grid"
+        ],
+        "interactions": {
+          "links_count": 35,
+          "buttons_count": 14,
+          "inputs_count": 1,
+          "data_paths": [
+            "about",
+            "characters",
+            "comics",
+            "home",
+            "podcast",
+            "profile",
+            "safari-journey"
+          ]
+        }
+      }
+    },
+    {
+      "folder": "02-animal-archetypes",
+      "screen_id": "9be89446b03b4f858ffb80e32a616696",
+      "title": "The AI Jungle \u2013 Council of 10 Animal Archetypes",
+      "role": "Executive dossier gallery representing 10 AI organizational personas (Lion, Elephant, Owl, Fox, Wolf, Eagle, etc.).",
+      "html_filename": "screen.html",
+      "preview_html_filename": "screen.preview.html",
+      "screenshot_filename": "screenshot.png",
+      "original_dimensions": {
+        "width": 2560,
+        "height": 12516
+      },
+      "html_size_bytes": 83210,
+      "screenshot_size_bytes": 9544433,
+      "screenshot_format": "PNG",
+      "export_status": "EXPORTED_AND_VERIFIED",
+      "downloaded_asset_count": 10,
+      "auth_gated_asset_count": 2,
+      "assets": [
+        {
+          "url": "https://cdn.tailwindcss.com",
+          "status": "EXTERNAL_EMBED",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuABxTzAG04kk5iszj-Uff6v7C7qXob1KUwQ60XHEBloMVNh1Fc8AE32mpm60r56WwoXKyQK5FEdWFmHIXshDAORGv4EnT6h-A1LYgajLKz8ruTfa4Vd24i7PKfbbtlYKP_NwimM0q8s_U-Bn-okcaH7qNLgb5TrFPRwkUC2Gb2--NNeCIECuXIekYMh1UX1EU-Oxs4MwIuhHATpIJqc9qNzvlzM5vkv9BMQyQFHHD0",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_01_7bfcb18f.jpg",
+          "filename": "asset_01_7bfcb18f.jpg",
+          "size_bytes": 51420,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuARB_vUhQMJZAPO7UbUZv4td1vFBIZkzOh9RrQ4bNomVZB75HD1CDpDRiGGAocutYucwrC83f1MDov_7BUbR1YhZG5CNhJvwSi9SiZwZ7uFp9eSjMK_qE6GhVn-944y7WdIs57EgPTEgfkaxU_KrcydM6K1MZJDY4Rmlo1704xVJtUDpnFJrDzJY5Qj2WJEOQSCJu-pTHtvplXwBEjnkuc3-cMEPGaN0f1oOK59NLU",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_02_35258088.jpg",
+          "filename": "asset_02_35258088.jpg",
+          "size_bytes": 60577,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBIiO8-QGIoaPB7b1g4LiXRFwNDXzAEWzoG_47shVcWpnxg4QYaJu5taLSAytAGNLV-uXYVahJ6s1AM2gz2fLbKeWnX3qr55WFwK4gRIE8N3VF4_cxqNWMNT9ms5kcSq5qf8761qRXYh9LntEjir3K79LwvVTQgWPVYnyl4AoBkgf9U_0BzAdoKMD548qHj4UgSbM4D2DX3NzXVf243vXGUoX1v3EyLlZ9l0YsuV5Q",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_03_67a41b13.jpg",
+          "filename": "asset_03_67a41b13.jpg",
+          "size_bytes": 41294,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBnVxzbEzC8dsv_sVArMSJiqsN0pY7L5z8TjddJg51Q1_pTz9kgnbhI6i0GjLjK0O_1O8UCdrTjM1hAAoymPElU7mOPgzB0i4gQ_vFQPyQIJ0gJI-0UpAueEAXSFAATHdKcc90XR8_2JTd_G008rsaEgBdTBMawYzt0WdAPd29wIpst7yDTv__Y41_NRiddnpFpYZ7xtcvGcvGE1BmAPLslUkU1kkpq5zAkXrFzzDA",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_04_8a0e394a.jpg",
+          "filename": "asset_04_8a0e394a.jpg",
+          "size_bytes": 63531,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxktVyEPSvDeMpWGcI5P-PtGxeoEVxxeDO9Yv-WG-fz7DVfDeOl6lGzYk2ABFG7lEYmPkWvXH8LgfSmEK1GqlfkLHlq3ClB9olkQnlPf6xXtHvNgLCHahhw-grNy48GL5SVcP9K7ChjSzeYOZJKC6OhVBYQhxEpQb19_gyMQEqT0AXnbWNxb21eOcFuc2_E2zslDc9aN1wZa14Wh2aFtd4XYfpBnClrhXxmyZdrr0",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_05_0e8b5a3f.jpg",
+          "filename": "asset_05_0e8b5a3f.jpg",
+          "size_bytes": 67993,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCBRjHCFD4vWhpUyza6tfM2_FPLxq8jA_a0fnm6b8-PS7s2qAZfCX_gPFTt-NpjWmjPs2dQaVE6Vc2rXvpdqMGnGnst-0LQjQLzQduL7-zCmtJrSuHYnYs39uyJTT2AyqOtlxk1isPuV5gjd0VNsOnu6ApMnoJMq15UYGPoeQT3-RQoK_Sjip41LAqNA4gphzsDRmLT5sc91iqjMCUUOkQttJhN-h57y_7KG579Rac",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_06_636678a4.jpg",
+          "filename": "asset_06_636678a4.jpg",
+          "size_bytes": 47583,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCaDDUcO2NlW7yPkQf3ZyXY4z2zas9W8htWNqowHVGPmKGAOmhKQKwBfUEpWmEdkpuJyrBTZttmT8P8TA-1fD5fEacm8OgpX4HsNEm9mVsda3NwE_l6nHrrcUyqB1tU4-9O7LW1Vvo4S9GtY__YuqS0XPBbLTWOFsN52SVJfsrXcsfO7asKKGYrc2n7yayAMj4AzRbL1kXpKsfUd2Og_d914IEpVdDdIIrEhLi5vUw",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_07_51e0a3a6.jpg",
+          "filename": "asset_07_51e0a3a6.jpg",
+          "size_bytes": 60332,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCe52YjecRdd-3vcA2VoJsZ5U1C8qWXxWvgxcYtkDlwdaqxM9YAZA9XwfdFjUEWiUw6MT3RZjhE3BzGBVJIhhwZS41Jpzrdimtz_y59vuNcWnZ40dHzV-XhOAlJFPQES-bzD_lY6mrMrocldR7Xk7JI3rvsyiVP3Qw5QKP3RnZ1l47p2hd3DHMLgc3L_NgWQNZWaMN12EXMtqwsiZwaWqZyCc8q8QIqoTMkJ3ke2BI",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_08_323cc0f3.jpg",
+          "filename": "asset_08_323cc0f3.jpg",
+          "size_bytes": 56391,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDL4osq5IJSKtAachFItMlit4q2rn2AG_1IRPOQMiC9RHVI781fBdeoxHHnk31RAuwvnogdrL28PMeCLubmFRFh7nGmbdATg9BbVaX71A3Ki9h2FODYuoD2oE5msMt2UbOsOzswnngqUMnJuKITVT318q1d61KbAgQTklKs3gpUvaXtV8zuj5Bj5b8fYx6a8E0__GtjBZYccksPapxlAXEPYfI7Y_bbegGOBOXe5Is",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_09_daa5ecbc.jpg",
+          "filename": "asset_09_daa5ecbc.jpg",
+          "size_bytes": 67560,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDbkHyXXwts4oqTNrLffInm8-EJYc7Jn93W43LUaUtm6ma4a7Cz7wu7jbL7ptwN2JfdUVmvCByrBJfvTtPudHl6NH-OysUw25xZ6osQt1a3dbKGQeoEhw4Pex3bex5IoFYkws7ADcDMrs3s71ghTQh2mZpKIGeZvvdWa-Vfhf-_qt7gXWeQWsn5-Q3tX8Hp6jr0wzxXDn3dYyustERKS1YPzpAWj3lrJfzP09SwETs",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_10_d1f146f0.jpg",
+          "filename": "asset_10_d1f146f0.jpg",
+          "size_bytes": 66893,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida/ALJJyrAKRDIWtoBzrxQoGvBjgOdP9nKXHu8y9rPkdPZ51wp2I6-kRxw8LVGkYWxvMdlfqiSQLVWw1HKIrCedpHAGCCgZ1rWYI7GOJ4_bnE19svtbh_8j7DZohGu0I-FXSNHGANtMFGPM1EgpwR0IFFcECRvyr7UX7Uqxhvpa1bw-T1BNU2XgGcqaFOKkTAO21zyAVpynU8VZM2E7QV8yZ94UJWkylqMXehimhVnzT7fGkLI",
+          "status": "REQUIRES_GOOGLE_AUTH",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        }
+      ],
+      "analysis": {
+        "fonts": [
+          "Material Symbols Outlined",
+          "Newsreader",
+          "Plus Jakarta Sans",
+          "Space Grotesk"
+        ],
+        "theme_colors": {
+          "outline-variant": "#4f4635",
+          "primary-fixed-dim": "#f5be46",
+          "surface-dim": "#111412",
+          "surface-container-highest": "#323533",
+          "primary-fixed": "#ffdea3",
+          "on-primary-container": "#553d00",
+          "background": "#111412",
+          "on-error-container": "#ffdad6",
+          "on-secondary-fixed": "#00201c",
+          "on-primary-fixed": "#261900",
+          "tertiary-container": "#d3a82d",
+          "on-secondary": "#003731",
+          "surface-container": "#1d201e",
+          "inverse-primary": "#7a5900",
+          "on-error": "#690005",
+          "secondary-fixed-dim": "#4fdbc7",
+          "on-primary": "#402d00",
+          "on-background": "#e1e3df",
+          "surface": "#111412",
+          "on-primary-fixed-variant": "#5d4200",
+          "surface-container-low": "#191c1a",
+          "on-secondary-container": "#003f37",
+          "secondary-fixed": "#70f8e3",
+          "surface-container-lowest": "#0c0f0d",
+          "primary-container": "#d9a52e",
+          "inverse-surface": "#e1e3df",
+          "on-tertiary": "#3e2e00",
+          "surface-container-high": "#282b28",
+          "outline": "#9b8f7b",
+          "surface-variant": "#323533",
+          "tertiary": "#f1c347",
+          "primary": "#f7c048",
+          "on-tertiary-container": "#533e00",
+          "tertiary-fixed-dim": "#eec145",
+          "secondary-container": "#03b4a1",
+          "tertiary-fixed": "#ffdf95",
+          "surface-tint": "#f5be46",
+          "on-tertiary-fixed": "#251a00",
+          "surface-bright": "#373a37",
+          "inverse-on-surface": "#2e312f",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-surface": "#e1e3df",
+          "on-secondary-fixed-variant": "#005047",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#d3c5af",
+          "error-container": "#93000a",
+          "secondary": "#4fdbc7"
+        },
+        "breakpoints": [
+          "sm",
+          "md",
+          "lg",
+          "xl"
+        ],
+        "semantic_tags": [
+          "header",
+          "nav",
+          "main",
+          "section",
+          "article",
+          "footer"
+        ],
+        "components": [
+          "Executive Brand Navigation Header",
+          "Glassmorphic Translucent Panels",
+          "Live Telemetry & Pulsing Status Badges",
+          "Filter Ribbon / Pill Controls",
+          "Executive Archetype Profile Dossiers",
+          "Broadcast Audio Waveform HUD Player",
+          "Full-Screen Comic Reader HUD & Panels"
+        ],
+        "interactions": {
+          "links_count": 34,
+          "buttons_count": 10,
+          "inputs_count": 1,
+          "data_paths": [
+            "about",
+            "characters",
+            "comics",
+            "home",
+            "podcast",
+            "profile",
+            "safari-journey"
+          ]
+        }
+      }
+    },
+    {
+      "folder": "03-podcast-episode-08",
+      "screen_id": "a5a30c52489c4c17ab434133f2b9c8fb",
+      "title": "The AI Jungle Podcast \u2013 Episode 08 Detail & Comic Bridge",
+      "role": "Multimedia broadcast episode hub integrating audio player, executive transcript, and direct comic reader bridge.",
+      "html_filename": "screen.html",
+      "preview_html_filename": "screen.preview.html",
+      "screenshot_filename": "screenshot.png",
+      "original_dimensions": {
+        "width": 2560,
+        "height": 7960
+      },
+      "html_size_bytes": 57671,
+      "screenshot_size_bytes": 6270128,
+      "screenshot_format": "PNG",
+      "export_status": "EXPORTED_AND_VERIFIED",
+      "downloaded_asset_count": 6,
+      "auth_gated_asset_count": 2,
+      "assets": [
+        {
+          "url": "https://cdn.tailwindcss.com",
+          "status": "EXTERNAL_EMBED",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuA8AB02CvBmpPlJ3XxD4MB9xYal9ZJS7jKyzpsgPLTd-262Fmp8VyGl9Xjaira9ml2H_ie4G48JhPT_hJfZ-SAfmoDUF1_nSdkKZautyTe2jUQ18-a4P13KoTKG-vuwtKU9eVrZAMixIKnmBIGyGRmQa_vRRp0QguHrbAEQMAk_ysaymOXNW_0H8QSOM0A_wUok2AGeB0_dltdQtqeeMSz-pb73MCuDhe6sYj-_W0M",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_01_8add66c3.jpg",
+          "filename": "asset_01_8add66c3.jpg",
+          "size_bytes": 38319,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuA9kmV7jFe3CoRaAbCWtqT5zc9SGSflHkp-NFE_qWdEnhWa4c22qWyiWN9ad8nLlR9eI8xYzFbJlKNxVcpeN4PGV4UYG6-6WeZlzKhM_IGNg7FpFYywEf9q6CM3CX8mXmzKQgv5fQlQ8AM5QAA2BXqonQxuhCCZ6xy6sqJubao2QTn0iA8tDDlgVGzsLW8UfI8I1I-_j9JqHzwaOSAjozakoPoBdr9ALlKDoguAsLw",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_02_8ff26d0d.jpg",
+          "filename": "asset_02_8ff26d0d.jpg",
+          "size_bytes": 27484,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuANQwJbcNAHAo6z44ZcXxQ72GguzRao1TOX7p8vqJR4zZHtmra-0KM0-5XIlzVEBDBwsdVd7_8bL71sS_RcZw63G6Jm8Y22H92RgVFU2zSJaYOCBsiVfdyQnkeNbRRH5stWzZ25xwMwpp-s5n4auINClEE65k3FF3wgeXylJ9rNept2aojoOOuKaaAf5Au9XbMvryY5nIiPjdsmmCs90SqiZAvUFzIKB7TADqwanYs",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_03_da408687.jpg",
+          "filename": "asset_03_da408687.jpg",
+          "size_bytes": 54612,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPgJyNB_Y6-GHS0YwfmtiH8sCZjc2TZ8qAAp2o2D9S74UTwmK0vo37fVLQgk2ZYx9O4nAt1iBX8CTBRJU4rHYU_NEuCBG2L3XrpbUq452p2eDsJlfN9w_N6WyFaXtiaPJCFaS2ZOi6419mLQITBB-OKPZHskUD8AHtA9uzegD7rRp_ALp2hEfkMrcDrCCaHa7Kx4g2dpIa0UooTfJzaO4mteADgLCJW4UJgRlPIW0",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_04_0bb8543c.jpg",
+          "filename": "asset_04_0bb8543c.jpg",
+          "size_bytes": 96989,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwL2k6MiSHFttkYW0ZNBjcn0vl4ilhKGhE-lQxltrymr94FC6PyRQAs9MCB6RuelAhfrrz0_YxKgAxZKJ807ZB_N2JAd9bkE8xZehwR7_MNp2vmq6e4gzA4fVuG-m7TedE6O2434ITr9qV_h13xdoFpYCsidj7O-D5ajIWPXf0WJlk0rDhvyrXPCLMIL9FSTz43E1luvFd27834h2Jd-iRavvGu9aIpkrNVdAFxks",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_05_703cccc2.jpg",
+          "filename": "asset_05_703cccc2.jpg",
+          "size_bytes": 92064,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDUar476RRnP4V_EdfmrfZmlsaS4cpl_e76qoPj3jNNV5BkTWp00JdiD-tuFuqCsbtNY8D30rX3weXGW8nXVZdSjX-WPaqGMd1VTdBacwj-DGuAvYc0yF212DzUonDMxiQzJrlkHXjipO9iqRmu7G6mJPPgAg1LWniEJYET4iniU5VQYB_89944x90xPLZFgbtSyiZsvVOjV5uF2Vnsfs_o34xin2rov6Uu600o2Ck",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_06_683b2d15.jpg",
+          "filename": "asset_06_683b2d15.jpg",
+          "size_bytes": 53431,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida/ALJJyrAKRDIWtoBzrxQoGvBjgOdP9nKXHu8y9rPkdPZ51wp2I6-kRxw8LVGkYWxvMdlfqiSQLVWw1HKIrCedpHAGCCgZ1rWYI7GOJ4_bnE19svtbh_8j7DZohGu0I-FXSNHGANtMFGPM1EgpwR0IFFcECRvyr7UX7Uqxhvpa1bw-T1BNU2XgGcqaFOKkTAO21zyAVpynU8VZM2E7QV8yZ94UJWkylqMXehimhVnzT7fGkLI",
+          "status": "REQUIRES_GOOGLE_AUTH",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        }
+      ],
+      "analysis": {
+        "fonts": [
+          "Material Symbols Outlined",
+          "Newsreader",
+          "Plus Jakarta Sans",
+          "Space Grotesk"
+        ],
+        "theme_colors": {
+          "outline-variant": "#4f4635",
+          "primary-fixed-dim": "#f5be46",
+          "surface-dim": "#111412",
+          "surface-container-highest": "#323533",
+          "primary-fixed": "#ffdea3",
+          "on-primary-container": "#553d00",
+          "background": "#111412",
+          "on-error-container": "#ffdad6",
+          "on-secondary-fixed": "#00201c",
+          "on-primary-fixed": "#261900",
+          "tertiary-container": "#d3a82d",
+          "on-secondary": "#003731",
+          "surface-container": "#1d201e",
+          "inverse-primary": "#7a5900",
+          "on-error": "#690005",
+          "secondary-fixed-dim": "#4fdbc7",
+          "on-primary": "#402d00",
+          "on-background": "#e1e3df",
+          "surface": "#111412",
+          "on-primary-fixed-variant": "#5d4200",
+          "surface-container-low": "#191c1a",
+          "on-secondary-container": "#003f37",
+          "secondary-fixed": "#70f8e3",
+          "surface-container-lowest": "#0c0f0d",
+          "primary-container": "#d9a52e",
+          "inverse-surface": "#e1e3df",
+          "on-tertiary": "#3e2e00",
+          "surface-container-high": "#282b28",
+          "outline": "#9b8f7b",
+          "surface-variant": "#323533",
+          "tertiary": "#f1c347",
+          "primary": "#f7c048",
+          "on-tertiary-container": "#533e00",
+          "tertiary-fixed-dim": "#eec145",
+          "secondary-container": "#03b4a1",
+          "tertiary-fixed": "#ffdf95",
+          "surface-tint": "#f5be46",
+          "on-tertiary-fixed": "#251a00",
+          "surface-bright": "#373a37",
+          "inverse-on-surface": "#2e312f",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-surface": "#e1e3df",
+          "on-secondary-fixed-variant": "#005047",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#d3c5af",
+          "error-container": "#93000a",
+          "secondary": "#4fdbc7"
+        },
+        "breakpoints": [
+          "sm",
+          "md",
+          "lg",
+          "xl"
+        ],
+        "semantic_tags": [
+          "header",
+          "nav",
+          "main",
+          "section",
+          "footer"
+        ],
+        "components": [
+          "Executive Brand Navigation Header",
+          "Glassmorphic Translucent Panels",
+          "Live Telemetry & Pulsing Status Badges",
+          "Filter Ribbon / Pill Controls",
+          "Executive Archetype Profile Dossiers",
+          "Broadcast Audio Waveform HUD Player",
+          "Full-Screen Comic Reader HUD & Panels",
+          "Graphic Novel Shelving & Issue Grid"
+        ],
+        "interactions": {
+          "links_count": 29,
+          "buttons_count": 25,
+          "inputs_count": 3,
+          "data_paths": [
+            "about",
+            "characters",
+            "comics",
+            "home",
+            "podcast",
+            "profile",
+            "safari-journey"
+          ]
+        }
+      }
+    },
+    {
+      "folder": "04-comic-reader",
+      "screen_id": "2c74294be224416caeb8b5ccabf6846d",
+      "title": "The AI Jungle \u2013 Cinematic Full-Screen Comic Reader",
+      "role": "Immersive graphic novel reader featuring full-bleed panels, reading mode selectors, and floating HUD controls.",
+      "html_filename": "screen.html",
+      "preview_html_filename": "screen.preview.html",
+      "screenshot_filename": "screenshot.png",
+      "original_dimensions": {
+        "width": 2560,
+        "height": 5284
+      },
+      "html_size_bytes": 36341,
+      "screenshot_size_bytes": 11440910,
+      "screenshot_format": "PNG",
+      "export_status": "EXPORTED_AND_VERIFIED",
+      "downloaded_asset_count": 2,
+      "auth_gated_asset_count": 1,
+      "assets": [
+        {
+          "url": "https://cdn.tailwindcss.com?plugins=forms,container-queries",
+          "status": "EXTERNAL_EMBED",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBj9qwQAqEKF1CGCft2MWcz6gtp3qtmq9KJ8IrRXyBcfFgFprXTLzSQ_M84ekDFTtjMy30mse_wou3H8uIly_cqLFHNvlAE8ItZIkGil1xaATeKCIXR5Antx2exnEoJjMfretajGBDe89FXOaSjHMcoxLq_N_xkxPow-pn4TXjMSPzd6ko_gR-Pt3MpQrfxvBTUtcblM_UC0DYyhPP7USjASEnqLaBeafohs04ISts",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_01_70b94e1f.jpg",
+          "filename": "asset_01_70b94e1f.jpg",
+          "size_bytes": 110245,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuD8TB0rueykXaudz6TkVsn7wr6Ixe8n99B-cksm9rj9_NhMuHhdfX0kbOt9LxIFGa3GhhsJnt6R9M_dUTthfIQLzmUtr0GX6FvwK2yay5lZOoT49jFPNWs2T9bLzJTple0hcCSw4NBWQV7CPUqjJ60YUyAh_2HT3w22TzPh1-nEh7rRKS84iJLC2EIqQeD4D1rLTHN1_u2Kg5itmtEEKcarx-DO6oSCPu8vSlYDVuk",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_02_506b9cda.jpg",
+          "filename": "asset_02_506b9cda.jpg",
+          "size_bytes": 98291,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        }
+      ],
+      "analysis": {
+        "fonts": [],
+        "theme_colors": {},
+        "breakpoints": [
+          "sm",
+          "md",
+          "lg",
+          "xl"
+        ],
+        "semantic_tags": [
+          "header",
+          "nav",
+          "main",
+          "section",
+          "article",
+          "aside",
+          "footer"
+        ],
+        "components": [
+          "Executive Brand Navigation Header",
+          "Glassmorphic Translucent Panels",
+          "Live Telemetry & Pulsing Status Badges",
+          "Filter Ribbon / Pill Controls",
+          "Full-Screen Comic Reader HUD & Panels"
+        ],
+        "interactions": {
+          "links_count": 5,
+          "buttons_count": 12,
+          "inputs_count": 0,
+          "data_paths": []
+        }
+      }
+    },
+    {
+      "folder": "05-comic-library",
+      "screen_id": "24bbe0748f2149ddb6a7e5d11d70b12c",
+      "title": "The AI Jungle Comics \u2013 Digital Graphic Novel Library",
+      "role": "Graphic novel library catalog featuring issue shelves, volume metadata, character tags, and reader launches.",
+      "html_filename": "screen.html",
+      "preview_html_filename": "screen.preview.html",
+      "screenshot_filename": "screenshot.png",
+      "original_dimensions": {
+        "width": 3086,
+        "height": 8740
+      },
+      "html_size_bytes": 72619,
+      "screenshot_size_bytes": 10340461,
+      "screenshot_format": "PNG",
+      "export_status": "EXPORTED_AND_VERIFIED",
+      "downloaded_asset_count": 18,
+      "auth_gated_asset_count": 2,
+      "assets": [
+        {
+          "url": "https://cdn.tailwindcss.com",
+          "status": "EXTERNAL_EMBED",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFTd6Vydm5mp4Dm9-EzgRjbGXCS_fDT492qsYYwF3-Mkjl4DkKQXAFsGSRfBngAQmaQNeFIbTXgbTsvEm3UNVHWt6rgJesGCCeiiQmJKW69VieSrvk_lE0eXXeEnndCg9dOmCmnqJbii3UY7bHVT7EIuoihZy2Qz_-BGme9FCyUv0aq2t0IBiaOgdGk9Qc7RDVTQObfq_d8kx2cqIdNj6gk7hhkp17gzYj46UqvlQ",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_01_30db0af2.jpg",
+          "filename": "asset_01_30db0af2.jpg",
+          "size_bytes": 82267,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAQUs2l76N1PYtzAVfxtQnLjne79646aKj6Z3_-zBORJkFvR-NAjqOFShN-fMJrwOtXqRhK6WgTdZFoOtcUR86t8RXf6Z9I_yHkX7VVYVCpIsqHzjRYUTphrXzvX4W8x7qb1hFkkoI7EL9vUUTvn1uWFpph2YP2Nfj5Bk8x-SQnm9pGuHeXXvi-1orDsHkWowIJkeRrxrmlQWtgLLywh5qt3HpNYCT2Ih45oOw8mVc",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_02_bb6092a3.jpg",
+          "filename": "asset_02_bb6092a3.jpg",
+          "size_bytes": 81221,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdqSsKz3UvROeBf5sNu7cnn9kRISkFthWRUglWdH4fNyuCJaIEr-Fsv71hd7CSmcUTjKrYIj-ZRUQ_goM60IdKARw4T0NKZ8PhBbAgdLNcrloCI9CSitiW5kvLt6nm9oiYosNLpwS9qdv_EPDy4rro16RiF9r2c1hp6WYv7AMfDa6e_TkIXVU9dQuxdiljVQdjGEiIBeFYOqO9IYNrD_AX4YJpWtVPEv9cyVVo0Rw",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_03_42ebfef0.jpg",
+          "filename": "asset_03_42ebfef0.jpg",
+          "size_bytes": 79764,
+          "dimensions": "343x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3Xsvz3alrsR7uBxxiv15gNeAll3alooJ4KjnCCdhv5bqkli8JMaizYFj2W8b5UJohVHdVZP1KUF7Pb_Uu7aFzpMgdB4reczqVgadtWgqKTib7W-G5jz8wAykVXrjpEgBYsWTaIkaHOskc_N7D3Z1zd7WZgWrGqxFcFbX6kEW0FRSBOojIEgNWmIhQruxrX5dEjQspKJn2ddyJNp4dS1jXqLT2-ehBIJ95LJFZKsY",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_04_ee424404.jpg",
+          "filename": "asset_04_ee424404.jpg",
+          "size_bytes": 69909,
+          "dimensions": "512x286",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBFOzgw2cxwzT7ZL0_tXLIjMkLfnOZ97Xq-sqS9E1lXGE-tqqfzdbaSc1T67JgqpWoSbpL87_AeYM9KEoQEZsL_fBahFzX1C7XqpkwLvNXtph7C7DcVcIGbRim8wr3z5TbbteNDyjwiQuDVU-S4nOfQu4ei29l8p0pIGBkPXDcVYobXxpo1BH6DRGX_-jsTmgS6j177kiGHJdp5QbwLpyzbcVW_OzLtnCGcryvipeg",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_05_b45edffc.jpg",
+          "filename": "asset_05_b45edffc.jpg",
+          "size_bytes": 103197,
+          "dimensions": "329x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBVzJdHXGjF6RRL9-4hidB6esKZ_dlfM8IU1P4DaAxvko_-CAm2fyZye6nfDh84f5ig6gFb9RCkxIaOIrvZWxaDczK_x7dFSmrSFzCpb2RsdNP8Laey4iu9EEWqAamWCazedRzaTUqhDvFthQvpjIFtel_2A34TpHbtczpevPjeNcM3hfFeBUSDcsHe82Gd3mtwCSTF2pzJL2ykc7SgPxex6rU-8UOKHfyPwLv1AD4",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_06_ac40d561.jpg",
+          "filename": "asset_06_ac40d561.jpg",
+          "size_bytes": 74040,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBnE4y0eaMYsisQs4Flsewfyyr_aOQiy-gJiFfMlSGYM21onNYca9APHsLdr25ueB1K5N_eAAABOPMQUlDZMUMg8IlkiM34X-7qIsv1A0qHyhCnTAqUuxjfGM6XmvCCf9b41K6o-By4KRSklm0qin4wwSdMTVA9wzmlAU6kBMAmMbJSbdsIVvnIjhjGWMxobL4umyQNj9E0Y3LEz9qJSNuRT0c3QVnKY1oyJLVkjXY",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_07_79aaf0cc.jpg",
+          "filename": "asset_07_79aaf0cc.jpg",
+          "size_bytes": 89841,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBr7_1OM1xaau1TWaN9K-lKJj6keP5IxNHTMACTUieEu_HyrAtihy3qhw1mWV_qA7_BLnIn5eO_XYpsML6FCdCVae9fAy3fWE485MZVwRlj_b2IstpAh0CFPuzbnqQ1KLwkkHR_YlzHXwGBLkSZPLZQsNtVxUFVc9N0j3_BYX_GN3dtlCRaYxUEavOX3OC2ZFS-HOGpWQbFRyxFo6DOs9Un8qWOS6iJDeFyjuLI5t0",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_08_9e65ebad.jpg",
+          "filename": "asset_08_9e65ebad.jpg",
+          "size_bytes": 82782,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuCxK9_597MGdwPHxsJcik-x27KyPd1oCJDf0JjRNmy6SkbFFxuv_Lco6D29-4xmi1Dw93gEld_FB29x_Ki50VcIZKqPUgsoK6gMNk1649vMA6DyVmeBYWVwyahsWEbIhFuj3jJhjPXutkoUMZQRAVXD9A7CtaeAGGSXK4stj2xFWuMlUJ3ZTfGb7DemJFhLkCAUwAhoCWKTpw5kHPlsRYYCQM26zFkc31cCfuEDQ",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_09_c5bce69c.jpg",
+          "filename": "asset_09_c5bce69c.jpg",
+          "size_bytes": 80692,
+          "dimensions": "343x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC2K9O7f7kmZa-p7KePWrIdofPsVYg0FL0ZFx8caDst2sXzgd_oxrpDe6d4V9b31X6B1teUEYThDYFQH0VySRnnx5P63_I6BK6bxa4tYyZQkYsRNPQ945-l8VTAHywYwzF-bplGIb1ieM476CVgxJv-kLVejS9M97jUTdRUkX5tEbS2kZ6c8AeOI7HDHMd4YBGtC98v5pS2UCopYcVIY3QYv5ms2aPuPalnehZBb8M",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_10_c55f36da.jpg",
+          "filename": "asset_10_c55f36da.jpg",
+          "size_bytes": 95480,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3RSTfB19X1lIfk9IkZG_vDqqvA4sqDwwye_bO-44IdS3fmyr8yMB1Ai-r4JbR1tbxCz1GbYbX6RHJ00hOb5oQn7Ha1YcXj9PhdBN1lvO0qXj3528ezDtfJxIB50VeQYfuI-Q0KUI8cn7TK_ioqcms7uxy91E8dYSb-lovFUBLtEPB2ZJ16PGNVrxLejb-dn-_sIRM20RY-4pip4MqwSDc3bpQdJpenamRRv2Sv9s",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_11_d0777a86.jpg",
+          "filename": "asset_11_d0777a86.jpg",
+          "size_bytes": 86181,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3e-UIxpOp48uxbnECPrPvO9qvgoQjYmR2crZE0LV8B09aQ2uqt1PB3PeQpB8KoqOGBxonLr3PHEDJ_Efwi6RNf4XnahsPmZzYqdPQsI6TuUK-orwgcauFJV9QOb-22m3NA-7u0Jf-wCml0avzlUUo9X_CaK4aB_EKh4AzGje35dpdIVbUDesQPCuGbPALwzr6T4mh7S-ecwt1uCztJWEQCNnC_Vte12GUDqpIH80",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_12_d8f7c718.jpg",
+          "filename": "asset_12_d8f7c718.jpg",
+          "size_bytes": 94872,
+          "dimensions": "359x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCTIl-tNO7Dnfc2biu8I-Ob78fu_az_QdelHJTHPvBxekMBqQRmQ7d85eLl0Gnojjn_CPoRXLs5VzT5J1FN2iEg0JiPZpbAhlslCQojvfoO8vyyUyH-HYAklDn9e-cvXwT2npCEGsntGQVx4ZmKRqiqKkLoz1KEnW5CaMQ7MoPV-M3gT2rK576r3WdXQeAGmwBXjx0NaRiyCuUcVwIpvGmGt575aOJ6Yso2Mn5yVR8",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_13_162a4bed.jpg",
+          "filename": "asset_13_162a4bed.jpg",
+          "size_bytes": 61705,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC_e1r1hlHTjcc3u6n2Y9GcDRZ27wQWwnFt5h6B_RV4BHKr3QvUwkn5U4-SM4AG8MvVJgA0Sj9g9cE7J6v76JS034mq59xwXC4UEkkCzW5OmugXOFJcZTeW17Imww3_U_uMGlaBn3k27Tdoj6LuxT5OXx5Vf9nYaMLKIVbjEVP056B36z4CL_7qrVUbDdlfPEyCqsF5vf71C4KTtIbVFTFfmKYTkuzMAOkpBO7irQA",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_14_ff4c22f7.jpg",
+          "filename": "asset_14_ff4c22f7.jpg",
+          "size_bytes": 83807,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCsSjV_O9NRPXmwqWEK7_GP1kC6tpXDgYyySwhnT1oYcS3kKroBMTOkQUwLOQZN6aGPIcfWMqITSICfHfDtaj04dYlS3gJTXIWMIYDXkvLAAsFiGvXfZ0kVH-t57z1FMqRKssqMb0VASlFvTG0J3v8vQmgpvp3HyfYtSc5vE-aAVCBc3IwvycsBeH2-LddWJDuja0udMfx6XMQDiS1NnBpsf7ejELYcpkjxrtN3lsI",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_15_15f74863.jpg",
+          "filename": "asset_15_15f74863.jpg",
+          "size_bytes": 36113,
+          "dimensions": "512x279",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCu-s18CmaC7f_1cHc3DQOSvpdMlfM2QzedHR9biwPBxGfa61XhyiIIdw7tnKcrli2k6V2HKkBGzBxwxqtL-7rGBFiRcGiWcQ4N_QGouKQAPqBm6vZoz33JRxVW-zF6WR5S0DrChhg7Y6Hn-L1INRXBZohr2jFKFAWP6ZLwUa3pciwbSasjZnroZLSZCFCIBLWwp2gmRFw-5khwo24MuFB1-qcCKcKrffCpN5QZh88",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_16_bd4a8efc.jpg",
+          "filename": "asset_16_bd4a8efc.jpg",
+          "size_bytes": 80115,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCuZKl22ogL-XL3olZpMLuU_j_XgekVlYrm8rDMejhzkwZlZjaH61qF3uUUUWaD2uP5gyRQAQ3St8oLD3Akon1Lw-yytrAYV0FYNvQr9Rp_i2qSHN8l-EBYzNtKkwCE27rBVJEywEyzXsA3dgxXCPfoZW7jchGPY94qhWZkbiZqZUXLorYoP2vc8eoFBSwf6gFVBqRLQcV-pQ8Es-8nPMPMH6v1eZG0BP2k1y-kIe8",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_17_ca72ce43.jpg",
+          "filename": "asset_17_ca72ce43.jpg",
+          "size_bytes": 86522,
+          "dimensions": "286x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDdfnK6CHAyZT3ebeR_oSuovLrubEYWXmpfCd9OlU6CS99uQYPVM3s8yFvpzH7xuiaLLmpfjwfsgx6GU8CAr5k1Hld7GkfuEq_cCN6Tfzt8XF1hUZ1qRejKcStRdVV1mv0vW5zQfhJJSLEfppmKFS7pL_x4M0GeXdUpPwl6bx-tnCNxk13d1yn3o4dxkjRrM0Oop0koQtTH5Q5OqRa8n5oIYcVVpfmM9C9e1QYeq9s",
+          "status": "DOWNLOADED_AND_MAPPED",
+          "local_path": "./assets/asset_18_d115da45.jpg",
+          "filename": "asset_18_d115da45.jpg",
+          "size_bytes": 79169,
+          "dimensions": "343x512",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://lh3.googleusercontent.com/aida/ALJJyrBtG_bmaMs1rL1TE1FLs-U16JzFMjX8YGdMxeRQGjsaQmNGmBNolSDERX-EpiWEck43HB9L2IZepRwK4vfjOzSQ61gzsjQlY4q-a1kqWoQz-lgXmW2raBgO4rBK3V8SCLtGySieDprJXVAYG2dwBgCHZz4PQwgs7jpRRY9BC09cgSw5nsnakpb4wlG0IMoKBT_CsiNpJEIEExMYM3sS7rJJusyYZmbnDoUN824QgNJs",
+          "status": "REQUIRES_GOOGLE_AUTH",
+          "local_path": null,
+          "filename": null,
+          "size_bytes": 0,
+          "note": "Private avatar or authentication-gated asset; preserved original URL in markup."
+        }
+      ],
+      "analysis": {
+        "fonts": [
+          "Material Symbols Outlined",
+          "Newsreader",
+          "Plus Jakarta Sans",
+          "Space Grotesk"
+        ],
+        "theme_colors": {
+          "on-primary-fixed": "#261900",
+          "secondary-container": "#03b4a1",
+          "error-container": "#93000a",
+          "on-primary": "#402d00",
+          "primary-fixed-dim": "#f5be46",
+          "primary-container": "#d9a52e",
+          "on-background": "#e1e3df",
+          "on-tertiary-fixed": "#251a00",
+          "on-surface-variant": "#d3c5af",
+          "on-tertiary-container": "#533e00",
+          "on-primary-container": "#553d00",
+          "inverse-surface": "#e1e3df",
+          "error": "#ffb4ab",
+          "secondary-fixed": "#70f8e3",
+          "surface-bright": "#373a37",
+          "primary": "#f7c048",
+          "primary-fixed": "#ffdea3",
+          "surface-variant": "#323533",
+          "on-primary-fixed-variant": "#5d4200",
+          "tertiary-container": "#d3a82d",
+          "background": "#111412",
+          "inverse-primary": "#7a5900",
+          "on-secondary": "#003731",
+          "on-secondary-fixed": "#00201c",
+          "on-secondary-fixed-variant": "#005047",
+          "tertiary-fixed-dim": "#eec145",
+          "on-tertiary": "#3e2e00",
+          "surface-tint": "#f5be46",
+          "secondary": "#4fdbc7",
+          "tertiary": "#f1c347",
+          "surface-container-lowest": "#0c0f0d",
+          "surface-container": "#1d201e",
+          "surface-dim": "#111412",
+          "inverse-on-surface": "#2e312f",
+          "outline": "#9b8f7b",
+          "surface": "#111412",
+          "secondary-fixed-dim": "#4fdbc7",
+          "on-secondary-container": "#003f37",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-surface": "#e1e3df",
+          "surface-container-highest": "#323533",
+          "outline-variant": "#4f4635",
+          "on-error-container": "#ffdad6",
+          "on-error": "#690005",
+          "surface-container-high": "#282b28",
+          "tertiary-fixed": "#ffdf95",
+          "surface-container-low": "#191c1a"
+        },
+        "breakpoints": [
+          "sm",
+          "md",
+          "lg",
+          "xl"
+        ],
+        "semantic_tags": [
+          "header",
+          "nav",
+          "main",
+          "section",
+          "article",
+          "footer"
+        ],
+        "components": [
+          "Executive Brand Navigation Header",
+          "Glassmorphic Translucent Panels",
+          "Live Telemetry & Pulsing Status Badges",
+          "Filter Ribbon / Pill Controls",
+          "Executive Archetype Profile Dossiers",
+          "Full-Screen Comic Reader HUD & Panels",
+          "Graphic Novel Shelving & Issue Grid"
+        ],
+        "interactions": {
+          "links_count": 41,
+          "buttons_count": 13,
+          "inputs_count": 2,
+          "data_paths": [
+            "about",
+            "characters",
+            "comics",
+            "contact",
+            "home",
+            "podcast",
+            "safari-journey"
+          ]
+        }
+      }
+    }
+  ]
+}

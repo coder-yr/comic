@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html class="dark h-full bg-[#060907]" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The AI Jungle | Issue 01: The Silicon Canopy &amp; The Clean Waters</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            jungle: {
+              950: '#040705',
+              900: '#060907',
+              850: '#0B0F0C',
+              800: '#111713',
+              700: '#1A231D',
+              border: '#1f2e24'
+            },
+            gold: {
+              300: '#FDE047',
+              400: '#F4C64A',
+              500: '#D9A52E',
+              600: '#B8821D',
+              glow: 'rgba(217, 165, 46, 0.18)'
+            },
+            teal: {
+              400: '#4EECD6',
+              500: '#36C9B5',
+              600: '#20A391',
+              glow: 'rgba(54, 201, 181, 0.15)'
+            }
+          },
+          fontFamily: {
+            serif: ['Georgia', 'Cambria', 'serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace']
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px -4px rgba(217, 165, 46, 0.25)',
+            'teal-glow': '0 0 25px -4px rgba(54, 201, 181, 0.25)',
+            'panel-depth': '0 20px 40px -15px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(217, 165, 46, 0.18)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Reader Styles -->
+<style data-purpose="hud-and-reader-layout">
+    /* Subtle grid line cyber-jungle background texture */
+    .bg-cyber-circuit {
+      background-image: radial-gradient(rgba(54, 201, 181, 0.05) 1px, transparent 0),
+                        radial-gradient(rgba(217, 165, 46, 0.03) 1px, transparent 0);
+      background-position: 0 0, 25px 25px;
+      background-size: 50px 50px;
+    }
+
+    /* Ambient backlight glow matching comic aesthetic */
+    .spread-ambient-backlight {
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(circle at center, rgba(54, 201, 181, 0.12) 0%, rgba(217, 165, 46, 0.08) 45%, transparent 70%);
+      filter: blur(40px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Smooth transition for zoom scale and page-by-page shifts */
+    .canvas-viewport {
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+      transform-origin: center top;
+    }
+
+    /* Custom thin scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #060907;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1A231D;
+      border-radius: 9999px;
+      border: 1px solid rgba(217, 165, 46, 0.2);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D9A52E;
+    }
+  </style>
+<!-- END: Custom Reader Styles -->
+</head>
+<body class="bg-[#060907] text-gray-200 min-h-screen flex flex-col font-sans select-none overflow-x-hidden antialiased bg-cyber-circuit">
+<!-- BEGIN: Fixed Top Reader Header HUD -->
+<header class="fixed top-0 inset-x-0 z-50 h-16 bg-[#060907]/90 backdrop-blur-md border-b border-jungle-border/80 flex items-center justify-between px-4 lg:px-6 transition-all duration-300" data-purpose="top-reader-hud">
+<!-- Brand / Back Link -->
+<div class="flex items-center gap-3 md:gap-5">
+<a class="group flex items-center gap-2 text-xs tracking-wider uppercase font-mono px-3 py-1.5 rounded-full border border-gold-500/30 bg-[#0B0F0C]/80 hover:bg-gold-500/10 hover:border-gold-400 text-gray-300 hover:text-gold-400 transition-all duration-200" data-purpose="exit-reader" href="#back">
+<svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="hidden sm:inline">Back to Comics</span>
+</a>
+<div class="h-4 w-px bg-jungle-border hidden sm:block"></div>
+<!-- Comic Logo & Seal -->
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded bg-gradient-to-br from-gold-400 via-gold-500 to-amber-700 flex items-center justify-center p-0.5 shadow-gold-glow">
+<svg class="w-full h-full text-black fill-current" viewbox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-bold tracking-widest text-xs uppercase text-gold-400 font-mono">The AI Jungle</span>
+<span class="text-[10px] text-teal-400 font-mono tracking-wider">SOVEREIGN ARCHIVE</span>
+</div>
+</div>
+</div>
+<!-- Center: Comic Title & Canon Badge -->
+<div class="hidden md:flex flex-col items-center justify-center text-center">
+<div class="flex items-center gap-2">
+<h1 class="font-serif tracking-wider font-semibold text-sm lg:text-base text-gray-100 uppercase">
+          The Silicon Canopy
+        </h1>
+<span class="px-2 py-0.5 text-[10px] font-mono tracking-widest rounded bg-gold-500/10 border border-gold-500/30 text-gold-400">
+          CANON ISSUE #01
+        </span>
+</div>
+<p class="text-[11px] text-gray-400 tracking-wide">Act I: The Sovereign Awakening &amp; Vector Sanitation</p>
+</div>
+<!-- Right Controls: Progress, Modes, and Fullscreen -->
+<div class="flex items-center gap-3 lg:gap-4">
+<!-- Progress Indicator -->
+<div class="hidden sm:flex flex-col items-end gap-1 font-mono text-[11px] text-gray-400">
+<div class="flex items-center gap-1.5">
+<span class="text-gold-400 font-medium" id="current-page-text">Page 01</span>
+<span class="text-gray-600">/</span>
+<span>02 Spreads</span>
+</div>
+<div class="w-24 h-1 bg-[#1A231D] rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-teal-500 to-gold-400 w-1/2 transition-all duration-300" id="reading-progress-bar"></div>
+</div>
+</div>
+<!-- Segmented View Mode Toggle -->
+<div class="flex items-center bg-[#0B0F0C] border border-jungle-border rounded-lg p-0.5 text-xs">
+<button class="px-2.5 py-1.5 rounded flex items-center gap-1.5 transition-all bg-gold-500/20 text-gold-300 font-medium border border-gold-500/40" id="btn-mode-vertical" title="Continuous Vertical Scroll Mode">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 13l-7 7-7-7m14-8l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="hidden xl:inline text-[11px]">Scroll</span>
+</button>
+<button class="px-2.5 py-1.5 rounded flex items-center gap-1.5 text-gray-400 hover:text-gray-200 transition-all" id="btn-mode-paged" title="Page-by-Page Mode">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="hidden xl:inline text-[11px]">Paged</span>
+</button>
+</div>
+<!-- Quick Action: Fullscreen Toggle -->
+<button class="p-2 rounded-lg bg-[#0B0F0C] border border-jungle-border text-gray-400 hover:text-gold-400 hover:border-gold-500/40 transition" id="btn-fullscreen" title="Toggle Fullscreen">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</header>
+<!-- END: Fixed Top Reader Header HUD -->
+<!-- BEGIN: Main Reading Canvas Container -->
+<main class="flex-1 w-full pt-20 pb-28 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center" id="reader-main-canvas">
+<!-- Scaling Viewport Wrapper -->
+<div class="canvas-viewport w-full flex flex-col items-center space-y-12" id="zoom-viewport">
+<!-- SPREAD 01: Sovereign Awakening & War Room -->
+<article class="comic-spread-container relative w-full group" data-spread-index="1" id="spread-section-1">
+<!-- Ambient Underglow -->
+<div class="spread-ambient-backlight"></div>
+<!-- Spread Header Pill Badge -->
+<div class="flex items-center justify-between mb-3 px-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono tracking-widest bg-gold-500/10 text-gold-400 border border-gold-500/30">
+              SPREAD 01-02
+            </span>
+<span class="text-xs font-serif text-gray-300 tracking-wide font-medium">The Sovereign Awakening &amp; Executive War Room</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-[11px] text-teal-400">
+<span class="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
+<span>CANONICAL MASTER // 1376x768</span>
+</div>
+</div>
+<!-- Graphic Spread Visual Frame -->
+<div class="relative rounded-lg overflow-hidden border border-gold-500/25 bg-black shadow-panel-depth transition-all duration-300 group-hover:border-gold-400/50">
+<img alt="High-end graphic novel comic book interior double-page spread for The AI Jungle comic: In an ancient misty cybernetic jungle, Dr. Amit Khandelwal and The Sovereign Lion stand inside a futuristic holographic executive boardroom amidst glowing teal neural circuits and gold data streams. Clean comic panels with speech bubbles, cinematic inked artwork, rich colors, dramatic lighting, dark luxury aesthetic." class="w-full h-auto object-contain block mx-auto transition-transform duration-200 ease-out" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8TB0rueykXaudz6TkVsn7wr6Ixe8n99B-cksm9rj9_NhMuHhdfX0kbOt9LxIFGa3GhhsJnt6R9M_dUTthfIQLzmUtr0GX6FvwK2yay5lZOoT49jFPNWs2T9bLzJTple0hcCSw4NBWQV7CPUqjJ60YUyAh_2HT3w22TzPh1-nEh7rRKS84iJLC2EIqQeD4D1rLTHN1_u2Kg5itmtEEKcarx-DO6oSCPu8vSlYDVuk"/>
+</div>
+<!-- Footnote Meta Bar -->
+<div class="flex items-center justify-between text-[11px] text-gray-400 mt-2.5 px-2 font-mono">
+<span class="flex items-center gap-2">
+<span class="text-gold-500">§ 1.1</span>
+<span>Dr. Amit Khandelwal &amp; The Sovereign Lion</span>
+</span>
+<span class="text-gray-400">NEURAL RECURSION PROTOCOL ACTIVE</span>
+</div>
+</article>
+<!-- Canonical Inter-spread Divider Node -->
+<div class="flex items-center justify-center gap-4 w-full py-4 text-gray-600" id="divider-node">
+<div class="h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent flex-1 max-w-xs"></div>
+<div class="flex items-center gap-2 text-gold-500/60 font-mono text-xs uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rotate-45 border border-gold-500 bg-[#060907]"></span>
+<span>Data Stream Transition</span>
+<span class="w-1.5 h-1.5 rotate-45 border border-gold-500 bg-[#060907]"></span>
+</div>
+<div class="h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent flex-1 max-w-xs"></div>
+</div>
+<!-- SPREAD 02: The Great Elephant of Data Strategy -->
+<article class="comic-spread-container relative w-full group" data-spread-index="2" id="spread-section-2">
+<!-- Ambient Underglow -->
+<div class="spread-ambient-backlight"></div>
+<!-- Spread Header Pill Badge -->
+<div class="flex items-center justify-between mb-3 px-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono tracking-widest bg-teal-500/10 text-teal-400 border border-teal-500/30">
+              SPREAD 03-04
+            </span>
+<span class="text-xs font-serif text-gray-300 tracking-wide font-medium">The Great Elephant: Vector Sanitation &amp; Algorithmic Rivers</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-[11px] text-teal-400">
+<span class="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
+<span>HIGH ACCURACY PURGE</span>
+</div>
+</div>
+<!-- Graphic Spread Visual Frame -->
+<div class="relative rounded-lg overflow-hidden border border-teal-500/30 bg-black shadow-panel-depth transition-all duration-300 group-hover:border-teal-400/60">
+<img alt="High-end graphic novel comic book interior page spread for The AI Jungle comic: The Great Elephant of Data Strategy spraying glowing cyan data particles like clean water across a corrupted algorithmic river with floating data vectors. Beautiful inked comic book panels, rich colors, cinematic lighting, speech bubbles and narration boxes about enterprise data hygiene." class="w-full h-auto object-contain block mx-auto transition-transform duration-200 ease-out" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj9qwQAqEKF1CGCft2MWcz6gtp3qtmq9KJ8IrRXyBcfFgFprXTLzSQ_M84ekDFTtjMy30mse_wou3H8uIly_cqLFHNvlAE8ItZIkGil1xaATeKCIXR5Antx2exnEoJjMfretajGBDe89FXOaSjHMcoxLq_N_xkxPow-pn4TXjMSPzd6ko_gR-Pt3MpQrfxvBTUtcblM_UC0DYyhPP7USjASEnqLaBeafohs04ISts"/>
+</div>
+<!-- Footnote Meta Bar -->
+<div class="flex items-center justify-between text-[11px] text-gray-400 mt-2.5 px-2 font-mono">
+<span class="flex items-center gap-2">
+<span class="text-teal-400">§ 1.2</span>
+<span>Enterprise Data Lake Cleansing Matrix</span>
+</span>
+<span class="text-gray-400">HALLUCINATION COEFFICIENT: 0.002%</span>
+</div>
+</article>
+</div>
+</main>
+<!-- END: Main Reading Canvas Container -->
+<!-- BEGIN: Floating Reader Control Dock HUD -->
+<nav class="fixed bottom-14 inset-x-0 z-40 flex justify-center pointer-events-none px-4" data-purpose="floating-control-dock">
+<div class="pointer-events-auto flex items-center gap-1 sm:gap-2 px-3.5 py-2 rounded-full bg-[#0B0F0C]/90 backdrop-blur-xl border border-gold-500/40 shadow-gold-glow">
+<!-- Previous Page Button -->
+<button class="p-2 rounded-full text-gray-300 hover:text-gold-400 hover:bg-gold-500/10 transition flex items-center justify-center" id="dock-btn-prev" title="Previous Spread (Left Arrow)">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="h-4 w-px bg-jungle-border mx-1"></div>
+<!-- Zoom Out -->
+<button class="p-2 rounded-full text-gray-300 hover:text-gold-400 hover:bg-gold-500/10 transition" id="dock-btn-zoom-out" title="Zoom Out (-)">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M20 12H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<!-- Zoom Indicator / Fit to Screen Reset -->
+<button class="px-2.5 py-1 rounded font-mono text-[11px] text-gold-400 hover:bg-gold-500/10 border border-transparent hover:border-gold-500/30 transition" id="dock-btn-zoom-reset" title="Reset Zoom (Fit to Screen)">
+<span id="zoom-level-text">100%</span>
+</button>
+<!-- Zoom In -->
+<button class="p-2 rounded-full text-gray-300 hover:text-gold-400 hover:bg-gold-500/10 transition" id="dock-btn-zoom-in" title="Zoom In (+)">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="h-4 w-px bg-jungle-border mx-1"></div>
+<!-- Mode Quick Switch -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-jungle-800 text-xs font-mono text-gray-200 hover:text-gold-300 border border-jungle-border hover:border-gold-500/40 transition" id="dock-btn-mode-toggle">
+<span class="w-2 h-2 rounded-full bg-gold-400"></span>
+<span id="dock-mode-label">Vertical</span>
+</button>
+<!-- Next Page Button -->
+<button class="p-2 rounded-full text-gray-300 hover:text-gold-400 hover:bg-gold-500/10 transition flex items-center justify-center" id="dock-btn-next" title="Next Spread (Right Arrow)">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<!-- END: Floating Reader Control Dock HUD -->
+<!-- BEGIN: Bottom Chapter Navigation Strip -->
+<footer class="fixed bottom-0 inset-x-0 z-30 h-12 bg-[#060907]/95 backdrop-blur border-t border-jungle-border flex items-center justify-between px-4 sm:px-8 text-xs font-mono" data-purpose="chapter-navigation-strip">
+<!-- Prev Chapter -->
+<a class="flex items-center gap-2 text-gray-400 hover:text-gold-400 transition truncate max-w-[200px] sm:max-w-none" href="#prologue">
+<span>←</span>
+<span class="hidden sm:inline">Prev Chapter:</span>
+<span class="text-gray-300 font-sans italic">Prologue (The Jungle Audit)</span>
+</a>
+<!-- Center Chapter Dropdown Trigger -->
+<div class="relative">
+<button class="flex items-center gap-2 px-3 py-1 rounded bg-[#0B0F0C] border border-gold-500/30 text-gold-400 hover:border-gold-400 transition" id="btn-chapter-modal">
+<svg class="w-3.5 h-3.5 text-teal-400" fill="currentColor" viewbox="0 0 20 20">
+<path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path>
+</svg>
+<span class="hidden md:inline">Chapter Select:</span>
+<span class="font-bold text-gray-200">13 Canonical Chapters</span>
+<span class="text-[10px]">▼</span>
+</button>
+</div>
+<!-- Next Chapter -->
+<a class="flex items-center gap-2 text-gray-400 hover:text-gold-400 transition truncate max-w-[200px] sm:max-w-none" href="#issue-02">
+<span class="hidden sm:inline">Next Chapter:</span>
+<span class="text-gray-300 font-sans italic">Issue 02 (The Great Trunk)</span>
+<span>→</span>
+</a>
+</footer>
+<!-- END: Bottom Chapter Navigation Strip -->
+<!-- BEGIN: Executive Chapter Debrief Section (After Comic) -->
+<section class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-32 pt-6" data-purpose="executive-debrief" id="chapter-debrief">
+<div class="rounded-2xl border border-gold-500/30 bg-[#0B0F0C]/90 p-6 sm:p-10 backdrop-blur-xl relative overflow-hidden shadow-2xl">
+<!-- Background Ambient Glow -->
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-teal-500/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-gold-500/10 blur-3xl pointer-events-none"></div>
+<!-- Debrief Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-jungle-border gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2.5 py-0.5 rounded text-[10px] font-mono tracking-widest bg-gold-500/20 text-gold-300 border border-gold-500/40 uppercase">Executive Debrief</span>
+<span class="text-xs font-mono text-teal-400">CANON ARTIFACT 01-BR</span>
+</div>
+<h2 class="text-xl sm:text-2xl font-serif font-bold text-gray-100 tracking-wide">
+            CANON DEBRIEF: CHAPTER 01 SUMMARY
+          </h2>
+<p class="text-xs sm:text-sm text-gray-400 mt-1">
+            Narrative breakdown of sovereign AI governance and data sanitization in enterprise ecosystems.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right font-mono text-xs hidden sm:block">
+<div class="text-gray-400">Authored By</div>
+<div class="text-gold-400 font-medium">Dr. Amit Khandelwal</div>
+</div>
+<div class="w-10 h-10 rounded-full border border-gold-500/50 bg-jungle-800 flex items-center justify-center text-gold-400 font-serif font-bold text-sm">
+            AK
+          </div>
+</div>
+</div>
+<!-- 3 Key Strategic Business Lessons -->
+<div class="mt-8">
+<h3 class="text-xs font-mono uppercase tracking-widest text-gold-400 mb-4 flex items-center gap-2">
+<svg class="w-4 h-4 text-gold-400" fill="currentColor" viewbox="0 0 20 20">
+<path d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.789l1.599.799L9 4.323V3a1 1 0 011-1z"></path>
+</svg>
+          Core Strategic Directives for Enterprise Leaders
+        </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Lesson 1 -->
+<div class="p-5 rounded-xl bg-[#060907]/80 border border-jungle-border hover:border-gold-500/40 transition duration-200">
+<div class="flex items-center gap-2.5 mb-2.5">
+<span class="w-6 h-6 rounded bg-gold-500/20 text-gold-400 font-mono text-xs flex items-center justify-center font-bold border border-gold-500/30">01</span>
+<h4 class="font-bold text-gray-200 text-sm leading-tight">Strategic Sovereignty Precedes Model Selection</h4>
+</div>
+<p class="text-xs text-gray-400 leading-relaxed">
+              The Lion's Directive: Never contract out your enterprise intuition. Model weights are commodities; sovereign orchestration and contextual alignment are indestructible moats.
+            </p>
+</div>
+<!-- Lesson 2 -->
+<div class="p-5 rounded-xl bg-[#060907]/80 border border-jungle-border hover:border-teal-500/40 transition duration-200">
+<div class="flex items-center gap-2.5 mb-2.5">
+<span class="w-6 h-6 rounded bg-teal-500/20 text-teal-400 font-mono text-xs flex items-center justify-center font-bold border border-teal-500/30">02</span>
+<h4 class="font-bold text-gray-200 text-sm leading-tight">Clean Waters: Vector Sanitation Eliminates Hallucination</h4>
+</div>
+<p class="text-xs text-gray-400 leading-relaxed">
+              The Elephant's Rule: 90% of model failure is upstream sludge. If vector databases ingest dirty legacy schemas, downstream autonomous agents will amplify hallucinations with compounding velocity.
+            </p>
+</div>
+<!-- Lesson 3 -->
+<div class="p-5 rounded-xl bg-[#060907]/80 border border-jungle-border hover:border-gold-500/40 transition duration-200">
+<div class="flex items-center gap-2.5 mb-2.5">
+<span class="w-6 h-6 rounded bg-gold-500/20 text-gold-400 font-mono text-xs flex items-center justify-center font-bold border border-gold-500/30">03</span>
+<h4 class="font-bold text-gray-200 text-sm leading-tight">Algorithmic Drift is Organizational Drift</h4>
+</div>
+<p class="text-xs text-gray-400 leading-relaxed">
+              The Jungle responds dynamically. Executive telemetry requires constant telemetry calibration; without autonomous observability, legacy policies will silently poison decisions.
+            </p>
+</div>
+</div>
+</div>
+<!-- Debrief Footprint Cards: Podcast Broadcast & Next Chapter -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Companion Podcast Broadcast Card -->
+<div class="p-5 rounded-xl bg-gradient-to-br from-[#0e1611] to-[#070b08] border border-teal-500/30 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] font-mono uppercase tracking-wider text-teal-400">Companion Broadcast // Ep. 01</span>
+<span class="flex items-center gap-1 text-[11px] font-mono text-gray-400">
+<span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                48 MIN
+              </span>
+</div>
+<h4 class="font-serif font-bold text-base text-gray-100 mb-1">
+              "The Jungle Is Changing: Executive Survival in the Machine Epoch"
+            </h4>
+<p class="text-xs text-gray-400 mb-4">
+              Deep dive dialogue between Dr. Amit Khandelwal &amp; The Sovereign Lion unbundling autonomous agents and data moat hygiene.
+            </p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-teal-500/15 border border-teal-500/40 text-teal-300 hover:bg-teal-500 hover:text-black font-semibold text-xs tracking-wide transition duration-200" href="#listen-podcast">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path>
+</svg>
+<span>Listen to Companion Episode (48 min)</span>
+</a>
+</div>
+<!-- Next Recommended Issue Card -->
+<div class="p-5 rounded-xl bg-gradient-to-br from-[#14120a] to-[#070b08] border border-gold-500/40 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] font-mono uppercase tracking-wider text-gold-400">Next Recommended Issue</span>
+<span class="text-[11px] font-mono text-gray-400">CANON ISSUE #02</span>
+</div>
+<h4 class="font-serif font-bold text-base text-gray-100 mb-1">
+              "The Great Trunk: Clean Waters of the Data Lake"
+            </h4>
+<p class="text-xs text-gray-400 mb-4">
+              The expedition ventures deeper past the firewall mangrove into the monolithic database catacombs.
+            </p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-gradient-to-r from-gold-500 to-amber-600 text-black font-bold text-xs tracking-wide hover:brightness-110 shadow-gold-glow transition duration-200" href="#issue-02">
+<span>Continue Reading Arc → Issue 02</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Executive Chapter Debrief Section -->
+<!-- BEGIN: Modal - Chapter Select Drawer -->
+<aside class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4" id="chapter-modal">
+<div class="w-full max-w-2xl bg-[#0B0F0C] border border-gold-500/40 rounded-2xl p-6 shadow-2xl relative max-h-[85vh] flex flex-col">
+<div class="flex items-center justify-between pb-4 border-b border-jungle-border">
+<div>
+<h3 class="text-lg font-serif font-bold text-gray-100">Canonical Chapter Arc</h3>
+<p class="text-xs text-gold-400 font-mono">13 CHAPTERS IN MASTER CHRONOLOGY</p>
+</div>
+<button class="p-1.5 text-gray-400 hover:text-white rounded-lg bg-jungle-800 border border-jungle-border" id="modal-close-btn">
+          ✕
+        </button>
+</div>
+<div class="overflow-y-auto py-4 space-y-2.5 pr-1 flex-1">
+<!-- Chapter item (Current) -->
+<div class="p-3 rounded-lg bg-gold-500/10 border border-gold-500/50 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="text-gold-400 font-mono text-xs font-bold">01</span>
+<div>
+<div class="text-sm font-semibold text-white">The Silicon Canopy &amp; The Clean Waters</div>
+<div class="text-[11px] text-gray-400">Current Issue • Sovereign Inception</div>
+</div>
+</div>
+<span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold-500 text-black font-bold">READING</span>
+</div>
+<!-- Chapter item -->
+<div class="p-3 rounded-lg bg-jungle-950/60 border border-jungle-border flex items-center justify-between hover:border-teal-500/40 transition cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="text-teal-400 font-mono text-xs font-bold">02</span>
+<div>
+<div class="text-sm font-semibold text-gray-200">The Great Trunk: Clean Waters of the Data Lake</div>
+<div class="text-[11px] text-gray-500">Vector Hygiene &amp; Legacy Purge</div>
+</div>
+</div>
+<span class="text-xs font-mono text-gray-500">Locked</span>
+</div>
+<!-- Chapter item -->
+<div class="p-3 rounded-lg bg-jungle-950/60 border border-jungle-border flex items-center justify-between hover:border-teal-500/40 transition cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="text-teal-400 font-mono text-xs font-bold">03</span>
+<div>
+<div class="text-sm font-semibold text-gray-200">The Chameleon's Mimicry: Hallucination Protocols</div>
+<div class="text-[11px] text-gray-500">Autonomous Alignment Guardrails</div>
+</div>
+</div>
+<span class="text-xs font-mono text-gray-500">Locked</span>
+</div>
+<!-- Chapter item -->
+<div class="p-3 rounded-lg bg-jungle-950/60 border border-jungle-border flex items-center justify-between hover:border-teal-500/40 transition cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="text-teal-400 font-mono text-xs font-bold">04</span>
+<div>
+<div class="text-sm font-semibold text-gray-200">The Panoptic Falcon: Telemetry Over the Forest</div>
+<div class="text-[11px] text-gray-500">Multi-Agent Governance</div>
+</div>
+</div>
+<span class="text-xs font-mono text-gray-500">Locked</span>
+</div>
+</div>
+<div class="pt-3 border-t border-jungle-border flex justify-end">
+<button class="px-4 py-2 bg-jungle-800 hover:bg-jungle-700 text-xs font-mono text-gray-300 rounded-lg" id="modal-close-footer-btn">Close Drawer</button>
+</div>
+</div>
+</aside>
+<!-- END: Modal - Chapter Select Drawer -->
+<!-- BEGIN: Interactive Logic Script -->
+<script data-purpose="reader-interactivity">
+    // State management
+    let currentMode = 'vertical'; // 'vertical' or 'paged'
+    let currentSpread = 1;        // 1 or 2
+    let zoomLevel = 1.0;
+    const totalSpreads = 2;
+
+    // DOM Elements
+    const spread1 = document.getElementById('spread-section-1');
+    const spread2 = document.getElementById('spread-section-2');
+    const dividerNode = document.getElementById('divider-node');
+    const zoomViewport = document.getElementById('zoom-viewport');
+    
+    // HUD & Navigation
+    const btnVertical = document.getElementById('btn-mode-vertical');
+    const btnPaged = document.getElementById('btn-mode-paged');
+    const dockModeLabel = document.getElementById('dock-mode-label');
+    const dockBtnModeToggle = document.getElementById('dock-btn-mode-toggle');
+    const currentPageText = document.getElementById('current-page-text');
+    const progressBar = document.getElementById('reading-progress-bar');
+    
+    // Zoom Elements
+    const dockBtnZoomIn = document.getElementById('dock-btn-zoom-in');
+    const dockBtnZoomOut = document.getElementById('dock-btn-zoom-out');
+    const dockBtnZoomReset = document.getElementById('dock-btn-zoom-reset');
+    const zoomLevelText = document.getElementById('zoom-level-text');
+
+    // Page navigation
+    const dockBtnPrev = document.getElementById('dock-btn-prev');
+    const dockBtnNext = document.getElementById('dock-btn-next');
+    const btnFullscreen = document.getElementById('btn-fullscreen');
+
+    // Modal
+    const btnChapterModal = document.getElementById('btn-chapter-modal');
+    const chapterModal = document.getElementById('chapter-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const modalCloseFooterBtn = document.getElementById('modal-close-footer-btn');
+
+    // Update UI Representation
+    function updateReaderView() {
+      if (currentMode === 'vertical') {
+        // Vertical continuous scroll
+        spread1.style.display = 'block';
+        spread2.style.display = 'block';
+        dividerNode.style.display = 'flex';
+
+        btnVertical.className = 'px-2.5 py-1.5 rounded flex items-center gap-1.5 transition-all bg-gold-500/20 text-gold-300 font-medium border border-gold-500/40';
+        btnPaged.className = 'px-2.5 py-1.5 rounded flex items-center gap-1.5 text-gray-400 hover:text-gray-200 transition-all';
+        dockModeLabel.textContent = 'Vertical';
+        currentPageText.textContent = 'All Spreads';
+        progressBar.style.width = '100%';
+      } else {
+        // Page-by-Page view
+        dividerNode.style.display = 'none';
+        if (currentSpread === 1) {
+          spread1.style.display = 'block';
+          spread2.style.display = 'none';
+          currentPageText.textContent = 'Page 01';
+          progressBar.style.width = '50%';
+        } else {
+          spread1.style.display = 'none';
+          spread2.style.display = 'block';
+          currentPageText.textContent = 'Page 02';
+          progressBar.style.width = '100%';
+        }
+
+        btnPaged.className = 'px-2.5 py-1.5 rounded flex items-center gap-1.5 transition-all bg-gold-500/20 text-gold-300 font-medium border border-gold-500/40';
+        btnVertical.className = 'px-2.5 py-1.5 rounded flex items-center gap-1.5 text-gray-400 hover:text-gray-200 transition-all';
+        dockModeLabel.textContent = 'Paged';
+      }
+    }
+
+    // Zoom Handlers
+    function applyZoom(delta) {
+      if (delta === 0) {
+        zoomLevel = 1.0;
+      } else {
+        zoomLevel = Math.min(Math.max(zoomLevel + delta, 0.75), 1.5);
+      }
+      zoomViewport.style.transform = `scale(${zoomLevel})`;
+      zoomLevelText.textContent = `${Math.round(zoomLevel * 100)}%`;
+    }
+
+    dockBtnZoomIn.addEventListener('click', () => applyZoom(0.1));
+    dockBtnZoomOut.addEventListener('click', () => applyZoom(-0.1));
+    dockBtnZoomReset.addEventListener('click', () => applyZoom(0));
+
+    // Mode Toggle Handlers
+    btnVertical.addEventListener('click', () => {
+      currentMode = 'vertical';
+      updateReaderView();
+    });
+
+    btnPaged.addEventListener('click', () => {
+      currentMode = 'paged';
+      updateReaderView();
+    });
+
+    dockBtnModeToggle.addEventListener('click', () => {
+      currentMode = currentMode === 'vertical' ? 'paged' : 'vertical';
+      updateReaderView();
+    });
+
+    // Page navigation Handlers
+    function nextPage() {
+      if (currentMode === 'paged') {
+        if (currentSpread < totalSpreads) {
+          currentSpread++;
+          updateReaderView();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          // Scroll to debrief
+          document.getElementById('chapter-debrief').scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        // In vertical, jump to next section or debrief
+        if (window.scrollY < spread2.offsetTop - 100) {
+          spread2.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          document.getElementById('chapter-debrief').scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+
+    function prevPage() {
+      if (currentMode === 'paged') {
+        if (currentSpread > 1) {
+          currentSpread--;
+          updateReaderView();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } else {
+        if (window.scrollY > spread1.offsetTop + 100) {
+          spread1.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+
+    dockBtnNext.addEventListener('click', nextPage);
+    dockBtnPrev.addEventListener('click', prevPage);
+
+    // Keyboard Shortcuts (Arrow navigation)
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+        nextPage();
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        prevPage();
+      } else if (e.key === '+' || e.key === '=') {
+        applyZoom(0.1);
+      } else if (e.key === '-' || e.key === '_') {
+        applyZoom(-0.1);
+      } else if (e.key === '0') {
+        applyZoom(0);
+      } else if (e.key === 'f' || e.key === 'F') {
+        toggleFullScreen();
+      }
+    });
+
+    // Fullscreen Toggle
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+    btnFullscreen.addEventListener('click', toggleFullScreen);
+
+    // Chapter Modal Toggle
+    function toggleChapterModal(show) {
+      if (show) {
+        chapterModal.classList.remove('hidden');
+        chapterModal.classList.add('flex');
+      } else {
+        chapterModal.classList.add('hidden');
+        chapterModal.classList.remove('flex');
+      }
+    }
+
+    btnChapterModal.addEventListener('click', () => toggleChapterModal(true));
+    modalCloseBtn.addEventListener('click', () => toggleChapterModal(false));
+    modalCloseFooterBtn.addEventListener('click', () => toggleChapterModal(false));
+    chapterModal.addEventListener('click', (e) => {
+      if (e.target === chapterModal) toggleChapterModal(false);
+    });
+
+    // Initialize Default State
+    updateReaderView();
+  </script>
+<!-- END: Interactive Logic Script -->
+</body></html>

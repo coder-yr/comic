@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#4f4635",
+          "primary-fixed-dim": "#f5be46",
+          "surface-dim": "#111412",
+          "surface-container-highest": "#323533",
+          "primary-fixed": "#ffdea3",
+          "on-primary-container": "#553d00",
+          "background": "#111412",
+          "on-error-container": "#ffdad6",
+          "on-secondary-fixed": "#00201c",
+          "on-primary-fixed": "#261900",
+          "tertiary-container": "#d3a82d",
+          "on-secondary": "#003731",
+          "surface-container": "#1d201e",
+          "inverse-primary": "#7a5900",
+          "on-error": "#690005",
+          "secondary-fixed-dim": "#4fdbc7",
+          "on-primary": "#402d00",
+          "on-background": "#e1e3df",
+          "surface": "#111412",
+          "on-primary-fixed-variant": "#5d4200",
+          "surface-container-low": "#191c1a",
+          "on-secondary-container": "#003f37",
+          "secondary-fixed": "#70f8e3",
+          "surface-container-lowest": "#0c0f0d",
+          "primary-container": "#d9a52e",
+          "inverse-surface": "#e1e3df",
+          "on-tertiary": "#3e2e00",
+          "surface-container-high": "#282b28",
+          "outline": "#9b8f7b",
+          "surface-variant": "#323533",
+          "tertiary": "#f1c347",
+          "primary": "#f7c048",
+          "on-tertiary-container": "#533e00",
+          "tertiary-fixed-dim": "#eec145",
+          "secondary-container": "#03b4a1",
+          "tertiary-fixed": "#ffdf95",
+          "surface-tint": "#f5be46",
+          "on-tertiary-fixed": "#251a00",
+          "surface-bright": "#373a37",
+          "inverse-on-surface": "#2e312f",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-surface": "#e1e3df",
+          "on-secondary-fixed-variant": "#005047",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#d3c5af",
+          "error-container": "#93000a",
+          "secondary": "#4fdbc7"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "margin": "3rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": [
+            "Newsreader"
+          ],
+          "headline-sm": [
+            "Newsreader"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Newsreader"
+          ],
+          "headline-md": [
+            "Newsreader"
+          ],
+          "display-lg": [
+            "Newsreader"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Space Grotesk"
+          ],
+          "label-md": [
+            "Space Grotesk"
+          ],
+          "headline-lg": [
+            "Newsreader"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Space Grotesk"
+          ],
+          "display-lg-mobile": [
+            "Newsreader"
+          ]
+        },
+        "fontSize": {
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.1em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex flex-col group" data-path="home" href="#"><span class="font-headline-md text-headline-md text-primary tracking-tight transition-colors group-hover:text-primary-fixed">THE AI JUNGLE</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Where Business Meets Artificial Intelligence</span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-medium rounded-lg"><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="home" href="#">Home</a><a aria-current="page" class="px-space-md py-space-sm uppercase tracking-wider transition-all bg-surface-container-high text-primary font-medium rounded-lg" data-path="podcast" href="#">Podcast</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="comics" href="#">Comics</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="safari-journey" href="#">Safari Journey</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="characters" href="#">Characters</a><a class="px-space-md py-space-sm font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="about" href="#">About</a></nav></div><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-surface-container-high font-label-md text-label-md text-secondary uppercase tracking-wider shadow-[0_0_12px_rgba(79,219,199,0.15)] hover:bg-secondary-container hover:text-on-secondary transition-all" data-path="podcast" href="#">Watch Podcast</a><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary font-label-md text-label-md text-on-primary uppercase tracking-wider shadow-[0_0_20px_rgba(247,192,72,0.3)] hover:bg-primary-fixed-dim hover:text-on-primary transition-all" data-path="comics" href="#">Explore Comics</a><a class="ml-space-xs flex items-center justify-center rounded-full p-0.5 ring-1 ring-primary/40 hover:ring-primary transition-all" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAKRDIWtoBzrxQoGvBjgOdP9nKXHu8y9rPkdPZ51wp2I6-kRxw8LVGkYWxvMdlfqiSQLVWw1HKIrCedpHAGCCgZ1rWYI7GOJ4_bnE19svtbh_8j7DZohGu0I-FXSNHGANtMFGPM1EgpwR0IFFcECRvyr7UX7Uqxhvpa1bw-T1BNU2XgGcqaFOKkTAO21zyAVpynU8VZM2E7QV8yZ94UJWkylqMXehimhVnzT7fGkLI"/></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 -left-32 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-md pb-space-xl">
+<!-- Breadcrumb Bar -->
+<nav aria-label="Breadcrumbs" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider mb-space-md overflow-x-auto whitespace-nowrap pb-1">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-sm">home</span>
+          Podcast
+        </a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Season 01: Foundations</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-medium">Episode 08: Autonomous Agents &amp; The Sovereign Enterprise</span>
+</nav>
+<!-- Episode Hero Header Header Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg items-end">
+<div class="lg:col-span-8 space-y-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-lg bg-secondary/10 font-label-sm text-label-sm text-secondary uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Season 01 • Episode 08
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-lg bg-surface-container-high font-label-sm text-label-sm text-primary uppercase tracking-widest">
+<span class="material-symbols-outlined text-xs">verified</span>
+              Executive Dispatch
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+              Oct 24, 2024 • 48 Min Broadcast
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl lg:text-display-lg font-normal text-on-surface tracking-tight">
+            Autonomous Agents &amp; The Sovereign Enterprise
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            A high-stakes examination into decoupling enterprise mission critical logic from centralized foundational model vendors. Co-hosted by Dr. Amit Khandelwal and the Sovereign Lion.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-row lg:flex-col items-start lg:items-end justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md uppercase tracking-wider transition-all shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">bookmark_add</span>
+              Save Episode
+            </button>
+<button class="p-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Audience Rating</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface ml-1 font-semibold">4.98</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(1,420 c-suite reviews)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Video & Media Stage Section -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest shadow-2xl mb-space-lg group">
+<!-- Main Media Frame (16:9) -->
+<div class="relative w-full aspect-video md:aspect-[21/9] lg:aspect-[16/8] overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Cinematic shot of The Sovereign Lion, an imposing anthropomorphic lion in a tailored navy bespoke business suit, sitting in a dark high-tech jungle boardroom with neon holographic neural network diagrams hovering in the air. Professional podcast studio boom microphone on modern walnut table, dramatic volumetric teal ambient lighting from jungle trees visible through panoramic windows, gilded gold data schematics floating beside him, 8k digital cinematography." src="./assets/asset_03_da408687.jpg"/>
+<!-- Gradient Scrim for Controls & Readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-black/40 pointer-events-none"></div>
+<!-- Top Quality Badges -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<div class="flex items-center gap-space-xs pointer-events-auto">
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest shadow-md">
+                4K UHD
+              </span>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">graphic_eq</span>
+                96kHz Spatial Audio
+              </span>
+</div>
+<div class="flex items-center gap-space-xs pointer-events-auto">
+<span class="px-space-sm py-0.5 rounded-lg bg-surface-container-high/80 backdrop-blur-md font-label-sm text-label-sm text-on-surface uppercase tracking-wider">
+                Live Chamber 04
+              </span>
+</div>
+</div>
+<!-- Center Play Button (Interactive state) -->
+<button class="absolute z-10 w-20 h-20 rounded-full bg-primary hover:bg-primary-fixed text-on-primary flex items-center justify-center shadow-[0_0_35px_rgba(247,192,72,0.45)] transition-all transform hover:scale-110 active:scale-95 group/btn" id="mediaCenterPlay">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Custom Playback Scrub & Control Bar -->
+<div class="p-space-md bg-surface-container-low backdrop-blur-xl flex flex-col gap-space-xs">
+<!-- Scrubber Timeline with Chapter Markers -->
+<div class="relative w-full h-3 bg-surface-container-highest rounded-full cursor-pointer flex items-center group/scrub">
+<div class="absolute left-0 top-0 bottom-0 bg-primary rounded-full" style="width: 38%;"></div>
+<!-- Chapter Segments Overlays -->
+<div class="absolute inset-0 flex justify-between px-1 pointer-events-none">
+<span class="w-0.5 h-full bg-surface-container-lowest" title="00:00 Prologue"></span>
+<span class="w-0.5 h-full bg-surface-container-lowest" style="margin-left: 18%;" title="08:42 Multi-Agent Failure"></span>
+<span class="w-0.5 h-full bg-surface-container-lowest" style="margin-left: 39%;" title="19:15 The Lion's Rule"></span>
+<span class="w-0.5 h-full bg-surface-container-lowest" style="margin-left: 65%;" title="31:40 Algorithmic Moats"></span>
+<span class="w-0.5 h-full bg-surface-container-lowest" style="margin-left: 87%;" title="42:10 Boardroom Blueprint"></span>
+</div>
+<!-- Scrubber Handle -->
+<div class="absolute w-4 h-4 bg-primary-fixed rounded-full shadow-[0_0_12px_rgba(247,192,72,0.8)] -translate-x-1/2 group-hover/scrub:scale-125 transition-transform" style="left: 38%;"></div>
+</div>
+<!-- Bottom Control Strip -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-space-sm">
+<button class="text-primary hover:text-primary-fixed transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">replay_10</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">forward_30</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 font-label-md text-label-md text-on-surface ml-2">
+<span class="text-primary font-semibold">18:24</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">48:15</span>
+</div>
+</div>
+<!-- Current Chapter Indicator -->
+<div class="hidden md:flex items-center gap-2 px-space-sm py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-xs">radio_button_checked</span>
+<span>Playing: The Lion's Rule: Sovereign Weight Orchestration</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-xs py-0.5 rounded-lg bg-surface-container-high hover:bg-surface-bright font-label-sm text-label-sm text-on-surface font-semibold">
+                1.25x
+              </button>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xl">closed_caption</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xl">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Timeline Chapter Navigation Bar -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">schedule</span>
+            Interactive Broadcast Index • Jump Directly to Chapters
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline">5 Strategic Takeaway Segments</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xs">
+<!-- Chapter 1 -->
+<button class="text-left p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between group">
+<span class="font-label-sm text-label-sm text-primary font-bold">00:00</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium line-clamp-2 mt-1 group-hover:text-primary transition-colors">
+              Prologue: The Delusion of Monolithic Models
+            </p>
+</button>
+<!-- Chapter 2 -->
+<button class="text-left p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between group">
+<span class="font-label-sm text-label-sm text-primary font-bold">08:42</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium line-clamp-2 mt-1 group-hover:text-primary transition-colors">
+              Why 80% of Enterprise Multi-Agents Fail in Production
+            </p>
+</button>
+<!-- Chapter 3 (Active) -->
+<button class="text-left p-space-sm rounded-lg bg-surface-container-high shadow-[0_0_12px_rgba(247,192,72,0.15)] flex flex-col justify-between">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm text-secondary font-bold">19:15</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-semibold line-clamp-2 mt-1">
+              The Lion's Rule: Sovereign Weight Orchestration
+            </p>
+</button>
+<!-- Chapter 4 -->
+<button class="text-left p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between group">
+<span class="font-label-sm text-label-sm text-primary font-bold">31:40</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium line-clamp-2 mt-1 group-hover:text-primary transition-colors">
+              Building Algorithmic Moats vs Vendor Dependency
+            </p>
+</button>
+<!-- Chapter 5 -->
+<button class="text-left p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between group">
+<span class="font-label-sm text-label-sm text-primary font-bold">42:10</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium line-clamp-2 mt-1 group-hover:text-primary transition-colors">
+              Executive Blueprint for Boardroom Adoption
+            </p>
+</button>
+</div>
+</div>
+<!-- KEY REQUIREMENT: DUAL CONTENT BRIDGE (Podcast + Comic Saga) -->
+<section class="mb-space-xl p-space-lg rounded-xl bg-surface-container-low shadow-xl relative overflow-hidden">
+<!-- Radiant Accent Background Gradients -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-72 h-72 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Comic Preview Artwork Stack -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-sm rounded-lg overflow-hidden shadow-2xl bg-surface-container-lowest group cursor-pointer">
+<!-- Illustrated Comic Artwork Frame matching second style reference image -->
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Vibrant graphic novel comic book spread showing The Great Elephant of Data Strategy in an illuminated deep biomech jungle, spraying a torrential stream of glowing cyan-teal binary code and pure data water across corrupted crimson circuitry roots. Comic panel framing, dynamic motion sound effect typography, dramatic neon cyan and midnight jungle color scheme, graphic line art style." src="./assets/asset_04_0bb8543c.jpg"/>
+</div>
+<!-- Comic Badge Overlay -->
+<div class="p-space-sm bg-surface-container-high flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest block">Issue 01 • Spread 04</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">The Jungle Audit &amp; The Silicon Canopy</span>
+</div>
+<span class="p-2 rounded-lg bg-primary text-on-primary">
+<span class="material-symbols-outlined text-lg">auto_stories</span>
+</span>
+</div>
+</div>
+<!-- Offset decorative card behind -->
+<div class="hidden sm:block absolute -top-3 -right-3 w-full h-full rounded-lg bg-surface-container -z-10 opacity-60"></div>
+</div>
+<!-- Narrative Bridge Copy & Executive Actions -->
+<div class="lg:col-span-7 space-y-space-sm">
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-lg bg-primary/10 text-primary font-label-sm text-label-sm uppercase font-bold tracking-widest">
+<span class="material-symbols-outlined text-sm">auto_stories</span>
+              Pairing with The Comic Saga: Issue 01 &amp; Prologue
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              Experience the Architecture in Full Graphic Form
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              This episode directly explores the architectural framework illustrated in Comic Chapter 01: <span class="text-primary italic">"The Jungle Audit"</span> and Issue 01: <span class="text-secondary italic">"The Silicon Canopy"</span>. Read the graphic novel spread to see The Sovereign Lion convene the high council to cleanse corrupted data channels and isolate enterprise intelligence from vendor extinction.
+            </p>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5">tips_and_updates</span>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold block">Reading Guidance</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Pause at <span class="text-primary font-bold">19:15</span> in this episode to align with page 18 of Comic Issue 01, where autonomous agents purge legacy telemetry pipelines.
+                </p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md uppercase tracking-wider font-semibold transition-all shadow-[0_0_25px_rgba(247,192,72,0.35)] flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">menu_book</span>
+                Open Companion Comic Chapter
+              </a>
+<a class="px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-secondary font-label-md text-label-md uppercase tracking-wider transition-all flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">visibility</span>
+                Read in Comic Reader (Split Screen)
+              </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid of Boardroom Directives & Key Takeaways -->
+<section class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Strategic Extraction</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Boardroom Directives &amp; Action Plan</h2>
+</div>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider transition-all">
+<span class="material-symbols-outlined text-sm">download</span>
+            Download Directive Briefing (.PDF)
+          </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Directive 01 -->
+<div class="p-space-md rounded-xl bg-surface-container shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-surface-container-low">Directive 01</span>
+<span class="material-symbols-outlined text-primary text-xl">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
+                Multi-Agent Orchestration vs Monolithic LLMs
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+                Replace brittle single-context pipelines with task-specialized federated agents. Autonomous micro-models deliver 94% lower inference cost and eliminate hallucinatory systemic drift.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Tactic: LangGraph / AutoGen Stacks</span>
+<span class="text-outline-variant">Min 08:42</span>
+</div>
+</div>
+<!-- Directive 02 -->
+<div class="p-space-md rounded-xl bg-surface-container shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-surface-container-low">Directive 02</span>
+<span class="material-symbols-outlined text-secondary text-xl">shield</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
+                Air-Gapping Proprietary IP from Foundational Vendors
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+                Never allow enterprise crown jewels to traverse hosted cloud inference unaltered. Implement local vector tokenization and ephemeral synthetic proxies at the border gateway.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Tactic: Zero-Trust Model Scrubbing</span>
+<span class="text-outline-variant">Min 23:10</span>
+</div>
+</div>
+<!-- Directive 03 -->
+<div class="p-space-md rounded-xl bg-surface-container shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-surface-container-low">Directive 03</span>
+<span class="material-symbols-outlined text-primary text-xl">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
+                The Sovereign Readiness Scorecard
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+                Measure organizational autonomy across 5 tiers: Compute Sovereignty, Fine-Tuning Independence, Memory Architecture, Governance Audits, and Fallback Redundancy.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Tactic: 5-Tier Audit Framework</span>
+<span class="text-outline-variant">Min 36:50</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Tabbed Interactive Transcript & Discussion Notes Hub -->
+<section class="mb-space-xl p-space-lg rounded-xl bg-surface-container-low shadow-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-sm overflow-x-auto pb-1">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider font-semibold transition-all flex items-center gap-2" id="tabTranscriptBtn">
+<span class="material-symbols-outlined text-lg">subtitles</span>
+              Searchable Transcript
+            </button>
+<button class="px-space-md py-space-xs rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-all flex items-center gap-2" id="tabNotesBtn">
+<span class="material-symbols-outlined text-lg">note_alt</span>
+              Executive Discussion Notes
+            </button>
+<button class="px-space-md py-space-xs rounded-lg bg-transparent hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-all flex items-center gap-2" id="tabDownloadsBtn">
+<span class="material-symbols-outlined text-lg">folder_zip</span>
+              Artifacts &amp; Schematics (3)
+            </button>
+</div>
+<!-- Transcript Search Bar -->
+<div class="relative w-full md:w-72">
+<input class="w-full bg-surface-container px-space-md py-space-xs pl-9 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search transcript..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-on-surface-variant text-lg">search</span>
+</div>
+</div>
+<!-- Transcript Content Stream -->
+<div class="space-y-space-md max-h-[460px] overflow-y-auto pr-space-xs">
+<!-- Dialogue Line 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm font-bold text-xs">AK</span>
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Dr. Amit Khandelwal</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant">Host</span>
+</div>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">play_circle</span>
+                00:14
+              </button>
+</div>
+<p class="font-body-md text-body-md text-on-surface pl-8">
+              Welcome back to The AI Jungle. Today we confront the defining enterprise paradox of our decade: every Fortune 500 board wants to deploy autonomous agents, but 80% are simply funneling sensitive company logic straight into third-party black boxes. Sovereign Lion, what is the fatal assumption being made in the boardroom today?
+            </p>
+</div>
+<!-- Dialogue Line 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm font-bold text-xs">SL</span>
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">The Sovereign Lion</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant">Mythic Host</span>
+</div>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">play_circle</span>
+                01:05
+              </button>
+</div>
+<p class="font-body-md text-body-md text-on-surface pl-8">
+              The delusion, Amit, is confusing <em class="text-secondary italic">subscription access</em> with <strong class="text-primary font-semibold">computational sovereignty</strong>. In the wild canopy, the predator who relies entirely on another beast's watering hole does not survive the dry season. When an enterprise surrenders its reasoning graph to a centralized monolithic provider, they are not building an algorithmic moat—they are building an executive cage.
+            </p>
+</div>
+<!-- Dialogue Line 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm font-bold text-xs">AK</span>
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Dr. Amit Khandelwal</span>
+</div>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">play_circle</span>
+                03:48
+              </button>
+</div>
+<p class="font-body-md text-body-md text-on-surface pl-8">
+              And this is precisely what we visualized in Comic Chapter 01, where the council gathers around the dying legacy streams. Let's unpack the difference between agent orchestration and mere API chaining...
+            </p>
+</div>
+<!-- Dialogue Line 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm font-bold text-xs">SL</span>
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">The Sovereign Lion</span>
+</div>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">play_circle</span>
+                07:22
+              </button>
+</div>
+<p class="font-body-md text-body-md text-on-surface pl-8">
+              True orchestration demands that each micro-agent possesses isolated state boundaries, air-gapped deterministic memory, and hot-swappable weights. If provider X doubles latency or rewrites policy tomorrow, your enterprise kingdom must not blink. That is the Sovereign Rule.
+            </p>
+</div>
+</div>
+<!-- Downloads & Architecture Drawer Footer -->
+<div class="mt-space-md pt-space-md flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-2 transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary text-base">picture_as_pdf</span>
+              Executive Memo (.PDF, 3.8 MB)
+            </a>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-2 transition-colors" href="#">
+<span class="material-symbols-outlined text-primary text-base">schema</span>
+              Multi-Agent Architecture Blueprint (.SVG)
+            </a>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+            Timestamped audio synchronizes with interactive transcript
+          </span>
+</div>
+</section>
+<!-- Featured Speakers & Archetypes Section -->
+<section class="mb-space-xl">
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">The Minds Behind the Broadcast</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Featured Episode Dialogists</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- The Sovereign Lion -->
+<div class="p-space-lg rounded-xl bg-surface-container shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-space-md">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-surface-container-highest shrink-0 shadow-md">
+<img class="w-full h-full object-cover" data-alt="Close up regal portrait of The Sovereign Lion character, a handsome majestic male lion with a full golden mane wearing an impeccable bespoke dark navy three-piece corporate suit and white pocket square. Dark ambient jungle background, confident intense amber eyes, studio portrait lighting." src="./assets/asset_02_8ff26d0d.jpg"/>
+</div>
+<div class="space-y-space-xs text-center sm:text-left">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary">The Sovereign Lion</span>
+<span class="px-space-xs py-0.5 rounded-lg bg-primary/20 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Mythic Anchor</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                The apex strategic intellect of the AI Jungle canopy. Guardian of organizational autonomy, proprietary weight sovereignty, and long-term algorithmic moats.
+              </p>
+<div class="pt-space-xs flex items-center justify-center sm:justify-start gap-space-sm">
+<a class="font-label-sm text-label-sm text-secondary uppercase tracking-wider hover:underline flex items-center gap-1" href="#">
+                  View Character Codex
+                  <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Dr. Amit Khandelwal -->
+<div class="p-space-lg rounded-xl bg-surface-container shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-space-md">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-surface-container-highest shrink-0 shadow-md">
+<img class="w-full h-full object-cover" data-alt="Editorial professional portrait of Dr. Amit Khandelwal, distinguished Indian artificial intelligence researcher and executive consultant with modern glasses, tailored black blazer, confident warm demeanor, high-tech dark studio background with subtle warm gold highlights." src="./assets/asset_01_8add66c3.jpg"/>
+</div>
+<div class="space-y-space-xs text-center sm:text-left">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Dr. Amit Khandelwal</span>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">Host &amp; Strategist</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Creator of The AI Jungle, enterprise transformation advisor, and author of the Sovereign Enterprise framework. Guides executive boards into practical frontier deployment.
+              </p>
+<div class="pt-space-xs flex items-center justify-center sm:justify-start gap-space-sm">
+<a class="font-label-sm text-label-sm text-primary uppercase tracking-wider hover:underline flex items-center gap-1" href="#">
+                  Read Executive Memo
+                  <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Up Next & Related Chronology -->
+<section class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">Season 01 Foundations</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Adjacent Canopy Transmissions</h2>
+</div>
+<a class="font-label-md text-label-md text-primary uppercase tracking-wider hover:underline flex items-center gap-1" href="#">
+            Full Broadcast Catalog
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Ep 07: The Data Tusk with The Elephant -->
+<div class="rounded-xl overflow-hidden bg-surface-container hover:bg-surface-container-high transition-all shadow-md group flex flex-col sm:flex-row">
+<div class="sm:w-48 aspect-video sm:aspect-auto overflow-hidden bg-surface-container-highest shrink-0 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Comic graphic novel panel depicting a biomechanical cybernetic mammoth elephant wading in an azure glowing cyber river, cleansing polluted toxic red software bugs with a blast of purified data water, dark bioluminescent forest, neon glowing cyan circuits." src="./assets/asset_05_703cccc2.jpg"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-sm text-label-sm">
+                52:10
+              </span>
+</div>
+<div class="p-space-md flex flex-col justify-between space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Episode 07 • Data Governance</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  The Data Tusk: Cleansing Legacy Swamps
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                  Featuring The Great Elephant of Data Strategy. Uncover how the Fortune 100 purges 20 years of toxic schema debt to feed modern transformer pipelines.
+                </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Feat. The Great Elephant</span>
+<span class="text-primary font-label-sm text-label-sm uppercase font-semibold flex items-center gap-1">
+                  Listen
+                  <span class="material-symbols-outlined text-xs">play_circle</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Ep 06: Pack Instinct with The Cyber Wolf -->
+<div class="rounded-xl overflow-hidden bg-surface-container hover:bg-surface-container-high transition-all shadow-md group flex flex-col sm:flex-row">
+<div class="sm:w-48 aspect-video sm:aspect-auto overflow-hidden bg-surface-container-highest shrink-0 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Digital art of a sleek cybernetic wolf with illuminated neon teal eyes standing atop a dark metallic outcrop in a rainy cyberpunk jungle canopy, looking down on a glowing matrix grid, dramatic cinematic lighting, deep shadows." src="./assets/asset_06_683b2d15.jpg"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-secondary font-label-sm text-label-sm">
+                41:30
+              </span>
+</div>
+<div class="p-space-md flex flex-col justify-between space-y-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Episode 06 • Swarm Intelligence</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Pack Instinct: Decentralized Swarm Compute
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                  Featuring The Cybernetic Wolf Alpha. Moving from monolithic GPU clusters to edge-distributed swarm coordination across sovereign jurisdictions.
+                </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Feat. The Alpha Wolf</span>
+<span class="text-primary font-label-sm text-label-sm uppercase font-semibold flex items-center gap-1">
+                  Listen
+                  <span class="material-symbols-outlined text-xs">play_circle</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Newsletter Dispatch CTA -->
+<section class="p-space-xl rounded-xl bg-surface-container-lowest shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-xl text-center lg:text-left">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest block">
+            Direct Boardroom Feed
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+            Decode the Canopy Before the Next Episode Airs
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Join 34,000+ executives receiving our bi-weekly architecture breakdowns, graphic novel releases, and sovereign compute benchmarks.
+          </p>
+</div>
+<form class="w-full max-w-md flex flex-col sm:flex-row items-center gap-space-xs">
+<input class="w-full bg-surface-container px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="chief.technology@firm.com" type="email"/>
+<button class="w-full sm:w-auto px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md uppercase tracking-wider font-semibold whitespace-nowrap shadow-lg transition-all" type="button">
+            Dispatch Memo
+          </button>
+</form>
+</section>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_12px_rgba(0,0,0,0.6)]"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg mb-space-xl"><div class="lg:col-span-5 flex flex-col items-start"><span class="font-headline-lg text-headline-lg text-primary mb-space-xs tracking-tight">THE AI JUNGLE</span><p class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-space-md">Think Strategically. Then Let AI Roar.</p><p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">The apex nexus for executive foresight, graphic storytelling, and systemic enterprise intelligence transformation. Decipher the digital canopy with master-crafted narratives and computational power.</p><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm px-space-sm py-space-xs rounded-lg bg-surface-container font-medium text-secondary uppercase tracking-wider">Transmitting Live</span><span class="font-label-sm text-label-sm px-space-sm py-space-xs rounded-lg bg-surface-container font-medium text-primary uppercase tracking-wider">Enterprise Protocol</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-space-xs">Directory</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home Core</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="podcast" href="#">The Podcast</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="comics" href="#">Graphic Novels</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="safari-journey" href="#">Safari Journey</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="characters" href="#">Characters Archetypes</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About Manifesto</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-space-xs">Intelligence</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="safari-journey" href="#">Enterprise Safari</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="characters" href="#">AI Agent Codex</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="podcast" href="#">Executive Briefs</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" data-path="profile" href="#">Member Portal</a></div><div class="lg:col-span-3 flex flex-col"><span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-space-xs">Canopy Dispatch</span><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Receive strategic dispatches, comic releases, and enterprise artificial intelligence blueprints.</p><form class="flex flex-col gap-space-xs"><div class="flex bg-surface-container rounded-lg p-space-xs"><input class="w-full bg-transparent px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="executive@enterprise.ai" type="email"/><button class="px-space-md py-space-xs rounded-lg bg-primary font-label-sm text-label-sm text-on-primary uppercase tracking-wider hover:bg-primary-fixed-dim transition-all" type="button">Join</button></div><span class="font-label-sm text-label-sm text-on-surface-variant">Encrypted corporate broadcast. Unsubscribe anytime.</span></form></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 THE AI JUNGLE PLATFORM. ALL RIGHTS RESERVED.</p><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">PRIVACY PROTOCOL</span><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">TERMS OF SERVICE</span><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors">ETHICS GOVERNANCE</span></div></div></div></footer></body></html>
