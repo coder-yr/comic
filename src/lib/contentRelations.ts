@@ -68,18 +68,18 @@ export function getAllSearchableContent(): ContentHubItem[] {
   });
 
   // 4. Characters
-  CHARACTERS.forEach((char) => {
+  CHARACTERS.forEach((char, index) => {
     items.push({
       id: char.id,
       type: "character",
       title: char.name,
-      subtitle: `${char.role} · ${char.archetype}`,
+      subtitle: `${char.executiveRole} · ${char.animal}`,
       description: char.description,
       slug: char.slug,
       url: `/characters/${char.slug}`,
-      badge: `Council Rank #${char.councilRank}`,
-      image: char.portrait,
-      meta: `${char.department} • Tier: ${char.maturityLevel}`,
+      badge: `Council Rank #${index + 1}`,
+      image: char.portraitImage,
+      meta: `${char.category} • Risk: ${char.riskMitigated}`,
     });
   });
 
@@ -111,9 +111,8 @@ export function getSafariRelatedContent(chapter: SafariChapter) {
   const relatedPodcast = PODCAST_EPISODES.find((ep) => ep.slug === chapter.relatedPodcastSlug) || PODCAST_EPISODES[0];
   const relatedCharacter = CHARACTERS.find((char) =>
     char.name.toLowerCase().includes(chapter.featuredArchetype.name.toLowerCase()) ||
-    char.role.toLowerCase().includes(chapter.featuredArchetype.role.toLowerCase())
+    char.executiveRole.toLowerCase().includes(chapter.featuredArchetype.role.toLowerCase())
   ) || CHARACTERS[0];
 
   return { relatedComic, relatedPodcast, relatedCharacter };
 }
-
